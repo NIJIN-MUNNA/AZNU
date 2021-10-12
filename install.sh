@@ -11,8 +11,10 @@ pkg install ffmpeg libwebp -y
 pkg install nodejs -y
 pkg install tesseract -y
 wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
+npm i -g npm@6.14.14
 npm install
 npm audit fix
+npm i terminal-kit
 
 #!/usr/bin/bash
 
