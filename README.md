@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://avatars.githubusercontent.com/u/86514883?v=4" alt="paul" width="300" />
+<img src="https://i.imgur.com/6nR8tPu.jpeg" alt="paul" width="300" />
 
 # PAUL WALKER
 
