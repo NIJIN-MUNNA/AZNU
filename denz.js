@@ -1721,7 +1721,7 @@ reply('sᴜᴄᴄᴜss')
 menusimpel = false
 reply('sᴜᴄᴄᴜss')
 }else{
-reply(`Cara Penggunaan : ${prefix}setmenu button\n\nTersedia: 1/2`)
+reply(`Use : ${prefix}setmenu button\n\nTersedia: 1/2`)
 }
 break
 case 'setthumb':
@@ -1738,7 +1738,7 @@ case 'addcmd':
 case 'setcmd':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 if (isQuotedSticker) {
-if (!c) return reply(`Penggunaan : ${command} cmdnya dan tag stickernya`)
+if (!c) return reply(`Use : ${command} to add cmd`)
 var kodenya = mek.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.fileSha256.toString('base64')
 addCmd(kodenya, c)
 reply("ᴄᴍᴅ ᴀᴅᴅᴇᴅ")
@@ -1748,7 +1748,7 @@ reply('ᴛᴀɢ ᴀ sᴛɪᴄᴋᴇʀ')
 break
 case 'delcmd':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-if (!isQuotedSticker) return reply(`Penggunaan : ${command} tagsticker`)
+if (!isQuotedSticker) return reply(`use : ${command} tagsticker`)
 var kodenya = mek.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.fileSha256.toString('base64')
 scommand.splice(getCommandPosition(kodenya), 1)
 fs.writeFileSync('./database/scommand.json', JSON.stringify(scommand))
