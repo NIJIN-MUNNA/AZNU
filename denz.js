@@ -2950,7 +2950,7 @@ break
            })
     	   break
 				case 'tag':
-			if (args.length < 1) return reply(`Penggunaan ${prefix}tag 62xnxx`)
+			if (args.length < 1) return reply(`Use ${prefix}tag 91*****o`)
             var nomqm = `${body.slice(5)}@s.whatsapp.net`
 					tagq = `@${nomqm.split('@')[0]}` 
 					denz.sendMessage(from, tagq, text, { quoted: ftrol, contextInfo: { forwardingScore: 508, isForwarded: true, mentionedJid: [nomqm]}})
@@ -2962,11 +2962,11 @@ break
 					break
 				case 'join':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-				 if (args.length < 1) return ephe('Link nya mana?')
+				 if (args.length < 1) return ephe('Link give?')
 					denz.query({
 json:["action", "invite", `${args[0].replace('https://chat.whatsapp.com/','')}`]
 })
-reply('Sukses bergabung dalam group')
+reply('Succuss')
 break
 				case 'totag':
 			if (!isGroup) return reply(mess.only.group)
@@ -3891,33 +3891,33 @@ break
 					break			
 					case 'setname':
 					if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-				if (args.length < 1) return reply('Teksnya?')
+				if (args.length < 1) return reply('Text?')
                 anu = body.slice(9)
                 denz.updateProfileName(anu)
-                reply(`Sukses mengganti nama ke ${body.slice(9)}`)
+                reply(`Succuss ${body.slice(9)}`)
                 break
 			case 'add':
 			if (!isGroup) return reply(mess.only.group)
 			if (!isGroupAdmins) return reply(mess.only.admin)
 			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply targetnya!')
+			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply target!')
 			add = mek.message.extendedTextMessage.contextInfo.participant
 		    denz.groupAdd(from, [add])
-				reply('Sukses menambahkan peserta')
+				reply('Succuss')
 				break
 				case 'kick':
 			if (!isGroup) return reply(mess.only.group)
 			if (!isGroupAdmins) return reply(mess.only.admin)
 			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply targetnya!')
+			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply target!')
 			kick = mek.message.extendedTextMessage.contextInfo.participant
 		    denz.groupRemove(from, [kick])
-						reply('Sukses mengeluarkan peserta')
+						reply('Succuss')
                     break
                     case 'creategroup':
 			case 'creategrup':
 			if (!isGroup) return reply(mess.only.group)
-				if (args.length < 1) return reply(`Penggunaan ${prefix}creategrup nama grup|@tag member`)
+				if (args.length < 1) return reply(`Use ${prefix}creategrup name group|@tag member`)
 				argz = arg.split('|')
 				if (mek.message.extendedTextMessage != undefined){
                     mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
@@ -3926,23 +3926,23 @@ break
 						anu.push(mentioned[i])
                     }
 					denz.groupCreate(argz[0], anu)
-					reply(`Sukses membuat grup ${argz[0]}`)
+					reply(`Succuss ${argz[0]}`)
                 }
 				break
 			case 'addrespon':
 			if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-				if (args.length < 1) return reply(`Penggunaan ${prefix}addrespon hai|hai juga`)
+				if (args.length < 1) return reply(`Use ${prefix}addrespon hi|hello`)
 				argz = arg.split('|')
-				if (checkCommands(argz[0], commandsDB) === true) return reply(`Udah ada`)
+				if (checkCommands(argz[0], commandsDB) === true) return reply(`succuss`)
 				addCommands(argz[0], argz[1], sender, commandsDB)
-				reply(`Sukses menambahkan respon ${argz[0]}`)
+				reply(`Done ${argz[0]}`)
 				break
 			case 'delrespon':
 			if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-				if (args.length < 1) return reply(`Penggunaan ${prefix}delrespon hai`)
-				if (!checkCommands(body.slice(11), commandsDB)) return reply(`Ga ada di database`)
+				if (args.length < 1) return reply(`Use ${prefix}delrespon hi`)
+				if (!checkCommands(body.slice(11), commandsDB)) return reply(`reply from database`)
                 deleteCommands(body.slice(11), commandsDB)
-				reply(`Sukses menghapus respon ${body.slice(11)}`)
+				reply(`Done✔ ${body.slice(11)}`)
 				break
 		default:break
 		}
