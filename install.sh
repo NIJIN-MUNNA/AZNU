@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+apt update 
+apt upgrade
+pkg install git -y
 pkg clean
 pkg install termimage -y
 pkg install tty-clock -y
