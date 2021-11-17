@@ -257,7 +257,7 @@ try {
 			only: {
 				group: '𝙾𝙽𝙻𝚈 𝚆𝙸𝚃𝙷 𝙸𝙽 𝙶𝚁𝙾𝚄𝙿𝚂',
 				ownerG: '𝙾𝙽𝙻𝚈 𝙵𝙾𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙳𝙼𝙸𝙽',
-				ownerB: '𝙾𝙽𝙻𝚈 𝙵𝙾𝚁 ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ⁩',
+				ownerB: '𝙾𝙽𝙻𝚈 𝙵𝙾𝚁 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩',
 				admin: '𝙾𝙽𝙻𝚈 𝙵𝙾𝚁 𝙰𝙳𝙼𝙸𝙽',
 				Badmin: '𝙼𝙰𝙺𝙴 𝙱𝙾𝚃 𝙶𝚁𝙾𝚄𝙿 𝙰𝙳𝙼𝙸𝙽'
 			}
@@ -290,7 +290,7 @@ try {
 		}
 		if (antibot === true) return
 		const katalog = (teks) => {
-             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_© ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ⁩_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
+             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_© 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
              denz.relayWAMessage(res)
         }
         const grupinv = (teks) => {
@@ -593,7 +593,7 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
             if (isAfk(mek.key.remoteJid)) return
             addafk(mek.key.remoteJid)
 			heheh = ms(Date.now() - waktuafk)
-		  sendButMessage(from, `Hai ${pushname}, Sorry it seems at this time ${NamaOwner} currently Offline\n\n*Reason :* ${alasanafk}\n*Since :* ${heheh.hours} Hour, ${heheh.minutes} Minutes, ${heheh.seconds} second\n\nPlease contact again after Online`, "*_© ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ⁩_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+		  sendButMessage(from, `Hai ${pushname}, Sorry it seems at this time ${NamaOwner} currently Offline\n\n*Reason :* ${alasanafk}\n*Since :* ${heheh.hours} Hour, ${heheh.minutes} Minutes, ${heheh.seconds} second\n\nPlease contact again after Online`, "*_© 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 			}
 		}
 		if (mek.key.remoteJid.endsWith('@g.us') && offline) {
@@ -606,7 +606,7 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                         if (isAfk(mek.key.remoteJid)) return
                         addafk(mek.key.remoteJid)
 						heheh = ms(Date.now() - waktuafk)
-			       sendButMessage(from, `Hai ${pushname}, Sorry it seems at this time ${NamaOwner} currently Offline\n\n*Reason :* ${alasanafk}\n*Since :* ${heheh.hours} Hour, ${heheh.minutes} Minutes, ${heheh.seconds} second\n\nPlease contact again after Online`, "*_© ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ⁩_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+			       sendButMessage(from, `Hai ${pushname}, Sorry it seems at this time ${NamaOwner} currently Offline\n\n*Reason :* ${alasanafk}\n*Since :* ${heheh.hours} Hour, ${heheh.minutes} Minutes, ${heheh.seconds} second\n\nPlease contact again after Online`, "*_© 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 					}
 				}
 						}
@@ -670,7 +670,7 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 	        denz.sendMessage(from, { displayname: nama, vcard: vcard}, MessageType.contact, {contextInfo: {"mentionedJid": ane}})
             }
 		const reply = (teks) => {
-			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/917356378949?text=Hi bro`}}})
+			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `𝙿𝙴𝙿𝙴 𝚂𝙸𝚁`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/917736622139?text=Hi bro`}}})
 		}
 		const reply2 = (teks) => {
 			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true}})
@@ -922,7 +922,7 @@ fill =`𝙷𝚒 𝙱𝚛𝚘 ${pushname}, ${tampilUcapan}
 
 If the button doesnt appear, type .allmenu
 `
-menu =`ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ⁩`
+menu =`𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩`
 gbutsan = [
 {buttonId:`allmenu`,buttonText:{displayText:'😱SHOW MENU'},type:1},
 {buttonId:`owner`,buttonText:{displayText:'😎OWNER'},type:1},
@@ -970,7 +970,7 @@ gambar = await getBuffer(randKey.result)
 ☯ 𝚃𝙸𝙼𝙴 : ${timeWit}  
 ☯ 𝙳𝙰𝚈 : ${week} ${weton}
 ☯ 𝙳𝙰𝚃𝙴 : ${calender}`
-sendButLocation(from, `${menu}`, "ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ⁩", {jpegThumbnail:gambar,name:""}, [
+sendButLocation(from, `${menu}`, "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩", {jpegThumbnail:gambar,name:""}, [
 {buttonId:`allmenu`,buttonText:{displayText:'😱SHOW MENU'},type:1},
 {buttonId:`owner`,buttonText:{displayText:'😎OWNER'},type:1},
 {buttonId:`script`,buttonText:{displayText:'📃SCRIPT'},type:1}
@@ -1003,7 +1003,7 @@ menu =`╭─❒ 「 𝙸𝙽𝙵𝙾🐦 」 ❒──❒
 │ ༄ 𝚂𝚃𝙰𝚃𝚄𝚂 : 𝚂𝙸𝙽𝙶𝙻𝙴 𝙻𝙸𝙵𝙴😱
 └❏
 
-╭─❒ 𝙱𝙾𝚃 𝙱𝚈 *ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ⁩*
+╭─❒ 𝙱𝙾𝚃 𝙱𝚈 *𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩*
 │
 ├➫ 𝚂𝚌𝚛𝚒𝚙𝚝 𝚌𝚑𝚘𝚍𝚒𝚌𝚑𝚞 𝚙𝚖 𝚟𝚊𝚛𝚊𝚗𝚍𝚊🐦
 │
@@ -1011,9 +1011,9 @@ menu =`╭─❒ 「 𝙸𝙽𝙵𝙾🐦 」 ❒──❒
 │
 ├➫ 𝙷𝙴𝙻𝙿𝙴𝙳 𝙱𝚈 𝚂𝙰𝙵𝚆𝙰𝙽 𝚂𝙴𝚁 ❣️
 │
-├➫ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 : *ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ⁩*
+├➫ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 : *𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩*
 │
-├➫ 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝙴 : wa.me/917356378949
+├➫ 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝙴 : wa.me/917736622139
 │
 ├➫ 𝚄𝚂𝙴 𝙼𝙴𝙽𝚄✰
 │
@@ -1039,19 +1039,19 @@ menu =`╭─❒ 「 𝙸𝙽𝙵𝙾🐦 」 ❒──❒
 │
 ├➫ 𝙰𝙳𝙸𝚃𝙷𝙷𝙰𝚁𝙸
 │
-├➫ *ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ⁩*
+├➫ *𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩*
 └─────────────────❒`
-sendButLocation(from, `${menu}`, "ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ⁩", {jpegThumbnail:gambar,name:""}, [{buttonId:`owner`,buttonText:{displayText:'🐦OWNER'},type:1},{buttonId:`script`,buttonText:{displayText:'📒SCRIPT'},type:1}], {contextInfo: { mentionedJid: [otod]}})
+sendButLocation(from, `${menu}`, "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩", {jpegThumbnail:gambar,name:""}, [{buttonId:`owner`,buttonText:{displayText:'🐦OWNER'},type:1},{buttonId:`script`,buttonText:{displayText:'📒SCRIPT'},type:1}], {contextInfo: { mentionedJid: [otod]}})
 break
 case 'menu':
  stod = `${sender}`
  listMsg = {
  buttonText: '𝙻𝙸𝚂𝚃 𝙼𝙴𝙽𝚄⁩',
- footerText: '*_© ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ⁩_*',
+ footerText: '*_© 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩_*',
  description: `𝙷𝙸 𝙱𝚁𝙾 @${stod.split('@')[0]}, 𝚃𝙷𝙸𝚂 𝙸𝚂 𝙻𝙸𝚂𝚃 𝙼𝙴𝙽𝚄`,
  sections: [
                      {
-                      "title": `ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ⁩`,
+                      "title": `𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩`,
  rows: [
                           {
                               "title": "Script",
@@ -1640,7 +1640,7 @@ mhan = await denz.prepareMessage(from, buff, image, {thumbnail: buff})
 const buttonMessagessss = {
 imageMessage: mhan.message.imageMessage,
 contentText: `𝙱𝚘𝚜𝚜`,
-footerText: '*_©ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ⁩_*',
+footerText: '*_©𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩_*',
 buttons: gbutsan,
 headerType: 4
 }
@@ -1794,8 +1794,8 @@ break
 		case 'sc':
 		case 'sourcecode':
 		anu =`╭─❒ SCRIPT
-│➩➬𝙱𝙰𝚂𝙴 : *ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ⁩*
-│➩➬𝙴𝚁𝚁𝙾𝚁 𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 : *ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ⁩*
+│➩➬𝙱𝙰𝚂𝙴 : *𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩*
+│➩➬𝙴𝚁𝚁𝙾𝚁 𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 : *𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩*
 │
 └──────[ 𝚂𝙲𝚁𝙸𝙿𝚃 ]──────❒
   │➬➩ : 𝙽𝙾𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝚈𝙴𝚃
@@ -1803,7 +1803,7 @@ break
 const buttons = [{buttonId: `menu`, buttonText: {displayText: 'BACK➡️'}, type: 1},{buttonId: `owner`, buttonText: {displayText: 'OWNER👤'}, type: 1}]
 const buttonMessage = {
     contentText: `${anu}`,
-    footerText: '*_©ꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ_*',
+    footerText: '*_©𝙿𝙴𝙿𝙴 𝚂𝙸𝚁_*',
     buttons: buttons,
     headerType: 1
 }
@@ -1819,7 +1819,7 @@ break
 			 res = await denz.prepareMessageFromContent(from,{
 "templateMessage": {
 						"hydratedTemplate": {
-							"hydratedContentText": `Hi ${pushname} 👋,\n\nꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ`,
+							"hydratedContentText": `Hi ${pushname} 👋,\n\n𝙿𝙴𝙿𝙴 𝚂𝙸𝚁`,
 							"hydratedFooterText": `${NamaBot}`,
 							"hydratedButtons": [
 								{
@@ -1866,7 +1866,7 @@ case 'debug2':
     ]
   },
   "hydratedTemplate": {
-    "hydratedContentText": `Hi ${pushname} 👋,\n\nꪶ𝑷𝑨𝑼𝑳 ⇥𝑾𝑨𝑳𝑲𝑬𝑹ꫂ`,
+    "hydratedContentText": `Hi ${pushname} 👋,\n\n𝙿𝙴𝙿𝙴 𝚂𝙸𝚁`,
     "hydratedFooterText": `${NamaBot}`,
     "hydratedButtons": [
       {
@@ -4122,7 +4122,7 @@ Giliran = @${tty.player1.split('@')[0]}`
             if (!e.includes("Cannot set property 'mtype' of undefined")) {
             if (!e.includes("jid is not defined")) {
      console.log(color('|ERR|', 'red'), color(e, 'cyan'))
-     denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ALERT-ERROR* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Anees ser",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/917356378949?text=Hi Bro"}}})
+     denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ALERT-ERROR* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer pepe ser",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/917736622139?text=Hi Bro"}}})
 	}
     }
     }
