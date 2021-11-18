@@ -124,7 +124,6 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ┌───〔 *_𝚃𝙸𝙼𝙴 𝙸𝙽𝙵𝙾_* 〕                           
 ┊
 ┊
-┊ ▢ *ᴅᴀᴛᴇ* : ${calender}
 ┊ ▢ *ᴛɪᴍᴇ* : ${timeWib}
 ┊ ▢ *ᴛɪᴍᴇ* : ${timeWita}
 ┊ ▢ *ᴛɪᴍᴇ* : ${timeWit}  
