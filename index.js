@@ -102,16 +102,36 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 			}
 			let buff = await getBuffer(ppimg)
-			masuk =`𝙷𝚎𝚕𝚕𝚘? @${num.split('@')[0]}
-𝚆𝚎𝚕𝚌𝚘𝚖𝚎 𝚝𝚘 ${mdata.subject}
-*Dont Forget Fill*
-*𝙽𝚊𝚖𝚎* :
-*𝙰𝚐𝚎* :
-*𝙶𝚎𝚗𝚍𝚎𝚛* :
-*𝙰𝚜𝚌𝚘𝚝* :
-𝙴𝚗𝚓𝚘𝚢 𝙳𝚘𝚗𝚝 𝙵𝚘𝚛𝚐𝚘𝚝 𝚃𝚘 𝙲𝚘𝚗𝚝𝚊𝚌𝚝
-Click the button below to start the bot
-Note if there is no type .allmenu`
+			masuk =`┌─  ❑ *_𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙱𝙾𝚃_*   ❑
+┊➥      *_Hᴇʏ ʙʀᴏ_* @${num.split('@')[0]}            
+┊➥     *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ*  ${mdata.subject} *ɢʀᴏᴜᴘ*  
+└───────────────〄  
+┌───〔 *_𝙱𝙾𝚃 𝙸𝙽𝙵𝙾_* 〕                           
+┊ ▢ *ᴅᴇᴠᴇʟᴏʟᴇʀ* : ᴘᴇᴘᴇ sɪʀ                                    
+┊ ▢ *ᴏᴡɴᴇʀ* :  ᴘᴇᴘᴇ sɪʀ                                    
+┊ ▢ *ᴍᴏᴅᴇ* : ${multi ? 'Multi Prefix' : 'No Prefix'}
+┊ ▢ *ᴘʀᴇғɪx* :  ${publik ? 'Public' : 'Self'}
+┊ ▢ *ᴛᴏᴛᴀʟ ʜɪᴛ* : ${cmhit.length}
+┊ ▢ *ᴏᴡɴᴇʀ* :  ${baterai.battery}
+┊ ▢ *☯︎* :  @${otod.split('@')[0]}
+┊
+┊
+┊
+┊       ▎▍▌▌▉▏▎▌▉▐▏▌▎    
+┊       ▎▍▌▌▉▏▎▌▉▐▏▌▎  
+┊         ©917736622139  
+└──────────────────〄
+┌───〔 *_𝚃𝙸𝙼𝙴 𝙸𝙽𝙵𝙾_* 〕                           
+┊
+┊
+┊ ▢ *ᴅᴀᴛᴇ* : ${calender}
+┊ ▢ *ᴛɪᴍᴇ* : ${timeWib}
+┊ ▢ *ᴛɪᴍᴇ* : ${timeWita}
+┊ ▢ *ᴛɪᴍᴇ* : ${timeWit}  
+┊ ▢ *ᴅᴀʏ* : ${week} ${weton}
+┊
+┊
+└──────────────────〄`
 gbutsan = [
 {buttonId:`inibuatwelcome`,buttonText:{displayText:'👋Welcome'},type:1},
 {buttonId:`menu`,buttonText:{displayText:'📒MENU'},type:1},
