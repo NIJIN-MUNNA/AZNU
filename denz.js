@@ -1809,6 +1809,34 @@ const buttonMessage = {
 }
 await denz.sendMessage(from, buttonMessage, MessageType.buttonsMessage, {quoted: ftok})
 		break
+				case 'alive':
+		anu =`█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█ 
+█░ ╔══╗╔╗─╔══╗╔╗─╔╗╔═╗  ░█
+█░║╔╗║║║─╚║║╝║╚╦╝║║╦╝  ░█
+█░║╠╣║║╚╗╔║║╗╚╗║╔╝║╩╗  ░█
+█░╚╝╚╝╚═╝╚══╝─╚═╝─╚═╝  ░█
+█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
+
+*╭➤ 𝐈𝐀𝐌 𝐒𝐓𝐈𝐋𝐋 𝐀𝐋𝐈𝐕𝐄 𝐁𝐑𝐎*»
+*│❖ Oᴡɴᴇʀ : ᴘᴇᴘᴇ sɪʀ*
+*│❖ Wᴏʀᴋ ᴛʏᴘᴇ : ${publik ? 'public' : 'self'}*
+*│❖ Pʀᴇғɪx : ${multi ? 'Multi Prefix' : 'No Prefix'}*     
+*│❖ Cʀᴇᴅɪᴛs : ᴀɴᴇᴇs sᴇʀ*
+*╰────────────────❋ཻུ۪۪⸙*
+*⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘*
+         *ᴘᴇᴘᴇ sᴇʀ ʙᴏᴛ*
+     
+*╭◪ ᴄᴏᴅᴅᴇᴅ ʙʏ ᴘᴇᴘᴇ sɪʀ*
+*╰─────────────────❋ཻུ۪۪⸙*`
+const buttons = [{buttonId: `menu`, buttonText: {displayText: 'BACK➡️'}, type: 1},{buttonId: `owner`, buttonText: {displayText: 'OWNER👤'}, type: 1}]
+const buttonMessage = {
+    contentText: `${anu}`,
+    footerText: '*_©𝙿𝙴𝙿𝙴 𝚂𝙸𝚁_*',
+    buttons: buttons,
+    headerType: 1
+}
+await denz.sendMessage(from, buttonMessage, MessageType.buttonsMessage, {quoted: ftok})
+		break
 case 'inibuatwelcome':
 reply2('Dont just press it, see the rules, okay?')
 break
