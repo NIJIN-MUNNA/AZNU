@@ -1828,6 +1828,8 @@ await denz.sendMessage(from, buttonMessage, MessageType.buttonsMessage, {quoted:
      
 *╭◪ ᴄᴏᴅᴅᴇᴅ ʙʏ ᴘᴇᴘᴇ sɪʀ*
 *╰─────────────────❋ཻུ۪۪⸙*`
+
+
 const buttons = [{buttonId: `menu`, buttonText: {displayText: 'BACK➡️'}, type: 1},{buttonId: `owner`, buttonText: {displayText: 'OWNER👤'}, type: 1}]
 const buttonMessage = {
     contentText: `${anu}`,
