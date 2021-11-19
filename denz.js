@@ -105,6 +105,12 @@ NamaOwner = settings.NamaOwner
 multi = true
 nopref = false
 
+// PEPE 
+ownernamepepe = "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁"
+botnamepepe = "𝙿𝙴𝙿𝙴 𝙱𝙾𝚃"
+
+// ------------- fear aavanda keto -----------
+
 // APIKEY
 HunterApi = settings.HunterApi
 YuzApi = 'Yuzzu'
@@ -290,7 +296,7 @@ try {
 		}
 		if (antibot === true) return
 		const katalog = (teks) => {
-             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_© 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
+             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 2021, "message": teks, "footerText": "*_© 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
              denz.relayWAMessage(res)
         }
         const grupinv = (teks) => {
@@ -670,7 +676,7 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 	        denz.sendMessage(from, { displayname: nama, vcard: vcard}, MessageType.contact, {contextInfo: {"mentionedJid": ane}})
             }
 		const reply = (teks) => {
-			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `𝙿𝙴𝙿𝙴 𝚂𝙸𝚁`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/917736622139?text=Hi bro`}}})
+			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `𝙿𝙴𝙿𝙴 𝚂𝙸𝚁`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://chat.whatsapp.com/BzhyWkAEU0t8oVl3s8p94m`}}})
 		}
 		const reply2 = (teks) => {
 			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true}})
@@ -1047,22 +1053,22 @@ case 'menu':
  stod = `${sender}`
  listMsg = {
  buttonText: '𝙻𝙸𝚂𝚃 𝙼𝙴𝙽𝚄⁩',
- footerText: '*© 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩*',
+ footerText: '*© ${botnamepepe}⁩*',
  description: `╭────────────────
 ┊     𝙷𝙸 𝙱𝚁𝙾 @${stod.split('@')[0]} 
 ┊ 
 ┊
-┊➫ ᴏᴡɴᴇʀ : ᴘᴇᴘᴇ sɪʀ
+┊➫ ᴅᴇᴠᴇʟᴏᴘᴇʀ : ᴘᴇᴘᴇ sɪʀ
+┊ 
+┊➫ ᴏᴡɴᴇʀ : ${ownernamepepe}
 ┊
-┊➫ ʙᴏᴛ ɴᴀᴍᴇ : ᴘᴇᴘᴇ sɪʀ
+┊➫ ʙᴏᴛ ɴᴀᴍᴇ : ${botnamepepe}
 ┊
 ┊➫ ᴄʀᴇᴅɪᴛs : ᴀɴᴇᴇs sɪʀ
 ┊
 ┊➫ ᴍᴏᴅᴇ : ${publik ? 'public' : 'self'}
 ┊
 ┊➫ ᴘʀᴇғɪx :${multi ? 'Multi Prefix' : 'No Prefix'}
-┊
-┊➫ 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝙴 : wa.me/917736622139
 ┊
 ╰────────────────`,
  sections: [
@@ -1834,13 +1840,15 @@ menu = `█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
 █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
 
 *╭➤ 𝐈𝐀𝐌 𝐒𝐓𝐈𝐋𝐋 𝐀𝐋𝐈𝐕𝐄 𝐁𝐑𝐎*»
-*│❖ Oᴡɴᴇʀ : ᴘᴇᴘᴇ sɪʀ*
+*│❖ Dᴇᴠᴇʟᴏᴘᴇʀ : ᴘᴇᴘᴇ sɪʀ*
+*│❖ Oᴡɴᴇʀ : ${ownernamepepe}*
+*│❖ Bᴏᴛ ɴᴀᴍᴇ : ${botnamepepe}*
 *│❖ Wᴏʀᴋ ᴛʏᴘᴇ : ${publik ? 'public' : 'self'}*
 *│❖ Pʀᴇғɪx : ${multi ? 'Multi Prefix' : 'No Prefix'}*     
 *│❖ Cʀᴇᴅɪᴛs : ᴀɴᴇᴇs sᴇʀ*
 *╰────────────────❋ཻུ۪۪⸙*
 *⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘*
-         *ᴘᴇᴘᴇ sᴇʀ ʙᴏᴛ*
+         *${botnamepepe}*
      
 *╭◪ ᴄᴏᴅᴅᴇᴅ ʙʏ ᴘᴇᴘᴇ sɪʀ*
 *╰─────────────────❋ཻུ۪۪⸙*`
