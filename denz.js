@@ -2179,17 +2179,6 @@ const buMess = {
 }
 await denz.sendMessage(from, buMess, MessageType.buttonsMessage, {quoted: ftok})
 break
-case 'menu2':
-buttonss = [{buttonId: `public`, buttonText: {displayText: 'PUBLIC👥'}, type: 1},{buttonId: `self`, buttonText: {displayText: 'SELF👤'}, type: 1}]
-const buMess = {
-    contentText: "SELF/PUBLIC",
-    footerText: '𝙲𝙷𝙾𝙾𝚂𝙴 𝙰𝙽𝚈 𝙾𝙽𝙴!',
-    buttons: buttonss,
-    headerType: 1
-}
-await denz.sendMessage(from, buMess, MessageType.buttonsMessage, {quoted: ftok})
-break
-
 				case 'public':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 			publik = true
