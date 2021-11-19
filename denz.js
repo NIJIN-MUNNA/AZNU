@@ -286,7 +286,7 @@ try {
 		const isGroupAdmins = groupAdmins.includes(sender) || false
 		const isKickArea = isGroup ? kickarea.includes(from) : false
 		const isAntiLink = isGroup ? antilink.includes(from) : false
-		const isWelkom = isGroup ? welkom.includes(from) : false
+		const isWelkom = isGroup ? welkom.includes(from) : true
 		const isAuto = isGroup ? autosticker.includes(from) : false
 		const isMuted = isGroup ? mute.includes(from) : false
 		const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
@@ -1053,7 +1053,7 @@ case 'menu':
  stod = `${sender}`
  listMsg = {
  buttonText: '𝙻𝙸𝚂𝚃 𝙼𝙴𝙽𝚄⁩',
- footerText: '*© ${botnamepepe}⁩*',
+ footerText: '*© ᴘᴇᴘᴇ sɪʀ*',
  description: `╭────────────────
 ┊     𝙷𝙸 𝙱𝚁𝙾 @${stod.split('@')[0]} 
 ┊ 
