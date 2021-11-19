@@ -14,6 +14,12 @@ const { color, bgcolor } = require('./lib/color')
 const { exec } = require('child_process')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 const settings = JSON.parse(fs.readFileSync('./settings.json'))
+// PEPE 
+ownernamepepe = "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁"
+botnamepepe = "𝙿𝙴𝙿𝙴 𝙱𝙾𝚃"
+
+// ------------- fear aavanda keto -----------
+
 const sleep = async (ms) => {
 return new Promise(resolve => setTimeout(resolve, ms))
 }
@@ -108,12 +114,12 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 └───────────────〄  
 ┌───〔 *_𝙱𝙾𝚃 𝙸𝙽𝙵𝙾_* 〕                           
 ┊ ▢ *ᴅᴇᴠᴇʟᴏʟᴇʀ* : ᴘᴇᴘᴇ sɪʀ                                    
-┊ ▢ *ᴏᴡɴᴇʀ* :  ᴘᴇᴘᴇ sɪʀ    
-┊ ▢ *ʙᴏᴛ ɴᴀᴍᴇ* : ᴘᴇᴘᴇ sɪʀ                                
+┊ ▢ *ᴏᴡɴᴇʀ* : ${ownernamepepe}   
+┊ ▢ *ʙᴏᴛ ɴᴀᴍᴇ* : ${botnamepepe}                               
 ┊ ▢ *ᴘʀᴇғɪx* : ${multi ? 'Multi Prefix' : 'No Prefix'}
 ┊ ▢ *ᴍᴏᴅᴇ* :  ${publik ? 'Public' : 'Self'}
 ┊ ▢ *ᴛᴏᴛᴀʟ ʜɪᴛ* : ${cmhit.length}
-┊ ▢ *ᴏᴡɴᴇʀ* :  ${baterai.battery}
+┊ ▢ *ᴄʜᴀʀɢᴇ* :  ${baterai.battery}
 ┊
 ┊
 ┊
@@ -126,16 +132,16 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ┊
 ┊ ▢ *ᴛɪᴍᴇ* : 
 ┊ ▢ *ᴛɪᴍᴇ* : 
-┊ ▢ *ᴛɪᴍᴇ* :   
+┊ ▢ *ᴛɪᴍᴇ* :  
 ┊ ▢ *ᴅᴀʏ* :
 ┊ ▢ *ᴅᴀᴛᴇ* : 
 ┊
 ┊
 └──────────────────〄`
 gbutsan = [
-{buttonId:`inibuatwelcome`,buttonText:{displayText:'👋Welcome'},type:1},
-{buttonId:`menu`,buttonText:{displayText:'📒MENU'},type:1},
-{buttonId:`owner`,buttonText:{displayText:'👑OWNER'},type:1}
+{buttonId:`getdeskgc`,buttonText:{displayText:'GROUP DESCRIPTION'},type:1},
+{buttonId:`menu`,buttonText:{displayText:'LIST MENU'},type:1},
+{buttonId:`owner`,buttonText:{displayText:'OWNER'},type:1}
 ]
 mhan = await denz.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
 const buttonMessages = {
