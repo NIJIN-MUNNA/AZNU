@@ -1876,23 +1876,6 @@ const buttonMessage = {
 }
 await denz.sendMessage(from, buttonMessage, MessageType.buttonsMessage, {quoted: ftok})
 		break
-				case '2menu':
-		anu =`╭─❒ SCRIPT
-│➩➬𝙱𝙰𝚂𝙴 : *𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩*
-│➩➬𝙴𝚁𝚁𝙾𝚁 𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 : *𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩*
-│
-└──────[ 𝚂𝙲𝚁𝙸𝙿𝚃 ]──────❒
-  │➬➩ : 𝙽𝙾𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝚈𝙴𝚃
-  └──────────────────❒`
-const buttons = [{buttonId: `alive`, buttonText: {displayText: 'ALIVE'}, type: 2},{buttonId: `status`, buttonText: {displayText: 'STATUS'}, type: 2}]
-const buttonMessage = {
-    contentText: `${anu}`,
-    footerText: '*_©𝙿𝙴𝙿𝙴 𝚂𝙸𝚁_*',
-    buttons: buttons,
-    headerType: 1
-}
-await denz.sendMessage(from, buttonMessage, MessageType.buttonsMessage, {quoted: ftok})
-		break
 				case 'alive':
 menu = `█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█ 
 █░ ╔══╗╔╗─╔══╗╔╗─╔╗╔═╗  ░█
