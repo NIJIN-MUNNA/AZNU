@@ -1884,7 +1884,7 @@ await denz.sendMessage(from, buttonMessage, MessageType.buttonsMessage, {quoted:
 └──────[ 𝚂𝙲𝚁𝙸𝙿𝚃 ]──────❒
   │➬➩ : 𝙽𝙾𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝚈𝙴𝚃
   └──────────────────❒`
-const buttons = [{buttonId: `menu`, buttonText: {displayText: 'BACK➡️'}, type: 1},{buttonId: `owner`, buttonText: {displayText: 'OWNER👤'}, type: 1}]
+const buttons = [{buttonId: `alive`, buttonText: {displayText: 'ALIVE'}, type: 1},{buttonId: `status`, buttonText: {displayText: 'STATUS'}, type: 1}]
 const buttonMessage = {
     contentText: `${anu}`,
     footerText: '*_©𝙿𝙴𝙿𝙴 𝚂𝙸𝚁_*',
