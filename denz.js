@@ -1125,6 +1125,30 @@ case 'menu':
 }
 denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
 break
+case 'help':
+        stod = `${sender}`
+       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
+       menu = `❏「 \`\`\`${NamaBot}\`\`\` 」
+
+╾ _Creator : 
+╾ _Battery :
+╾ _Mode : 
+╾ _Total Hit :
+╾ _Command : 
+
+_
+
+❏「 \`\`\`INFO USER\`\`\` 」
+
+╾ _Status : 
+╾ _Nama : 
+╾ _Bio : 
+╾ _Nomor : 
+╾ _Info Nomor : `
+sendButDocument(from, `${menu}`, "*_© Dcode Denpa_*", fs.readFileSync('./sampah/Denpa'), {mimetype:Mimetype.pdf, thumbnail:fs.readFileSync('./denz.jpg'), filename:`pepe, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER'},type:1},{buttonId:`script`,buttonText:{displayText:'SOURCE CODE'},type:1}], {quoted:fmen, contextInfo: { mentionedJid: [dtod,otod,stod], forwardingScore: 508, isForwarded: true, externalAdReply:{title:`${tampilUcapan} ${pushname}`,body:`*click here to play music`,mediaType:"2",thumbnail:ofrply,mediaUrl:`https://youtu.be/uQiF1yOnzDg`}}})
+break
 case 'ownermenu':
 menu = `╭────────────────╮
      *Oᴡɴᴇʀ Mᴇɴᴜ*
