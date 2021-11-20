@@ -1209,7 +1209,7 @@ menu =`
 ├➫ 𝙰𝙽𝙴𝙴𝚂 𝚂𝙸𝚁 
 │
 └─────────────────❒`
-sendButLocation(from, `${menu}`, "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩", {jpegThumbnail:gambar,name:""}, [{buttonId:'owner',buttonText:{displayText:'OWNER'},type:1},{buttonId:'script',buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [otod]}})
+sendButLocation(from, `${menu}`, "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩", {jpegThumbnail:gambar,name:""}, [{buttonId:'owner',buttonText:{displayText:'OWNER'},type:1},{buttonId:'script',buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [stod]}})
 break
 case 'menu':
  stod = `${sender}`
