@@ -1024,49 +1024,49 @@ menu =`
 │
 │
 │▢ ${prefix}stopjadibot
-│▢ ${prefix} setthumb [ 𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚒𝚖𝚊𝚐𝚎 ]
-│▢ ${prefix}autorespon [ _on/off_ ]
-│▢ ${prefix}bc [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚝𝚎𝚡𝚝_ ]
-│▢ ${prefix}tobc [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚊𝚞𝚍𝚒𝚘,𝚒𝚖𝚊𝚐𝚎,𝚟𝚒𝚍𝚎𝚘_ ]
-│▢ ${prefix}return [ _𝚓𝚊𝚟𝚊𝚜𝚌𝚛𝚒𝚙𝚝_ ]
+│▢ ${prefix} setthumb 
+│▢ ${prefix}autorespon 
+│▢ ${prefix}bc 
+│▢ ${prefix}tobc
+│▢ ${prefix}return 
 │▢ ${prefix}clearall
 │▢ ${prefix}delchat
 │▢ ${prefix}mute
 │▢ ${prefix}unmute
 │▢ ${prefix}public
 │▢ ${prefix}self
-│▢ ${prefix}spam [ _𝚝𝚎𝚡𝚝|𝚊𝚖𝚘𝚞𝚗𝚝_ ]
+│▢ ${prefix}spam
 │▢ ${prefix}demoteall
 │▢ ${prefix}promoteall
-│▢ ${prefix}addcmd [ _𝚝𝚎𝚡𝚝 𝚛𝚎𝚙𝚕𝚢 𝚜𝚝𝚌_ ]
-│▢ ${prefix}delcmd [ _𝚛𝚎𝚙𝚕𝚢 𝚜𝚝𝚌_ ]
+│▢ ${prefix}addcmd 
+│▢ ${prefix}delcmd 
 │▢ ${prefix}listcmd
-│▢ ${prefix}spamsw [ _𝚝𝚎𝚡𝚝|𝚊𝚖𝚘𝚞𝚗𝚝_ ]
-│▢ ${prefix}upswteks [ _𝚝𝚎𝚡𝚝_ ]
-│▢ ${prefix}upswlokasi [ _𝚝𝚎𝚡𝚝_ ]
-│▢ ${prefix}upswaudio [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚊𝚞𝚍𝚒𝚘_ ]
-│▢ ${prefix}upswvoice [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚊𝚞𝚍𝚒𝚘_ ]
-│▢ ${prefix}upswsticker [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚜𝚝𝚌_ ]
-│▢ ${prefix}upswimage [ _𝚛𝚎𝚙𝚕𝚢 𝚒𝚖𝚊𝚐𝚎 𝚠𝚒𝚝𝚐 𝚌𝚊𝚙𝚝𝚒𝚘𝚗_ ]
-│▢ ${prefix}upswgif [ _𝚛𝚎𝚙𝚕𝚢 𝚐𝚒𝚏 𝚠𝚒𝚝𝚑 𝚌𝚊𝚙𝚝𝚒𝚘𝚗_ ]
-│▢ ${prefix}upswvideo [ _𝚛𝚎𝚙𝚕𝚢 𝚟𝚒𝚍𝚎𝚘 𝚠𝚒𝚝𝚑 𝚌𝚊𝚙𝚝𝚒𝚘𝚗_ ]
+│▢ ${prefix}spamsw 
+│▢ ${prefix}upswteks 
+│▢ ${prefix}upswlokasi 
+│▢ ${prefix}upswaudio
+│▢ ${prefix}upswvoice 
+│▢ ${prefix}upswsticker 
+│▢ ${prefix}upswimage 
+│▢ ${prefix}upswgif
+│▢ ${prefix}upswvideo 
 │▢ ${prefix}shutdown
-│▢ ${prefix}offline [ _𝚛𝚎𝚊𝚜𝚘𝚗_ ]
+│▢ ${prefix}offline
 │▢ ${prefix}online
-│▢ ${prefix}exif [ _𝚗𝚊𝚖𝚎|𝚊𝚞𝚝𝚑𝚘𝚛_ ]
-│▢ ${prefix}setprofile [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚒𝚖𝚊𝚐𝚎_ ]
-│▢ ${prefix}setname [ _𝚝𝚎𝚡𝚝_ ]
-│▢ ${prefix}setprefix [ _multi/nopref/prefix_ ]
-│▢ ${prefix}setbio [ _𝚝𝚎𝚡𝚝_ ]
-│▢ ${prefix}addsticker [ _𝚗𝚊𝚖𝚎_ ]
-│▢ ${prefix}delsticker [ _𝚗𝚊𝚖𝚎_ ]
-│▢ ${prefix}addvn [ _𝚗𝚊𝚖𝚎_ ]
-│▢ ${prefix}delvn [ _𝚗𝚊𝚖𝚎_ ]
-│▢ ${prefix}addimage [ _𝚗𝚊𝚖𝚎_ ]
-│▢ ${prefix}delimage [ _𝚗𝚊𝚖𝚎_ ]
-│▢ ${prefix}bug [ _𝚊𝚖𝚘𝚞𝚗𝚝_ ]
-│▢ ${prefix}bugpc2 [ _𝚊𝚖𝚘𝚞𝚗𝚝_ ]
-│▢ ${prefix}bugtroli2 [ _𝚊𝚖𝚘𝚞𝚗𝚝_ ]
+│▢ ${prefix}exif 
+│▢ ${prefix}setprofile 
+│▢ ${prefix}setname 
+│▢ ${prefix}setprefix 
+│▢ ${prefix}setbio 
+│▢ ${prefix}addsticker 
+│▢ ${prefix}delsticker 
+│▢ ${prefix}addvn 
+│▢ ${prefix}delvn
+│▢ ${prefix}addimage 
+│▢ ${prefix}delimage 
+│▢ ${prefix}bug 
+│▢ ${prefix}bugpc2 
+│▢ ${prefix}bugtroli2 
 │▢ ${prefix}bugpc
 │▢ ${prefix}bugcombine
 │▢ ${prefix}bugtroli
@@ -1074,9 +1074,9 @@ menu =`
 │▢ ${prefix}bughole
 │▢ ${prefix}leave
 │▢ ${prefix}restart
-│▢ ${prefix}join [ _𝚐𝚛𝚘𝚞𝚙 𝚕𝚒𝚗𝚔_ ]
-│▢ ${prefix}addrespon [ _𝚊𝚜𝚔|𝚊𝚗𝚠𝚜𝚎𝚛_ ]
-│▢ ${prefix}delrespon [ _𝚗𝚊𝚖𝚎_ ]
+│▢ ${prefix}join 
+│▢ ${prefix}addrespon 
+│▢ ${prefix}delrespon 
 │
 │
 │   ❑ *Dᴏᴡɴʟᴏᴀᴅ Mᴇɴᴜ*
@@ -1084,121 +1084,123 @@ menu =`
 │
 │▢   ︎︎${prefix}infogempa
 │▢  ${prefix}herolist
-│▢  ${prefix}herodetail [ _𝙷𝚎𝚛𝚘_ ]
-│▢  ${prefix}google [ _𝚂𝚎𝚊𝚛𝚌𝚑_ ]
-│▢  ${prefix}gimage [ _𝚂𝚎𝚊𝚛𝚌𝚑_ ]
-│▢  ${prefix}wiki [ _𝚂𝚎𝚊𝚛𝚌𝚑_ ]
-│▢  ${prefix}mediafire [ _𝙻𝚒𝚗𝚔_ ]
-│▢  ${prefix}ytsearch [ _𝚃𝚒𝚝𝚕𝚎_ ]
-│▢  ${prefix}ytmp4 [ _𝚈𝚃 𝙻𝚒𝚗𝚔_ ]
-│▢  ${prefix}ytmp3 [ _𝚈𝚃 𝙻𝚒𝚗𝚔_ ]
-│▢  ${prefix}play [ _𝚃𝚒𝚕𝚝𝚎 𝚘𝚏 𝚜𝚘𝚗𝚐_ ]
-│▢  ${prefix}video [ _𝚃𝚒𝚝𝚕𝚎 𝚘𝚏 𝚟𝚒𝚍𝚎𝚘_ ]
-│▢  ${prefix}tinyurl [ _𝙻𝚒𝚗𝚔_ ]
-│▢  ${prefix}fetch [ _𝙻𝚒𝚗𝚔_ ]
-│▢  ${prefix}igdl [ _𝙻𝚒𝚗𝚔_ ]
-│▢  ${prefix}tiktokdl [ _𝙻𝚒𝚗𝚔_ ]
-│▢  ${prefix}pinterest [ _𝚂𝚎𝚊𝚛𝚌𝚑_ ]
-│▢  ${prefix}lirik [ _𝚃𝚒𝚝𝚕𝚎_ ]
-│▢  ${prefix}tourl [ _𝚁𝚎𝚙𝚕𝚢 𝚝𝚘 𝚒𝚖𝚊𝚐𝚎/𝚅𝚒𝚍𝚎𝚘_ ]
-│▢  ${prefix}resepmasakan [ _𝚃𝚒𝚝𝚕𝚎_ ]
-│▢  ${prefix}artimimpi [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}bilangangka [ _𝙽𝚞𝚖𝚋𝚎𝚛_ ]
-│▢  ${prefix}kalkulator [ _𝙽𝚞𝚖𝚋𝚎𝚛_ ]
-│▢  ${prefix}fancytext [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}githubstalk [ _𝚄𝚜𝚎𝚛𝚗𝚊𝚖𝚎_ ]
-│▢  ${prefix}translate [ _𝙻𝚊𝚗𝚐𝚞𝚊𝚐𝚎|𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}ss [ _link_ ]
+│▢  ${prefix}herodetail 
+│▢  ${prefix}google 
+│▢  ${prefix}gimage 
+│▢  ${prefix}wiki 
+│▢  ${prefix}mediafire 
+│▢  ${prefix}ytsearch 
+│▢  ${prefix}ytmp4 
+│▢  ${prefix}ytmp3 
+│▢  ${prefix}play
+│▢  ${prefix}video
+│▢  ${prefix}tinyurl
+│▢  ${prefix}fetch 
+│▢  ${prefix}igdl
+│▢  ${prefix}tiktokdl
+│▢  ${prefix}pinterest [
+│▢  ${prefix}lirik 
+│▢  ${prefix}tourl
+│▢  ${prefix}resepmasakan 
+│▢  ${prefix}artimimpi 
+│▢  ${prefix}bilangangka 
+│▢  ${prefix}kalkulator 
+│▢  ${prefix}fancytext 
+│▢  ${prefix}githubstalk 
+│▢  ${prefix}translate 
+│▢  ${prefix}ss 
 │
 │
 │   ❑ *Oᴡɴᴇʀ Mᴇɴᴜ*
 │ 
 │    
-│▢  ${prefix}matrix [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}googletxt [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}spiderman [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}express [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}dance [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}blackbird [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}halloween [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}vampire [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}codetxt [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}text3d [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}warrior [ _𝚃𝚎𝚡𝚝_ ]
+│▢  ${prefix}matrix 
+│▢  ${prefix}googletxt 
+│▢  ${prefix}spiderman 
+│▢  ${prefix}express 
+│▢  ${prefix}dance
+│▢  ${prefix}blackbird
+│▢  ${prefix}halloween  
+│▢  ${prefix}vampire
+│▢  ${prefix}codetxt 
+│▢  ${prefix}text3d 
+│▢  ${prefix}warrior 
 │
 │
 │   ❑ *Gʀᴏᴜᴘ Mᴇɴᴜ*
 │
 │
-│▢  ${prefix}getpict [ _@𝚃𝚊𝚐_ ]
-│▢  ${prefix}getname [ _𝚁𝚎𝚙𝚕𝚢 𝚃𝚊𝚛𝚐𝚎𝚝_ ]
-│▢  ${prefix}getbio [ _𝚁𝚎𝚙𝚕𝚢 𝚃𝚊𝚛𝚐𝚎𝚝_ ]
-│▢  ${prefix}promote [ _@𝚃𝚊𝚐_ ]
-│▢  ${prefix}demote [ _@𝚃𝚊𝚐_ ]
-│▢  ${prefix}antilink [ _1/0_ ]
-│▢  ${prefix}creategrup [ _𝙽𝚊𝚖𝚎|@𝚃𝚊𝚐_ ]
-│▢  ${prefix}tictactoe [ _@𝚃𝚊𝚐_ ]
+│▢  ${prefix}getpict 
+│▢  ${prefix}getname 
+│▢  ${prefix}getbio 
+│▢  ${prefix}promote 
+│▢  ${prefix}demote 
+│▢  ${prefix}antilink 
+│▢  ${prefix}creategrup 
+│▢  ${prefix}tictactoe
 │▢  ${prefix}delttt
 │▢  ${prefix}getpp
-│▢  ${prefix}kick [ _@𝚃𝚊𝚐_ ]
-│▢  ${prefix}add [ _𝙽𝚞𝚖𝚋𝚎𝚛_ ]
+│▢  ${prefix}kick
+│▢  ${prefix}add
 │▢  ${prefix}getdeskgc
-│▢  ${prefix}sider [ _𝚁𝚎𝚙𝚕𝚢 𝙼𝚊𝚜𝚜𝚊𝚐𝚎 𝙱𝚘𝚝_ ]
-│▢  ${prefix}hacked [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}setnamegc [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}setdeskgc [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}fitnah [ _@𝚃𝚊𝚐|𝚃𝚎𝚡𝚝1|𝚃𝚎𝚡𝚝2_ ]
-│▢  ${prefix}kontak [ _@𝚃𝚊𝚐|𝙽𝚊𝚖𝚎_ ]
-│▢  ${prefix}kontag [ _@𝚃𝚊𝚐|𝙽𝚊𝚖𝚎_ ]
+│▢  ${prefix}sider 
+│▢  ${prefix}hacked 
+│▢  ${prefix}setnamegc 
+│▢  ${prefix}setdeskgc 
+│▢  ${prefix}fitnah 
+│▢  ${prefix}kontak 
+│▢  ${prefix}kontag 
 │▢  ${prefix}opengc
 │▢  ${prefix}closegc
 │▢  ${prefix}resetlinkgc
 │▢  ${prefix}linkgrup
-│▢  ${prefix}hidetag [ _𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}sticktag [ _𝙽𝚊𝚖𝚎 𝚂𝚝𝚒𝚌𝚔𝚎𝚛_ ]
-│▢  ${prefix}totag [ _𝚁𝚎𝚙𝚕𝚢 𝙼𝚎𝚍𝚒𝚊_ ]
+│▢  ${prefix}hidetag 
+│▢  ${prefix}sticktag 
+│▢  ${prefix}totag 
 │
 │
 │   ❑ *Oᴛʜᴇʀ Mᴇɴᴜ*
 │
 │
 │▢  ${prefix}jadibot
-│▢  ${prefix}caripesan [ _𝚃𝚎𝚡𝚝|𝙰𝚖𝚘𝚞𝚗𝚝_ ]
+│▢  ${prefix}caripesan
 │▢  ${prefix}slots
-│▢  ${prefix}suit [ _𝚂𝚌𝚒𝚜𝚜𝚘𝚛𝚜/𝚂𝚝𝚘𝚗𝚎/𝙿𝚊𝚙𝚎𝚛_ ]
-│▢  ${prefix}tag [ _𝙽𝚞𝚖𝚋𝚎𝚛_ ]
+│▢  ${prefix}suit 
+│▢  ${prefix}tag 
 │▢  ${prefix}tagme
-│▢  ${prefix}tts [ _𝚃𝚎𝚡𝚝 𝙲𝚘𝚍𝚎_ ]
-│▢  ${prefix}readmore [ _𝚃𝚎𝚡𝚝1|𝚃𝚎𝚡𝚝2_ ]
-│▢  ${prefix}fitnahpc [ _𝙽𝚞𝚖𝚋𝚎𝚛|𝚃𝚎𝚡𝚝1|𝚃𝚎𝚡𝚝2_ ]
-│▢  ${prefix}chat [ _𝙽𝚞𝚖𝚋𝚎𝚛|𝚃𝚎𝚡𝚝_ ]
-│▢  ${prefix}fdeface [ _𝚁𝚎𝚙𝚕𝚢𝚒𝚖𝚐 𝙻𝚒𝚗𝚔|𝚃𝚎𝚡𝚝1|𝚃𝚎𝚡𝚝2_ ]
+│▢  ${prefix}tts 
+│▢  ${prefix}readmore 
+│▢  ${prefix}fitnahpc 
+│▢  ${prefix}chat 
+│▢  ${prefix}fdeface
 │▢  ${prefix}listimage
 │▢  ${prefix}liststicker
 │▢  ${prefix}listvn
 │▢  ${prefix}listgrup
-│▢  ${prefix}baileys [ _𝚁𝚎𝚙𝚕𝚢 𝙼𝚎𝚜𝚜𝚊𝚐𝚎_ ]
-│▢  ${prefix}q [ _𝚁𝚎𝚙𝚕𝚢 𝙼𝚊𝚜𝚜𝚊𝚐𝚎_ ]
-│▢  ${prefix}getcaption [ _𝚁𝚎𝚙𝚕𝚢 𝙼𝚎𝚜𝚜𝚊𝚐𝚎_ ]
+│▢  ${prefix}baileys 
+│▢  ${prefix}q 
+│▢  ${prefix}getcaption
 │▢  ${prefix}pantun
-│▢  ${prefix}tospam [ _𝚁𝚎𝚙𝚕𝚢 𝙰𝚞𝚍𝚒𝚘/𝚂𝚝𝚒𝚌𝚔𝚎𝚛/𝙸𝚖𝚊𝚐𝚎|𝙰𝚖𝚘𝚞𝚗𝚝_ ]
-│▢  ${prefix}sharelock [ _𝚃𝚎𝚡𝚝1|𝚃𝚎𝚡𝚝2_ ]
+│▢  ${prefix}tospam 
+│▢  ${prefix}sharelock 
 │▢  ${prefix}sticker
-│▢  ${prefix}stickerwm [ _𝙽𝚊𝚖𝚎|𝙰𝚞𝚝𝚑𝚘𝚛_ ]
-│▢  ${prefix}takestick [ _𝙽𝚊𝚖𝚎|𝙰𝚞𝚝𝚑𝚘𝚛_ ]
-│▢  ${prefix}colong [ _𝚁𝚎𝚙𝚕𝚢 𝚂𝚝𝚒𝚌𝚔𝚎𝚛_ ]
+│▢  ${prefix}stickerwm 
+│▢  ${prefix}takestick 
+│▢  ${prefix}colong 
 │▢  ${prefix}dadu
-│▢  ${prefix}semoji [ _𝙴𝚖𝚘𝚓𝚒_ ]
-│▢  ${prefix}attp [ _𝚃𝚎𝚡𝚝_ ]
+│▢  ${prefix}semoji 
+│▢  ${prefix}attp 
 │▢  ${prefix}toimg
-│▢  ${prefix}tomp3 [ _𝚁𝚎𝚙𝚕𝚢 𝚅𝚒𝚍𝚎𝚘_ ]
-│▢  ${prefix}tomp4 [ _𝚁𝚎𝚙𝚕𝚢 𝚂𝚝𝚒𝚌𝚔𝚎𝚛 𝙶𝚒𝚏_ ]
-│▢  ${prefix}robot [ _𝚁𝚎𝚙𝚕𝚢 𝙰𝚞𝚍𝚒𝚘_ ]
-│▢  ${prefix}balik [ _𝚁𝚎𝚙𝚕𝚢 𝙰𝚞𝚍𝚒𝚘_ ]
-│▢  ${prefix}bass [ 𝚁𝚎𝚙𝚕𝚢 𝙰𝚞𝚍𝚒𝚘 ]
-│▢  ${prefix}gemuk [ 𝚁𝚎𝚙𝚕𝚢 𝙰𝚞𝚍𝚒𝚘 ]
-│▢  ${prefix}detikvn [ 𝚁𝚎𝚙𝚕𝚢 𝙰𝚞𝚍𝚒𝚘 𝙲𝚊𝚙𝚝𝚒𝚘𝚗 𝙽𝚞𝚖𝚋𝚎𝚛 ]
-│▢  ${prefix}detikvideo [ 𝚁𝚎𝚙𝚕𝚢 𝚅𝚒𝚍𝚎𝚘 𝙲𝚊𝚙𝚝𝚒𝚘𝚗 𝙽𝚞𝚖𝚋𝚎𝚛 ]
+│▢  ${prefix}tomp3 
+│▢  ${prefix}tomp4 
+│▢  ${prefix}robot 
+│▢  ${prefix}balik 
+│▢  ${prefix}bass 
+│▢  ${prefix}gemuk 
+│▢  ${prefix}detikvn 
+│▢  ${prefix}detikvideo 
+│
+│
 ╰────────────────╯
 ╭─❒ ❣️ 𝚃𝙷𝙰𝙽𝙺𝚉 𝚃𝙾 ❣️
 │
