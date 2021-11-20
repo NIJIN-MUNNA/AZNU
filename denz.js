@@ -2860,6 +2860,16 @@ case 'tts':
 						reply(`Succuss closing group ${groupName}`)
 						denz.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					break
+case 'group':
+buttonss = [{buttonId: `opengc`, buttonText: {displayText: 'OPEN GROUP'}, type: 1},{buttonId: `closegc`, buttonText: {displayText: 'CLOSE GROUP'}, type: 1}]
+const pepee = {
+    contentText: "OPEN OR CLOSE GROUP",
+    footerText: '𝙲𝙷𝙾𝙾𝚂𝙴 𝙰𝙽𝚈 𝙾𝙽𝙴!',
+    buttons: buttonss,
+    headerType: 1
+}
+await denz.sendMessage(from, pepee, MessageType.buttonsMessage, {quoted: ftok})
+break
 				case 'spam':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 					if (!arg) return reply(`use ${prefix}spam text|amount`)
