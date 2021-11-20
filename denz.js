@@ -2861,7 +2861,7 @@ case 'tts':
 						denz.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					break
 case 'group':
-buttonss = [{buttonId: `opengc`, buttonText: {displayText: 'OPEN GROUP'}, type: 1},{buttonId: `closegc`, buttonText: {displayText: 'CLOSE GROUP'}, type: 1}]
+buttonss = [{buttonId: `opengc`, buttonText: {displayText: 'OPEN🌝'}, type: 1},{buttonId: `closegc`, buttonText: {displayText: 'CLOSE🌚'}, type: 1}]
 const pepee = {
     contentText: "OPEN OR CLOSE GROUP",
     footerText: '𝙲𝙷𝙾𝙾𝚂𝙴 𝙰𝙽𝚈 𝙾𝙽𝙴!',
