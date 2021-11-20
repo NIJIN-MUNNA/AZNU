@@ -675,18 +675,9 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 	        }
 	        denz.sendMessage(from, { displayname: nama, vcard: vcard}, MessageType.contact, {contextInfo: {"mentionedJid": ane}})
             }
-       const fkontak = { 
-                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `0@s.whatsapp.net` } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./denz.jpg')}}}     
 		const reply = (teks) => {
 			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `𝙿𝙴𝙿𝙴 𝚂𝙸𝚁`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://chat.whatsapp.com/BzhyWkAEU0t8oVl3s8p94m`}}})
 		}
-		const buttonMessagesssss = {
-imageMessage: mhan.message.imageMessage,
-contentText: `𝙱𝚘𝚜𝚜`,
-footerText: '*_©𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩_*',
-buttons: gbutsan,
-headerType: 4
-}
 		const reply2 = (teks) => {
 			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true}})
 		}
@@ -927,37 +918,6 @@ denz.updatePresence(from, Presence.recording)
         reply(su)
 				}
         switch (command) {
- case 'help2':
-groups = denz.chats.array.filter(v => v.jid.endsWith('g.us'))
-              privat = denz.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
-              ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
-           
-              uptime = process.uptime();
-              timestampe = speed();
-              totalChat = await denz.chats.all()
-              latensie = speed() - timestampe
-              total = math(`${groups.length}*${privat.length}`)
-sendButMessage (from, buttonMessagesssss, MessageType.buttonsMessage, { quoted: fkontak})
-       txtt =` ▢ 𝐇𝐢 ${pushname} \n ▢ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} \n ▢ 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}\n ▢ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐡𝐚𝐭𝐬 : ${totalChat.length} \n ▢ 𝐒𝐩𝐞𝐞𝐝 : ${latensie.toFixed(4)} _Second_ \n ▢ 𝐀𝐜𝐭𝐢𝐯𝐞 : ${runtime(process.uptime())} \n ▢ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}`
-
-               buttons = [{buttonId:`allmenu`, 
-               buttonText:{displayText: 'MENU'},type:1},
-               {buttonId:`owner`,buttonText:{displayText:'CREATOR'},type:1},
-               {buttonId:`menu`,buttonText:{displayText:'LIST MENU'},type:1}]
-
-
-               imageMsg = (await denz.prepareMessageMedia(fs.readFileSync(`./denz.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./denz.jpg`)})).imageMessage
-
-               buttonsMessage = {
-               contentText: `${txtt}`,
-               footerText: `𝙿𝙴𝙿𝙴 𝚂𝙸𝚁`, imageMessage: imageMsg,
-               buttons: buttons,
-               headerType: 4
-}
-prep = await denz.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkontak})
-               denz.relayWAMessage(prep)
-             
-               break       
 case 'help':
 if(menusimpel == false){
 stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
