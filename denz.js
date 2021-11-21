@@ -106,6 +106,8 @@ multi = true
 nopref = false
 
 // PEPE 
+ApiZeks = "https://api.zeks.xyz",
+zeksApikey = "Alphabott",
 ownernamepepe = "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁"
 botnamepepe = "𝙿𝙴𝙿𝙴 𝙱𝙾𝚃"
 
@@ -1754,6 +1756,15 @@ break
 					buffer1 = await getBuffer(anu.result.results)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
+       case 'marvel':
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} pepe&lol*`)
+                   var F = body.slice(8)
+				   var F1 = F.split("|")[0];
+				   var F2 = F.split("|")[1]; 
+                   reply(mess.wait)
+                   anu = await getBuffer(`${ApiZeks}/api/marvellogo?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
+                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   break
 			case 'googletxt':
                     if (args.length < 1) return reply(`*Example :*\n${prefix}${command} 𝙿𝙰𝚄𝙻|𝚆𝙰𝙻𝙺𝙴𝚁|𝙱𝙾𝚃`)
 					makell = args.join(" ")
