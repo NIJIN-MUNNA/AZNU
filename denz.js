@@ -678,7 +678,7 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 	        denz.sendMessage(from, { displayname: nama, vcard: vcard}, MessageType.contact, {contextInfo: {"mentionedJid": ane}})
             }
 		const reply = (teks) => {
-			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `𝙿𝙴𝙿𝙴 𝚂𝙸𝚁`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://chat.whatsapp.com/BzhyWkAEU0t8oVl3s8p94m`}}})
+			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `𝙿𝙴𝙿𝙴 𝚂𝙸𝚁`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://youtube.com/channel/UCVJ9029PQ-gJBtFQZZ3AJuA`}}})
 		}
 		const reply2 = (teks) => {
 			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true}})
@@ -1116,13 +1116,13 @@ menu =`
 │ 
 │    
 │▢  ${prefix}marvel
-│▢  ${prefix}googletxt 
-│▢  ${prefix}spiderman 
-│▢  ${prefix}express 
-│▢  ${prefix}dance
-│▢  ${prefix}blackbird
-│▢  ${prefix}halloween  
-│▢  ${prefix}vampire
+│▢  ${prefix}t3d 
+│▢  ${prefix}logoa 
+│▢  ${prefix}phlogo 
+│▢  ${prefix}leavest
+│▢  ${prefix}notewrite
+│▢  ${prefix}neon2  
+│▢  ${prefix}wall
 │▢  ${prefix}codetxt 
 │▢  ${prefix}text3d 
 │▢  ${prefix}warrior 
@@ -1483,19 +1483,19 @@ menu = `╭────────────────╮
 ╭────────────────
 │🍁⃝❉⃟🍂 ${prefix}marvel [ text1 | text2 ]
 │
-│🍁⃝❉⃟🍂 ${prefix}googletxt [ _𝚃𝚎𝚡𝚝_ ]
+│🍁⃝❉⃟🍂 ${prefix}t3d [ _𝚃𝚎𝚡𝚝_ ]
 │
-│🍁⃝❉⃟🍂 ${prefix}spiderman [ _𝚃𝚎𝚡𝚝_ ]
+│🍁⃝❉⃟🍂 ${prefix}logoa [ _𝚃𝚎𝚡𝚝_ ]
 │
-│🍁⃝❉⃟🍂 ${prefix}express [ _𝚃𝚎𝚡𝚝_ ]
+│🍁⃝❉⃟🍂 ${prefix}phlogo [ _𝚃𝚎𝚡𝚝_ ]
 │
-│🍁⃝❉⃟🍂 ${prefix}dance [ _𝚃𝚎𝚡𝚝_ ]
+│🍁⃝❉⃟🍂 ${prefix}leavest [ _𝚃𝚎𝚡𝚝_ ]
 │
-│🍁⃝❉⃟🍂 ${prefix}blackbird [ _𝚃𝚎𝚡𝚝_ ]
+│🍁⃝❉⃟🍂 ${prefix}notewrite [ _𝚃𝚎𝚡𝚝_ ]
 │
-│🍁⃝❉⃟🍂 ${prefix}halloween [ _𝚃𝚎𝚡𝚝_ ]
+│🍁⃝❉⃟🍂 ${prefix}neon2 [ _𝚃𝚎𝚡𝚝_ ]
 │
-│🍁⃝❉⃟🍂 ${prefix}vampire [ _𝚃𝚎𝚡𝚝_ ]
+│🍁⃝❉⃟🍂 ${prefix}wall [ _𝚃𝚎𝚡𝚝_ ]
 │
 │🍁⃝❉⃟🍂 ${prefix}codetxt [ _𝚃𝚎𝚡𝚝_ ]
 │
@@ -1818,17 +1818,6 @@ break
                    anu = await getBuffer(`${ApiZeks}/api/breakwall?apikey=${zeksApikey}&text=${F}`)
                    denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it?q`, quoted: mek})
                    break
-			case 'googletxt':
-                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} 𝙿𝙰𝚄𝙻|𝚆𝙰𝙻𝙺𝙴𝚁|𝙱𝙾𝚃`)
-					makell = args.join(" ")
-					ll1 = makell.split("|")[0];
-					ll2 = makell.split("|")[1];
-					ll3 = makell.split("|")[0];
-					reply(mess.wait)
-					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker?text=${ll1}&text2=${ll2}&text3=${ll3}&theme=google-suggestion&apikey=${YuzApi}`)
-					buffer1 = await getBuffer(anu.result.url)
-					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
-					break
 			case 'battlefield': 
                     if (args.length < 1) return reply(`*Example :*\n${prefix}${command} 𝙿𝙰𝚄𝙻|𝚆𝙰𝙻𝙺𝙴𝚁`)
 					makell = args.join(" ")
@@ -2695,46 +2684,6 @@ if (Number(oi2) >= 50) return reply('most!')
 	  }
 }
 	  break
-	case 'halloween':
-	if (!arg) return reply(from, `use ${prefix}halloween text`, mek)
-	sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/halloween?text=${arg}&apikey=${HunterApi}`)
-   break
-   case 'vampire':
-   if (!arg) return reply(from, `use ${prefix}vampire text`, mek)
-   sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/vampire?text=${arg}&apikey=${HunterApi}`)
-   break
-   case 'codetxt':
-   if (!arg) return reply(from, `use ${prefix}codetxt text`, mek)
-   sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/maker/carbon?code=${arg}&apikey=${HunterApi}`)
-   break
-				case 'googletxt':
-				if (!arg) return reply(from, `use ${prefix}googletxt text`, mek)
-				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/google?text=${arg}&apikey=${HunterApi}`)
-				break
-				case 'spiderman':
-				if (!arg) return reply(from, `use ${prefix}sipderman text`, mek)
-				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/spider?text=${arg}&apikey=${HunterApi}`)
-				break
-				case 'express':
-				if (!arg) return reply(from, `use ${prefix}express text`, mek)
-				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/express?text=${arg}&apikey=${HunterApi}`)
-				break
-				case 'dance':
-				if (!arg) return reply(from, `use ${prefix}dance text`, mek)
-				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/dance?text=${arg}&apikey=${HunterApi}`)
-				break
-				case 'blackbird':
-				if (!arg) return reply(from, `use ${prefix}blackbird text`, mek)
-				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/blackbird?text=${arg}&apikey=${HunterApi}`)
-				break
-				case 'text3d':
-				if (!arg) return reply(from, `use ${prefix}text3d text`, mek)
-				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/text3d?text=${arg}&apikey=${HunterApi}`)
-				break
-				case 'warrior':
-				if (!arg) return reply(from, `use ${prefix}warrior text`, mek)
-				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/warrior?text=${arg}&apikey=${HunterApi}`)
-				break
 				case 'd':
 				case 'del':
 				case 'delete':
