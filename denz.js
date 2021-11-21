@@ -2314,16 +2314,9 @@ case 'fetch':
                     reply(mess.error.api)
                 }
                 break
-                
                 case 'setprefix':
-    buttonss = [{buttonId: `multi`, buttonText: {displayText: 'PUBLIC👥'}, type: 1},{buttonId: `nopref`, buttonText: {displayText: 'SELF👤'}, type: 1}]
-const pepemonee = {
-    contentText: "SELF/PUBLIC",
-    footerText: '𝙲𝙷𝙾𝙾𝚂𝙴 𝙰𝙽𝚈 𝙾𝙽𝙴!',
-    buttons: buttonss,
-    headerType: 1
-}
-await denz.sendMessage(from, pepemonee, MessageType.buttonsMessage, {quoted: ftok})
+      if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
+       if (args.length < 1) return reply(`𝙴𝙽𝚃𝙴𝚁 𝙿𝚁𝙴𝙵𝙸𝚇\nOptions :\n=> multi\n=> nopref`)
            if (c === 'multi'){
               multi = true
                     reply(`𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚁𝙴𝙵𝙸𝚇 𝚃𝙾 ${c}`)
