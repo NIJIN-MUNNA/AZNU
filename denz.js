@@ -4063,17 +4063,17 @@ break
 
 ╾ _Nama Bot : ${NamaBot}_
 ╾ _Nama Owner : ${NamaOwner}_
-╾ _Nomor Owner : @${otod.split('@')[0]}_
-╾ _Auto Composing : ${autocomposing}_
-╾ _Auto Recording : ${autorecording}_
+╾ _Nomor Owner : @${otod.split('
+╾ _Auto Compos
+╾ _Auto Recording 
 
 ❏「 \`\`\`INFO USER\`\`\` 」
 
-╾ _Status : ${isOwner ? 'Owner' : 'User'}_
+╾ _Status : 
 ╾ _Nama : ${pushname}_
-╾ _Bio : ${stst}_
+╾ _Bio : 
 ╾ _Nomor : @${stod.split('@')[0]}_
-╾ _Info Nomor : ${num.line_type} - ${num.country_name} - ${num.carrier}_`
+╾ _Info Nomor :
 sendButDocument(from, `${menu}`, "*_© Dcode Denpa_*", fs.readFileSync('./sampah/Denpa'), {mimetype:Mimetype.pdf, thumbnail:fs.readFileSync('./media/image/banner.jpg'), filename:`${jmn} - ${week} - ${calender}`}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER'},type:1},{buttonId:`script`,buttonText:{displayText:'SOURCE CODE'},type:1}], {quoted:fmen, contextInfo: { mentionedJid: [dtod,otod,stod], forwardingScore: 508, isForwarded: true, externalAdReply:{title:`${tampilUcapan} ${pushname}`,body:`*click here to play music`,mediaType:"2",thumbnail:ofrply,mediaUrl:`https://youtu.be/uQiF1yOnzDg`}}})
 break
 				case 'delsticker':
