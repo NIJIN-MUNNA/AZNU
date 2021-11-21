@@ -2314,22 +2314,17 @@ case 'fetch':
                     reply(mess.error.api)
                 }
                 break
-case 'setprefix':
-      if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-       if (args.length < 1) return reply(`𝙴𝙽𝚃𝙴𝚁 𝙿𝚁𝙴𝙵𝙸𝚇\nOptions :\n=> multi\n=> nopref`)
-           if (c === 'multi'){
-              multi = true
-                    reply(`𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚁𝙴𝙵𝙸𝚇 𝚃𝙾 ${c}`)
-                } else if (c === 'nopref'){
-                    multi = false
-                    nopref = true
-                    reply(`𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚁𝙴𝙵𝙸𝚇 𝚃𝙾 ${c}`)
-                } else {
-                    multi = false
-                    nopref = false
-                    prefa = `${c}`
-                    reply(`𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚁𝙴𝙵𝙸𝚇 𝚃𝙾 ${c}`)
-                }
+case 'multi':
+  			if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
+				multi = false
+				reply('𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚁𝙴𝙵𝙸𝚇 𝚃𝙾 MULTI')
+			break
+case 'nopref':
+  			if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
+				multi = true
+				reply('𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚁𝙴𝙵𝙸𝚇 𝚃𝙾 NOPREF')
+			break
+                case 'setprefix':
 buttonss = [{buttonId: 'multi', buttonText: {displayText: 'MULTI'}, type: 1},{buttonId: 'nopref', buttonText: {displayText: 'NOPREF'}, type: 1}]
 const pepensks = {
     contentText: "MULTI/NOPREF",
