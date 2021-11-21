@@ -2314,26 +2314,30 @@ case 'fetch':
                     reply(mess.error.api)
                 }
                 break
-case 'multi':
-  			if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-				multi = false
-				reply('𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚁𝙴𝙵𝙸𝚇 𝚃𝙾 MULTI')
-			break
-case 'nopref':
-  			if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-				multi = true
-				reply('𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚁𝙴𝙵𝙸𝚇 𝚃𝙾 NOPREF')
-			break
+                
                 case 'setprefix':
-buttonss = [{buttonId: 'multi', buttonText: {displayText: 'MULTI'}, type: 1},{buttonId: 'nopref', buttonText: {displayText: 'NOPREF'}, type: 1}]
-const pepensks = {
-    contentText: "MULTI/NOPREF",
+    buttonss = [{buttonId: `multi`, buttonText: {displayText: 'PUBLIC👥'}, type: 1},{buttonId: `nopref`, buttonText: {displayText: 'SELF👤'}, type: 1}]
+const buMess = {
+    contentText: "SELF/PUBLIC",
     footerText: '𝙲𝙷𝙾𝙾𝚂𝙴 𝙰𝙽𝚈 𝙾𝙽𝙴!',
     buttons: buttonss,
     headerType: 1
 }
-await denz.sendMessage(from, pepensks, MessageType.buttonsMessage, {quoted: ftok})
-break
+await denz.sendMessage(from, buMess, MessageType.buttonsMessage, {quoted: ftok})
+           if (c === 'multi'){
+              multi = true
+                    reply(`𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚁𝙴𝙵𝙸𝚇 𝚃𝙾 ${c}`)
+                } else if (c === 'nopref'){
+                    multi = false
+                    nopref = true
+                    reply(`𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚁𝙴𝙵𝙸𝚇 𝚃𝙾 ${c}`)
+                } else {
+                    multi = false
+                    nopref = false
+                    prefa = `${c}`
+                    reply(`𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚁𝙴𝙵𝙸𝚇 𝚃𝙾 ${c}`)
+                }
+                break
         case 'test':
 				case 'cek':
 				case 'tes':
