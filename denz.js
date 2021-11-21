@@ -1115,7 +1115,7 @@ menu =`
 │   ❑ *Oᴡɴᴇʀ Mᴇɴᴜ*
 │ 
 │    
-│▢  ${prefix}matrix 
+│▢  ${prefix}marvel
 │▢  ${prefix}googletxt 
 │▢  ${prefix}spiderman 
 │▢  ${prefix}express 
@@ -1481,7 +1481,7 @@ menu = `╭────────────────╮
 
 ❏ *ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs*
 ╭────────────────
-│🍁⃝❉⃟🍂 ${prefix}matrix [ _𝚃𝚎𝚡𝚝_ ]
+│🍁⃝❉⃟🍂 ${prefix}marvel [ text1 | text2 ]
 │
 │🍁⃝❉⃟🍂 ${prefix}googletxt [ _𝚃𝚎𝚡𝚝_ ]
 │
@@ -1756,6 +1756,31 @@ break
 					buffer1 = await getBuffer(anu.result.results)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
+        case 't3d':
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} pepe*`)
+                   F = body.slice(5)
+                   reply(mess.wait)
+                   anu = await getBuffer(`${ApiZeks}/api/text3dbox?apikey=${zeksApikey}&text=${F}`)
+                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   break
+       case 'logoa':
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} pepe&lol*`)
+                   var F = body.slice(7)
+				   var F1 = F.split("|")[0];
+				   var F2 = F.split("|")[1]; 
+                   reply(mess.wait)
+                   anu = await getBuffer(`${ApiZeks}/api/logoaveng?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
+                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   break
+       case 'phlogo':  
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} pepe&lol*`)
+                   var F = body.slice(9)
+				   var F1 = F.split("|")[0];
+				   var F2 = F.split("|")[1]; 
+                   reply(mess.wait)
+                   anu = await getBuffer(`${ApiZeks}/api/phlogo?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
+                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   break
        case 'marvel':
                    if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} pepe&lol*`)
                    var F = body.slice(8)
@@ -1764,6 +1789,34 @@ break
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/marvellogo?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
                    denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   break
+       case 'leavest':  
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} pepe*`)
+                   F = body.slice(9)
+                   reply(mess.wait)
+                   anu = await getBuffer(`${ApiZeks}/api/leavest?text=${F}&apikey=${zeksApikey}`)
+                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   break                   
+       case 'notewrite':
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} pepe*`)
+                   F = body.slice(7)
+                   reply(mess.wait)
+                   anu = await getBuffer(`${ApiZeks}/api/nulis?text=${F}&apikey=${zeksApikey}`)
+                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   break
+       case 'neon2':
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} pepe*`)
+                   F = body.slice(7)
+                   reply(mess.wait)
+                   anu = await getBuffer(`${ApiZeks}/api/bneon?apikey=${zeksApikey}&text=${F}`)
+                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
+                   break                   
+       case 'wall':
+                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} pepe*`)
+                   F = body.slice(6)
+                   reply(mess.wait)
+                   anu = await getBuffer(`${ApiZeks}/api/breakwall?apikey=${zeksApikey}&text=${F}`)
+                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it?q`, quoted: mek})
                    break
 			case 'googletxt':
                     if (args.length < 1) return reply(`*Example :*\n${prefix}${command} 𝙿𝙰𝚄𝙻|𝚆𝙰𝙻𝙺𝙴𝚁|𝙱𝙾𝚃`)
@@ -2654,10 +2707,6 @@ if (Number(oi2) >= 50) return reply('most!')
    if (!arg) return reply(from, `use ${prefix}codetxt text`, mek)
    sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/maker/carbon?code=${arg}&apikey=${HunterApi}`)
    break
-case 'matrix':
-				if (!arg) return reply(from, `use ${prefix}matrix text`, mek)
-				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/matrix?text=${arg}&apikey=${HunterApi}`)
-				break
 				case 'googletxt':
 				if (!arg) return reply(from, `use ${prefix}googletxt text`, mek)
 				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/google?text=${arg}&apikey=${HunterApi}`)
