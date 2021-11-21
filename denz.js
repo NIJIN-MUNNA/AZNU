@@ -1684,7 +1684,6 @@ kon = (`https://hardianto-chan.herokuapp.com/api/foliokanan?text=${c}&apikey=har
 anu = await getBuffer(kon)
 denz.sendMessage(from, anu, image, { quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 break
-
 case 'foliokiri':
 if (!c) return reply('Wheres the text bro?')
 reply(mess.wait)
@@ -3025,7 +3024,6 @@ if (isMedia && !mek.message.videoMessage || isQuotedSticker) {
 						}
 						reply(`Succuss upload sticker`)
                     break
-
                      case 'upswaudio':
                     if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 if (!isQuotedAudio) return reply('Reply audio!')
@@ -4046,36 +4044,6 @@ break
 					fs.writeFileSync('./database/setik.json', JSON.stringify(setik))
 					denz.sendMessage(from, `ᴀᴅᴅᴇᴅ ᴛᴏ ᴅᴀᴛᴀʙᴀsᴇ✔, *${prefix}liststicker*`, MessageType.text, { quoted: mek })
 					break
- case 'help3':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
-       menu = `❏「 \`\`\`${NamaBot}\`\`\` 」
-
-╾ _Creator : @${dtod.split('@')[0]}_
-╾ _Battery : ${baterai.battery}_
-╾ _Mode : ${publik ? 'Public' : 'Self'}_
-╾ _Total Hit : ${cmhit.length}_
-╾ _Command : ${prefix + command}_
-
-❏「 \`\`\`INFO BOT\`\`\` 」
-
-╾ _Nama Bot : ${NamaBot}_
-╾ _Nama Owner : ${NamaOwner}_
-╾ _Nomor Owner : @${otod.split('
-╾ _Auto Compos
-╾ _Auto Recording 
-
-❏「 \`\`\`INFO USER\`\`\` 」
-
-╾ _Status : 
-╾ _Nama : ${pushname}_
-╾ _Bio : 
-╾ _Nomor : @${stod.split('@')[0]}_
-╾ _Info Nomor :
-sendButDocument(from, `${menu}`, "*_© Dcode Denpa_*", fs.readFileSync('./sampah/Denpa'), {mimetype:Mimetype.pdf, thumbnail:fs.readFileSync('./media/image/banner.jpg'), filename:`${jmn} - ${week} - ${calender}`}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER'},type:1},{buttonId:`script`,buttonText:{displayText:'SOURCE CODE'},type:1}], {quoted:fmen, contextInfo: { mentionedJid: [dtod,otod,stod], forwardingScore: 508, isForwarded: true, externalAdReply:{title:`${tampilUcapan} ${pushname}`,body:`*click here to play music`,mediaType:"2",thumbnail:ofrply,mediaUrl:`https://youtu.be/uQiF1yOnzDg`}}})
-break
 				case 'delsticker':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 					try {
