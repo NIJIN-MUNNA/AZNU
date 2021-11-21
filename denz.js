@@ -999,6 +999,17 @@ sendButLocation(from, `${menu}`, "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩", {jpegThumbn
 ], {contextInfo: { mentionedJid: [otod]}})
 }
            	break
+       case 'group2':
+        rows = [
+           {title: 'open', description: "", rowId: `OPEN`},
+           {title: 'close', description: "", rowId: `CLOSE`},
+           {title: 'on', description: "", rowId: `on`},
+           {title: 'off', description: "", rowId: `off`}]
+          section = [{title: "𝑲𝒓𝒊𝒛 𝒔𝒆𝒓 𝒖𝒚𝒊𝒓", rows: rows}]
+          button = {buttonText: 'SELECT', description: `*Gʀᴏᴜᴘ [ᴏᴘᴇɴ/ᴄʟᴏsᴇ]*\n*Dɪsᴀᴘᴘᴇᴀʀ Mᴇsᴀᴀɢᴇ [ᴏɴ/ᴏғғ]*`,
+          sections: section, listType: 1}
+          denz.sendMessage(from, button, MessageType.listMessage, {quoted: ftroli})
+                    break
 case 'allmenu':
 denz.sendMessage(from, '𝚆𝚊𝚒𝚝', text, {quoted: ftok})
 stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
