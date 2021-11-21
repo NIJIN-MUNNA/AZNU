@@ -557,6 +557,20 @@ headerType: 1
 }
 denz.sendMessage(id, buttonMessage, MessageType.buttonsMessage, options)
 }
+        // Button Cmd 
+           if (responseButton === 'open') {
+	       denz.sendMessage(from, `*Gʀᴏᴜᴘ Oᴘᴇɴᴅ Bʏ Aᴅᴍɪɴ*`, MessageType.text, {quoted: ftext})
+		   denz.groupSettingChange(from, GroupSettingChange.messageSend, false)
+		   } else if (responseButton === 'close') {
+	       await denz.groupSettingChange(from, GroupSettingChange.messageSend, true)
+	       denz.sendMessage(from, `*Gʀᴏᴜᴘ Cʟᴏsᴇᴅ Bʏ Aᴅᴍɪɴ*`, MessageType.text, {quoted: ftext})
+           }
+           if (responseButton === 'on'){
+           await bosco.toggleDisappearingMessages(from, WA_DEFAULT_EPHEMERAL)
+           } else if (responseButton === 'off'){
+           await denz.toggleDisappearingMessages(from, 0)
+           }
+
 ///Button Image
 const sendButImage = async(id, text1, desc1, gam1, but = [], options = {}) => {
 kma = gam1
