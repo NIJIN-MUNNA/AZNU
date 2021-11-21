@@ -110,6 +110,7 @@ ApiZeks = "https://api.zeks.xyz",
 zeksApikey = "Alphabott",
 ownernamepepe = "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁"
 botnamepepe = "𝙿𝙴𝙿𝙴 𝙱𝙾𝚃"
+pepeownerinsta = "giv ur insta link"
 
 // ------------- fear aavanda keto -----------
 
@@ -1992,9 +1993,43 @@ denz.sendMessage(from, {
 "contacts": ini_list 
 }, 'contactsArrayMessage', { quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true }})
 break
+case 'owner':
+	case 'creator':
+case 'developer':
+		case 'author':
+buttonss = [{buttonId: `donate`, buttonText: {displayText: 'ᴅᴏɴᴀᴛᴇ'}, type: 1},{buttonId: `pepeinsta`, buttonText: {displayText: 'ɪɴsᴛᴀɢʀᴀᴍ'}, type: 1}]
+const nsjsmsndke = {
+    contentText: "That's My Owner🌝❤️ \n What do you want to know more about him🐦",
+    footerText: '𝙲𝙷𝙾𝙾𝚂𝙴 𝙷𝙴𝚁𝙴',
+    buttons: buttonss,
+    headerType: 1
+}
+await denz.sendMessage(from, nsjsmsndke, MessageType.buttonsMessage, {quoted: ftok})
+break
+		case 'pepeinsta':
+buttonss = [{buttonId: `ownerinsta`, buttonText: {displayText: 'ᴏᴡɴᴇʀ'}, type: 1},{buttonId: `pepeinstaa`, buttonText: {displayText: 'ᴅᴇᴠᴇʟᴏᴘᴇʀ'}, type: 1}]
+const nsjssmsndke = {
+    contentText: "Whom do you want to know about😛",
+    footerText: '𝙲𝙷𝙾𝙾𝚂𝙴 𝙷𝙴𝚁𝙴',
+    buttons: buttonss,
+    headerType: 1
+}
+await denz.sendMessage(from, nsjssmsndke, MessageType.buttonsMessage, {quoted: ftok})
+break
+case 'pepeinstaa':
+	pepeee = `⍟ ────────────────── ⍟
+https://www.instagram.com/_roshan_p_r
+⍟ ────────────────── ⍟`
+reply(pepeee)
+case 'ownerinsta':
+	pepeeee = `⍟ ────────────────── ⍟
+${pepeownerinsta}
+⍟ ────────────────── ⍟`
+reply(pepeeee)
+break
 case 'setmenu':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-if(args[0] == '2'){
+i(rgs[0] == '2'){
 menusimpel = true
 reply('sᴜᴄᴄᴜss')
 }else if(args[0] == '1'){
