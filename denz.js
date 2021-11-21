@@ -557,20 +557,6 @@ headerType: 1
 }
 denz.sendMessage(id, buttonMessage, MessageType.buttonsMessage, options)
 }
-        // Button Cmd 
-           if (responseButton === 'open') {
-	       denz.sendMessage(from, `*Gʀᴏᴜᴘ Oᴘᴇɴᴅ Bʏ Aᴅᴍɪɴ*`, MessageType.text, {quoted: ftext})
-		   denz.groupSettingChange(from, GroupSettingChange.messageSend, false)
-		   } else if (responseButton === 'close') {
-	       await denz.groupSettingChange(from, GroupSettingChange.messageSend, true)
-	       denz.sendMessage(from, `*Gʀᴏᴜᴘ Cʟᴏsᴇᴅ Bʏ Aᴅᴍɪɴ*`, MessageType.text, {quoted: ftext})
-           }
-           if (responseButton === 'on'){
-           await bosco.toggleDisappearingMessages(from, WA_DEFAULT_EPHEMERAL)
-           } else if (responseButton === 'off'){
-           await denz.toggleDisappearingMessages(from, 0)
-           }
-
 ///Button Image
 const sendButImage = async(id, text1, desc1, gam1, but = [], options = {}) => {
 kma = gam1
@@ -999,17 +985,6 @@ sendButLocation(from, `${menu}`, "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩", {jpegThumbn
 ], {contextInfo: { mentionedJid: [otod]}})
 }
            	break
-       case 'group2':
-        rows = [
-           {title: 'open', description: "", rowId: `OPEN`},
-           {title: 'close', description: "", rowId: `CLOSE`},
-           {title: 'on', description: "", rowId: `on`},
-           {title: 'off', description: "", rowId: `off`}]
-          section = [{title: "𝑲𝒓𝒊𝒛 𝒔𝒆𝒓 𝒖𝒚𝒊𝒓", rows: rows}]
-          button = {buttonText: 'SELECT', description: `*Gʀᴏᴜᴘ [ᴏᴘᴇɴ/ᴄʟᴏsᴇ]*\n*Dɪsᴀᴘᴘᴇᴀʀ Mᴇsᴀᴀɢᴇ [ᴏɴ/ᴏғғ]*`,
-          sections: section, listType: 1}
-          denz.sendMessage(from, button, MessageType.listMessage, {quoted: ftroli})
-                    break
 case 'allmenu':
 denz.sendMessage(from, '𝚆𝚊𝚒𝚝', text, {quoted: ftok})
 stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
@@ -4414,7 +4389,7 @@ Giliran = @${tty.player1.split('@')[0]}`
             if (!e.includes("Cannot set property 'mtype' of undefined")) {
             if (!e.includes("jid is not defined")) {
      console.log(color('|ERR|', 'red'), color(e, 'cyan'))
-     denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ALERT-ERROR* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer pepe ser",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/917736622139?text=Hi Bro"}}})
+     denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ALERT-ERROR* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer pepe ser",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://chat.whatsapp.com/BzhyWkAEU0t8oVl3s8p94m"}}})
 	}
     }
     }
