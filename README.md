@@ -1,5 +1,6 @@
-![Fxc7](https://cardivo.vercel.app/api?name=PEPE_SIR&description=Hi,%20i%27m%20Pepe%20and%20i%27m%20just%20a%20newbie%20programmer%20Nice%20to%20meet%20you%20%F0%9F%91%8B&image=https://fxc7-api.herokuapp.com/upload/farhan.png&backgroundColor=%23ecf0f1&instagram=_roshan_p_r&github=pepesir&group=https://chat.whatsapp.com/BzhyWkAEU0t8oVl3s8p94m&iconColor=%23595959&fontColor=%23595959&pattern=ticTacToe&colorPattern=%23eaeaea&opacity=1)
-___
+</p>
+
+![My card name](https://cardivo.vercel.app/api?name=PEPE-SIR&description=Hi,%20Welcome%20To%20My%20Profile%20❤&image=https://avatars.githubusercontent.com/u/90826638?v=4&s=10?v=4&backgroundColor=%23ecf0f1&instagram=_roshan_p_r&github=pepesir&twitter=&pattern=leaf&colorPattern=%23eaeaea)
 
 
 <div align="center">
