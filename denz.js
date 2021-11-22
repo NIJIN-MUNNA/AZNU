@@ -288,6 +288,7 @@ try {
 		const isGroupAdmins = groupAdmins.includes(sender) || false
 		const isKickArea = isGroup ? kickarea.includes(from) : false
 		const isAntiLink = isGroup ? antilink.includes(from) : false
+		const isVien = isGroup ? vien.includes(from) : false
 		const isWelkom = isGroup ? welkom.includes(from) : false
 		const isAuto = isGroup ? autosticker.includes(from) : false
 		const isMuted = isGroup ? mute.includes(from) : false
@@ -2776,6 +2777,27 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 						reply('1 active, 0 deactive')
 					}
 					break
+				 case 'autobgm':
+	        if (!isGroup) return reply(mess.only.group)
+			if (!isGroupAdmins) return reply(mess.only.admin)
+			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+					if (args.length < 1) return reply(`untuk mengaktifkan ketik : ${prefix}vien 1`)
+					if (Number(args[0]) === 1) {
+						if (isVien) return reply('Active')
+						vien.push(from)
+						fs.writeFileSync('./database/vien.json', JSON.stringify(vien))
+						reply('Successfully activate the bgm feature')
+						denz.sendMessage(from, `ALLERT!!! Group ini sudah di pasang anti link\nJika Kamu Melanggar Maka Akan Saya Tendang`, text)
+					} else if (Number(args[0]) === 0) {
+						if (!isVien) return reply('you are dead')
+						var ini = vien.indexOf(from)
+						vien.splice(ini, 1)
+						fs.writeFileSync('./database/vien.json', JSON.stringify(vien))
+						reply('Succussfully disable vien feature')
+					} else {
+						reply('1 active, 0 deactive')
+					}
+					break					
 				case 'tinyurl':
 try {
 link = args[0]
