@@ -2037,16 +2037,25 @@ reply('sᴜᴄᴄᴜss')
 reply(`Use : ${prefix}setmenu button\n\nTersedia: 1/2`)
 }
 break
-case 'setthumb':
-			if (!isQuotedImage) return reply('Reply image!')
-			if (!arg) return reply
-				boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
-				delb = await denz.downloadMediaMessage(boij)
-				fs.unlinkSync(`./denz.jpg`)
-                await sleep(1000)
-				fs.writeFileSync(`./denz.jpg`, delb)
-				denz.sendMessage(_.jid, buff, sticker, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999999, status: 200, thumbnail: fs.readFileSync('./denz.jpg'), surface: 200, message: `${bc}`, orderTitle: `${bc}`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}})
-				  break
+      case "setthumb":
+        if (
+          ((isMedia && !mek.message.videoMessage) ||
+            isQuotedImage ||
+            isQuotedSticker) &&
+          args.length == 0
+        ) {
+          boij =
+            isQuotedImage || isQuotedSticker
+              ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
+                  .extendedTextMessage.contextInfo
+              : mek;
+          delb = await denz.downloadMediaMessage(boij);
+          fs.writeFileSync(`./denz.jpg`, delb);
+          reply("Success");
+        } else {
+          reply(`Send a picture with a caption ${prefix}sethumb`);
+        }
+        break
 case 'addcmd': 
 case 'setcmd':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
