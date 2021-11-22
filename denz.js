@@ -2865,20 +2865,6 @@ case 'tts':
 						reply(`Succuss closing group ${groupName}`)
 						denz.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					break
-					case 'unmute':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-                   if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-                   reply(`Succuss unmuting group ${groupName}`)
-						denz.groupSettingChange(from, GroupSettingChange.messageSend, false)
-						break
-						case 'mute':
-						if (!isGroup) return reply(mess.only.group)
-						if (!isGroupAdmins) return reply(mess.only.admin)
-                   if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-						reply(`Succuss muting group ${groupName}`)
-						denz.groupSettingChange(from, GroupSettingChange.messageSend, true)
-					break
 case 'group':
 buttonss = [{buttonId: `opengc`, buttonText: {displayText: 'OPEN🌝'}, type: 1},{buttonId: `closegc`, buttonText: {displayText: 'CLOSE🌚'}, type: 1}]
 const pepee = {
