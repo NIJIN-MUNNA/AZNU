@@ -2940,7 +2940,7 @@ break
 					} else if (Number(args[off]) === off) {
 						if (!isWelkom) return reply('𝙸𝚃𝚂 𝙳𝙴𝙰𝙳')
 						var ini = welkom.indexOf(from)
-						welkom.splice(ini, 1)
+						welkom.splice(ini, on)
 						fs.writeFileSync('./database/welkom.json', JSON.stringify(welkom))
 						reply('𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳')
 					} else {
