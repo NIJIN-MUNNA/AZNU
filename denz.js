@@ -110,6 +110,8 @@ ApiZeks = "https://api.zeks.xyz",
 zeksApikey = "Alphabott",
 ownernamepepe = "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁"
 botnamepepe = "𝙿𝙴𝙿𝙴 𝙱𝙾𝚃"
+autovn = true;
+autoketik = false;
 
 // ------------- fear aavanda keto -----------
 
@@ -858,15 +860,15 @@ numd = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${send
                      sami = simi.success
                         denz.sendMessage(from, `_${sami}_`, text, {thumbnail: ofrply, sendEphemeral: true, quoted:mek, contextInfo : {forwardingScore: 508, isForwarded: true}})
                       }
-if (!settings.autoread) {
-denz.chatRead(from)
+// 𝘼𝙪𝙩𝙤 𝙑𝙣:𝙫
+if (autovn) {
+	if (autovn === false) return
+await denz.updatePresence(from, Presence.recording)
+} else if (autoketik) {
+	if (autoketik === false) return
+await denz.updatePresence(from, Presence.composing)
 }
-if (!settings.autocomposing) {
-denz.updatePresence(from, Presence.composing)
-}
-if (!settings.autorecording) {
-denz.updatePresence(from, Presence.recording)
-}
+
    const sotoy = [
         '🍊 : 🍒 : 🍐',
         '🍒 : 🔔 : 🍊',
@@ -1691,6 +1693,36 @@ kon = (`https://hardianto-chan.herokuapp.com/api/foliokiri?text=${c}&apikey=hard
 anu = await getBuffer(kon)
 denz.sendMessage(from, anu, image, { quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 break
+       case 'autotype':
+if (!isOwner && !mek.key.fromMe) return
+if (args.length < 1) return reply('Choose on or off')
+if (args[0] === "on") {
+if (autoketik === true) return
+autoketik = true
+reply(`Success activate autotype`)
+} else if (args[0] === "off") {
+if (autoketik === false) return
+autoketik = false
+reply(`Success turns off autotype`)
+} else {
+reply(`Choose on or off`)
+}
+break
+case 'autovn':
+if (!isOwner && !mek.key.fromMe) return
+if (args.length < 1) return reply('Select on or off')
+if (args[0] === "on") {
+if (autovn === true) return
+autovn = true
+reply(`Succesfully activated autovn`)
+} else if (args[0] === "off") {
+if (autovn === false) return
+autovn = false
+reply(`Successfully turned off autovn`)
+} else {
+reply(`Select on or off`)
+}
+break
 //My Api
        case 'maker2d2': 
                     if (args.length < 1) return reply(`*Example :*\n${prefix}${command} 𝙿𝙰𝚄𝙻 𝚆𝙰𝙻𝙺𝙴𝚁`)
@@ -1756,6 +1788,7 @@ break
 					buffer1 = await getBuffer(anu.result.results)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
+					
         case 't3d':
                    if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} pepe*`)
                    F = body.slice(5)
