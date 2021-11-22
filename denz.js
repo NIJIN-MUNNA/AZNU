@@ -1538,7 +1538,7 @@ menu = `╭────────────────╮
 │
 │🦋⃝❉⃟࿔ꦿ ${prefix}getpp
 │
-│🦋⃝❉⃟࿔ꦿ ${prefix}kick [ _@𝚃𝚊𝚐_ ]
+│🦋⃝❉⃟࿔ꦿ ${prefix}kick [ _𝚁𝚎𝚙𝚕𝚢_ ]
 │
 │🦋⃝❉⃟࿔ꦿ ${prefix}add [ _𝙽𝚞𝚖𝚋𝚎𝚛_ ]
 │
@@ -4200,21 +4200,12 @@ break
                 denz.updateProfileName(anu)
                 reply(`Succuss ${body.slice(9)}`)
                 break
-			case 'addd':
-			if (!isGroup) return reply(mess.only.group)
-			if (!isGroupAdmins) return reply(mess.only.admin)
-			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply target!')
-			add = mek.message.extendedTextMessage.contextInfo.participant
-		    denz.groupAdd(from, [add])
-				reply('Succuss')
-				break
       case "add":
 			if (!isGroup) return reply('this feature is only for groups')
 			if (!isGroupAdmins) return sticAdmin(from)
 			if (!isBotGroupAdmins) return sticNotAdmin(from)
 			if (args.length < 1) return reply('do you want to add a genie?')
-					if (args[0].startsWith('08')) return reply('use the country code')
+					if (args[0].startsWith('+')) return reply('Enter the number with country code avoiding plus sign ; eg. 12132950219')
 					try {
 						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 						denz.groupAdd(from, [num])
@@ -4230,7 +4221,7 @@ break
 			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply target!')
 			kick = mek.message.extendedTextMessage.contextInfo.participant
 		    denz.groupRemove(from, [kick])
-						reply('Succuss')
+						reply('Success')
                     break
                     case 'creategroup':
 			case 'creategrup':
