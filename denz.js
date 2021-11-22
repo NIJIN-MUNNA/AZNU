@@ -290,7 +290,7 @@ try {
 		const isGroupAdmins = groupAdmins.includes(sender) || false
 		const isKickArea = isGroup ? kickarea.includes(from) : false
 		const isAntiLink = isGroup ? antilink.includes(from) : false
-		const isWelkom = isGroup ? welkom.includes(from) : false
+		const isWelkom = isGroup ? welkom.includes(from) : true
 		const isAuto = isGroup ? autosticker.includes(from) : false
 		const isMuted = isGroup ? mute.includes(from) : false
 		const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
@@ -2931,20 +2931,20 @@ break
             case 'welcome': 
 	        if (!isGroup) return reply(mess.only.group)
 			if (!isOwner && !isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply(`untuk mengaktifkan ketik : ${prefix}welcome 1/0`)
-					if (Number(args[0]) === 1) {
+					if (args.length < 1) return reply(`Hey Bro send : ${prefix}welcome on/off`)
+					if (Number(args[off]) === on) {
 						if (isWelkom) return reply('𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙰𝙲𝚃𝙸𝚅𝙴')
 						welkom.push(from)
 						fs.writeFileSync('./database/welkom.json', JSON.stringify(welkom))
 						reply('𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝙴𝙽𝙰𝙱𝙻𝙴𝙳')
-					} else if (Number(args[0]) === 0) {
+					} else if (Number(args[off]) === off) {
 						if (!isWelkom) return reply('𝙸𝚃𝚂 𝙳𝙴𝙰𝙳')
 						var ini = welkom.indexOf(from)
 						welkom.splice(ini, 1)
 						fs.writeFileSync('./database/welkom.json', JSON.stringify(welkom))
 						reply('𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳')
 					} else {
-						reply('1 𝚃𝙾 𝚃𝚄𝚁𝙽 𝙾𝙽, 0 𝚃𝙾 𝙳𝙸𝚂𝙰𝙱𝙻𝙴')
+						reply('on 𝚃𝙾 𝙴𝙽𝙰𝙱𝙻𝙴, off 𝚃𝙾 𝙳𝙸𝚂𝙰𝙱𝙻𝙴')
 					}
 					break
 				case 'demoteall':
