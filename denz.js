@@ -110,7 +110,7 @@ ApiZeks = "https://api.zeks.xyz",
 zeksApikey = "Alphabott",
 ownernamepepe = "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁"
 botnamepepe = "𝙿𝙴𝙿𝙴 𝙱𝙾𝚃"
-autovn = true;
+autovn = false;
 autoketik = false;
 
 // ------------- fear aavanda keto -----------
@@ -4200,7 +4200,7 @@ break
                 denz.updateProfileName(anu)
                 reply(`Succuss ${body.slice(9)}`)
                 break
-			case 'add':
+			case 'addd':
 			if (!isGroup) return reply(mess.only.group)
 			if (!isGroupAdmins) return reply(mess.only.admin)
 			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -4209,6 +4209,20 @@ break
 		    denz.groupAdd(from, [add])
 				reply('Succuss')
 				break
+      case "add":
+			if (!isGroup) return reply('this feature is only for groups')
+			if (!isGroupAdmins) return sticAdmin(from)
+			if (!isBotGroupAdmins) return sticNotAdmin(from)
+			if (args.length < 1) return reply('do you want to add a genie?')
+					if (args[0].startsWith('08')) return reply('use the country code')
+					try {
+						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
+						denz.groupAdd(from, [num])
+					} catch (e) {
+						console.log('Error :', e)
+						reply('Failed to add target, maybe because its private🤔')
+					}
+					break;
 				case 'kick':
 			if (!isGroup) return reply(mess.only.group)
 			if (!isGroupAdmins) return reply(mess.only.admin)
