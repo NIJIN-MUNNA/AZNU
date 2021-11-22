@@ -1190,7 +1190,7 @@ menu =`
 │▢  ${prefix}dadu
 │▢  ${prefix}semoji 
 │▢  ${prefix}attp 
-│▢  ${prefix}toimg
+│▢  ${prefix}img
 │▢  ${prefix}tomp3 
 │▢  ${prefix}tomp4 
 │▢  ${prefix}robot 
@@ -1638,7 +1638,7 @@ menu = `╭────────────────╮
 │
 │❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}attp [ _𝚃𝚎𝚡𝚝_ ]
 │
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}toimg
+│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}img
 │
 │❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}tomp3 [ _𝚁𝚎𝚙𝚕𝚢 𝚅𝚒𝚍𝚎𝚘_ ]
 │
@@ -2865,6 +2865,20 @@ case 'tts':
 						reply(`Succuss closing group ${groupName}`)
 						denz.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					break
+					case 'unmute':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+                   if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+                   reply(`Succuss unmuting group ${groupName}`)
+						denz.groupSettingChange(from, GroupSettingChange.messageSend, false)
+						break
+						case 'mute':
+						if (!isGroup) return reply(mess.only.group)
+						if (!isGroupAdmins) return reply(mess.only.admin)
+                   if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+						reply(`Succuss muting group ${groupName}`)
+						denz.groupSettingChange(from, GroupSettingChange.messageSend, true)
+					break
 case 'group':
 buttonss = [{buttonId: `opengc`, buttonText: {displayText: 'OPEN🌝'}, type: 1},{buttonId: `closegc`, buttonText: {displayText: 'CLOSE🌚'}, type: 1}]
 const pepee = {
@@ -3095,6 +3109,7 @@ if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
             }
             fs.unlinkSync(owgi)
             break
+          case 'mp3':
             case 'tomp3':
 					denz.updatePresence(from, Presence.composing)
 					if (!isQuotedVideo) return reply('Reply Video')
@@ -4002,8 +4017,9 @@ break
 					return denz.sendMessage(from, JSON.stringify(eval(body.slice(8))), text, {quoted: mek})
 					if (err) return denz.sendMessage(from, `root @Anees-Anz:~ ${err}`, text, { quoted: mek })
                  break
-                 case 'toimg':
-				case 'tomedia':
+                 case 'photo':
+                 case 'img':
+				case 'tophoto':
 					if (!isQuotedSticker) return reply('𝚁𝚎𝚙𝚕𝚢 𝚝𝚘 𝚂𝚝𝚒𝚌𝚔𝚎𝚛')
 					if (mek.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.isAnimated === true){
 						const encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
