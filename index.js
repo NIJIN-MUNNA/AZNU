@@ -143,7 +143,6 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ┊
 ┊
 ┊ ▢ *ᴛɪᴍᴇ* : ${jmn}
-┊ ▢ *ᴅᴀʏ* :  ${week} ${weton}
 ┊ ▢ *ᴅᴀᴛᴇ* : ${calender}
 ┊
 ┊
