@@ -14,7 +14,6 @@ const { color, bgcolor } = require('./lib/color')
 const { exec } = require('child_process')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 const settings = JSON.parse(fs.readFileSync('./settings.json'))
-            var tampilUcapan = "" + jamss;
             const jmn = moment.tz('Asia/Kolkata').format('HH:mm:ss')
 				let d = new Date
 				let locale = 'id'
@@ -143,8 +142,10 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ┌───〔 *_𝚃𝙸𝙼𝙴 𝙸𝙽𝙵𝙾_* 〕                           
 ┊
 ┊
-┊ ▢ *ᴛɪᴍᴇ* : ${jmn}  
-┊ ▢ *ᴅᴀʏ* : ${week} ${weton}
+┊ ▢ *ᴛɪᴍᴇ* : 
+┊ ▢ *ᴛɪᴍᴇ* : 
+┊ ▢ *ᴛɪᴍᴇ* :  
+┊ ▢ *ᴅᴀʏ* :
 ┊ ▢ *ᴅᴀᴛᴇ* : ${calender}
 ┊
 ┊
