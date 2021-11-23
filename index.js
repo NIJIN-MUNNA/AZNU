@@ -18,7 +18,7 @@ const settings = JSON.parse(fs.readFileSync('./settings.json'))
 				let d = new Date
 				let locale = 'id'
 				let gmt = new Date(0).getTime() - new Date('1 Januari 2021').getTime()
-				const weton = ['Pahing', 'Pon','Wage','Kliwon','Legi'][Math.floor(((d * 1) + gmt) / 84600000) % 5]
+				const weton = ['𝙼𝚘𝚗𝚍𝚊𝚢', '𝚃𝚞𝚎𝚜𝚍𝚊𝚢','𝚆𝚎𝚗𝚍𝚎𝚜𝚍𝚊𝚢','𝚃𝚑𝚞𝚛𝚜𝚍𝚊𝚢','𝙵𝚛𝚒𝚍𝚊𝚢'][Math.floor(((d * 1) + gmt) / 84600000) % 5]
 				const week = d.toLocaleDateString(locale, { weekday: 'long' })
 				const calender = d.toLocaleDateString(locale, {
 				day: 'numeric',
