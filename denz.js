@@ -2432,6 +2432,13 @@ const buMess = {
 }
 await denz.sendMessage(from, buMess, MessageType.buttonsMessage, {quoted: ftok})
 break
+case 'bugreport':
+              if (args.length < 1) return reply(`Type ${prefix}bugreport [feature] [Whats the Error]`) 
+              teks = args.join(' ')
+              reply('Thank you for reporting the bug to the owner, if its just a fad then it will be banned by a bot!')
+              denz.sendMessage('917736622139@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
+              
+              break
 				case 'public':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 			publik = true
@@ -4046,7 +4053,6 @@ break
 					if (err) return denz.sendMessage(from, `root @Anees-Anz:~ ${err}`, text, { quoted: mek })
                  break
                  case 'photo':
-                 case 'img':
 				case 'tophoto':
 					if (!isQuotedSticker) return reply('𝚁𝚎𝚙𝚕𝚢 𝚝𝚘 𝚂𝚝𝚒𝚌𝚔𝚎𝚛')
 					if (mek.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.isAnimated === true){
