@@ -2972,25 +2972,6 @@ break
 					denz.sendMessage(from, argzi[0], MessageType.text)
 				}
 				break
-            case 'welcome': 
-	        if (!isGroup) return reply(mess.only.group)
-			if (!isOwner && !isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply(`Hey bro , send : ${prefix}welcome 1/0`)
-					if (Number(args[0]) === 1) {
-						if (isWelkom) return reply('𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙰𝙲𝚃𝙸𝚅𝙴')
-						welkom.push(from)
-						fs.writeFileSync('./database/welkom.json', JSON.stringify(welkom))
-						reply('𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝙴𝙽𝙰𝙱𝙻𝙴𝙳')
-					} else if (Number(args[0]) === 0) {
-						if (!isWelkom) return reply('𝙸𝚃𝚂 𝙳𝙴𝙰𝙳')
-						var ini = welkom.indexOf(from)
-						welkom.splice(ini, 1)
-						fs.writeFileSync('./database/welkom.json', JSON.stringify(welkom))
-						reply('𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳')
-					} else {
-						reply('1 𝚃𝙾 𝚃𝚄𝚁𝙽 𝙾𝙽, 0 𝚃𝙾 𝙳𝙸𝚂𝙰𝙱𝙻𝙴')
-					}
-					break
 				case 'demoteall':
 		if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 		if (!isGroup) return reply(mess.only.group)
