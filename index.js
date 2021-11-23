@@ -14,6 +14,18 @@ const { color, bgcolor } = require('./lib/color')
 const { exec } = require('child_process')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 const settings = JSON.parse(fs.readFileSync('./settings.json'))
+            var tampilUcapan = "" + jamss;
+            const jmn = moment.tz('Asia/Kolkata').format('HH:mm:ss')
+				let d = new Date
+				let locale = 'id'
+				let gmt = new Date(0).getTime() - new Date('1 Januari 2021').getTime()
+				const weton = ['Pahing', 'Pon','Wage','Kliwon','Legi'][Math.floor(((d * 1) + gmt) / 84600000) % 5]
+				const week = d.toLocaleDateString(locale, { weekday: 'long' })
+				const calender = d.toLocaleDateString(locale, {
+				day: 'numeric',
+				month: 'long',
+				year: 'numeric'
+		       })
 // PEPE 
 ownernamepepe = "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁"
 botnamepepe = "𝙿𝙴𝙿𝙴 𝙱𝙾𝚃"
@@ -131,11 +143,9 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ┌───〔 *_𝚃𝙸𝙼𝙴 𝙸𝙽𝙵𝙾_* 〕                           
 ┊
 ┊
-┊ ▢ *ᴛɪᴍᴇ* : 
-┊ ▢ *ᴛɪᴍᴇ* : 
-┊ ▢ *ᴛɪᴍᴇ* :  
-┊ ▢ *ᴅᴀʏ* :
-┊ ▢ *ᴅᴀᴛᴇ* : 
+┊ ▢ *ᴛɪᴍᴇ* : ${jmn}  
+┊ ▢ *ᴅᴀʏ* : ${week} ${weton}
+┊ ▢ *ᴅᴀᴛᴇ* : ${calender}
 ┊
 ┊
 └──────────────────〄`
