@@ -14,12 +14,12 @@ const { color, bgcolor } = require('./lib/color')
 const { exec } = require('child_process')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 const settings = JSON.parse(fs.readFileSync('./settings.json'))
-            const jmn = moment.tz('Asia/Kolkata').format('HH:mm:ss')
+    const jmn = moment.tz('Asia/Kolkata').format('hh:mm')
 				let d = new Date
-				let locale = 'id'
+				let locale = 'en'
 				let gmt = new Date(0).getTime() - new Date('1 Januari 2021').getTime()
-				const weton = ['𝙼𝚘𝚗𝚍𝚊𝚢', '𝚃𝚞𝚎𝚜𝚍𝚊𝚢','𝚆𝚎𝚗𝚍𝚎𝚜𝚍𝚊𝚢','𝚃𝚑𝚞𝚛𝚜𝚍𝚊𝚢','𝙵𝚛𝚒𝚍𝚊𝚢'][Math.floor(((d * 1) + gmt) / 84600000) % 5]
-				const week = d.toLocaleDateString(locale, { weekday: 'long' })
+       const jmo = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+ const week = d.toLocaleDateString(locale, { weekday: 'long' })
 				const calender = d.toLocaleDateString(locale, {
 				day: 'numeric',
 				month: 'long',
@@ -143,7 +143,9 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ┊
 ┊
 ┊ ▢ *ᴛɪᴍᴇ* : ${jmn}
-┊ ▢ *ᴅᴀᴛᴇ* : ${calender}
+┊ ▢ *ᴅᴀʏ* : ${week}
+┊ ▢ *ᴅᴀᴛᴇ* : ${jmo} 
+┊            ${calender}
 ┊
 ┊
 └──────────────────〄`
