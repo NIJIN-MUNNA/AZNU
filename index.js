@@ -14,16 +14,7 @@ const { color, bgcolor } = require('./lib/color')
 const { exec } = require('child_process')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 const settings = JSON.parse(fs.readFileSync('./settings.json'))
-    const jmn = moment.tz('Asia/Kolkata').format('hh:mm')
-				let d = new Date
-				let locale = 'en'
-				let gmt = new Date(0).getTime() - new Date('1 Januari 2021').getTime()
-       const jmo = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
- const week = d.toLocaleDateString(locale, { weekday: 'long' })
-				const calender = d.toLocaleDateString(locale, {
-				day: 'numeric',
-				month: 'long',
-				year: 'numeric'
+            
 		       })
 // PEPE 
 ownernamepepe = "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁"
@@ -138,16 +129,6 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ┊     ▎▍▌▌▉▏▎▌▉▐▏▌▎    
 ┊     ▎▍▌▌▉▏▎▌▉▐▏▌▎  
 ┊      ©917736622139  
-└──────────────────〄
-┌───〔 *_𝚃𝙸𝙼𝙴 𝙸𝙽𝙵𝙾_* 〕                           
-┊
-┊
-┊ ▢ *ᴛɪᴍᴇ* : ${jmn}
-┊ ▢ *ᴅᴀʏ* : ${week}
-┊ ▢ *ᴅᴀᴛᴇ* : ${jmo} 
-┊            ${calender}
-┊
-┊
 └──────────────────〄`
 gbutsan = [
 {buttonId:`getdeskgc`,buttonText:{displayText:'GROUP DESCRIPTION'},type:1},
