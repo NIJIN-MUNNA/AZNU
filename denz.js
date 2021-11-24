@@ -3182,6 +3182,18 @@ if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
             fs.unlinkSync(owgi)
             break
           case 'mp3':
+					denz.updatePresence(from, Presence.composing)
+					encmediad = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
+					mediad = await denz.downloadAndSaveMediaMessage(encmediad)
+					ran = getRandom('.mp4')
+					exec(`ffmpeg -i ${mediad} ${ran}`, (err) => {
+						fs.unlinkSync(mediad)
+						if (err) return reply(mess.error.api)
+						mhee = fs.readFileSync(ran)
+						denz.sendMessage(from, mhee, audio, { mimetype: 'audio/mp4', duration: 4, quoted: mek })
+						fs.unlinkSync(ran)
+					})
+					break
             case 'tomp3':
 					denz.updatePresence(from, Presence.composing)
 					if (!isQuotedVideo) return reply('Reply Video')
