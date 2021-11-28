@@ -137,7 +137,7 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 			let buff = await getBuffer(ppimg)
 						masuk =`ada member baru nih..\nHalo @${num.split('@')[0]}\nIntro Dulu Ya\n❅Nama:\n❅Umur:\n❅Askot:\nDi Isi Ya Bg`
 						
-		    denz.sendMessage(mdata.id, masuk, MessageType.text, { quoted: fkontakk, thumbnail: fs.readFileSync('./denz.jpg'), contextInfo: { forwardingScore: 567308, isForwarded: true, externalAdReply:{title: `Welcome To ${mdata.subject}`,body:"",mediaType:"2",thumbnail:buff,mediaUrl:`https://youtu.be/J2ONq-963S4`}}})
+		    denz.sendMessage(mdata.id, masuk, MessageType.text, { quoted: fkontakk, thumbnail: fs.readFileSync('./denz.jpg'), contextInfo: { forwardingScore: 567308, isForwarded: true, externalAdReply:{title: `Welcome To ${mdata.subject}`,body:"",mediaType:"2",thumbnail:buff,mediaUrl:`https://youtu.be/25D3JT9lzNM`}}})
             //sendButLocation(mdata.id, `${masuk}`, `${uwu}𝙿 𝙴 𝙿 𝙴 右${uwu}`, {jpegThumbnail:buff}, [{buttonId:`Zmenu`,buttonText:{displayText:'HALLO'},type:1}], {contextInfo: { mentionedJid: [num]}})
 			} else if (anu.action == 'remove') {
 			const welkom = JSON.parse(fs.readFileSync('./database/welkom.json'))
