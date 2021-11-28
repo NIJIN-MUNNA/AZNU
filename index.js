@@ -114,58 +114,30 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
         	if(!welkom.includes(mdata.id)) return
 			fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Denz;;;\nFN:Denz\nitem1.TEL;waid=917736622139:917736622139\nitem1.X-ABLabel:𝚒𝚗𝚍𝚒𝚊\nEND:VCARD` }}}
 		    num = anu.participants[0]
+					    //Button ocument
+const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio } = 
+sendbutdocument = async(id, text1, desc1, file1, doc1, but = [], options = {}) => {
+media = file1
+kma = doc1
+mhan = await denz.prepareMessage(media, document, kma)
+const buttonMessages = {
+documentMessage: mhan.message.documentMessage,
+contentText: text1,
+footerText: desc1,
+buttons: but,
+headerType: "DOCUMENT"
+}
+denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
+}
 			try {
 			ppimg = await denz.getProfilePicture(`${num.split('@')[0]}@c.us`)
 			} catch {
 			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 			}
 			let buff = await getBuffer(ppimg)
-			masuk =`┌─  ❑ *_𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙱𝙾𝚃_*   ❑
-┊➥  *Hᴇʏ ʙʀᴏ* @${num.split('@')[0]}            
-┊➥  *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ*  ${mdata.subject} *ɢʀᴏᴜᴘ*  
-└───────────────〄  
-┌───〔 *_𝙱𝙾𝚃 𝙸𝙽𝙵𝙾_* 〕                           
-┊ ▢ *ᴅᴇᴠᴇʟᴏʟᴇʀ* : ᴘᴇᴘᴇ sɪʀ                                    
-┊ ▢ *ᴏᴡɴᴇʀ* : ${ownernamepepe}   
-┊ ▢ *ʙᴏᴛ ɴᴀᴍᴇ* : ${botnamepepe}                               
-┊ ▢ *ᴘʀᴇғɪx* : ${multi ? 'Multi Prefix' : 'No Prefix'}
-┊ ▢ *ᴍᴏᴅᴇ* :  ${publik ? 'Public' : 'Self'}
-┊ ▢ *ᴛᴏᴛᴀʟ ʜɪᴛ* : ${cmhit.length}
-┊ ▢ *ᴄʜᴀʀɢᴇ* :  ${baterai.battery}
-┊
-┊
-┊
-┊     ▎▍▌▌▉▏▎▌▉▐▏▌▎    
-┊     ▎▍▌▌▉▏▎▌▉▐▏▌▎  
-┊      ©917736622139  
-└──────────────────〄
-┌───〔 *_𝚃𝙸𝙼𝙴 𝙸𝙽𝙵𝙾_* 〕                           
-┊
-┊
-┊ ▢ *ᴛɪᴍᴇ* : ${jmn}
-┊ ▢ *ᴅᴀᴛᴇ* : ${calender}
-┊
-┊
-└──────────────────〄`
-gbutsan = [
-{buttonId:`getdeskgc`,buttonText:{displayText:'GROUP DESCRIPTION'},type:1},
-{buttonId:`menu`,buttonText:{displayText:'LIST MENU'},type:1},
-{buttonId:`owner`,buttonText:{displayText:'OWNER'},type:1}
-]
-mhan = await denz.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
-const buttonMessages = {
-imageMessage: mhan.message.imageMessage,
-contentText: `${masuk}`,
-footerText: `ī.ᴀᴍ/ᴘᴇᴘᴇsɪʀ`, 
-buttons: gbutsan,
-headerType: 4
-}
-denz.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, {
-        thumbnail: fs.readFileSync('./denz.jpg'),
-        "contextInfo": {
-            mentionedJid: [num]},
-        caption: 'Tes',
-            quoted: fkontakk})
+						masuk =`ada member baru nih..\nHalo @${num.split('@')[0]}\nIntro Dulu Ya\n❅Nama:\n❅Umur:\n❅Askot:\nDi Isi Ya Bg`
+						
+		    denz.sendMessage(mdata.id, masuk, MessageType.text, { quoted: fkontakk, thumbnail: fs.readFileSync('./denz.jpg'), contextInfo: { forwardingScore: 567308, isForwarded: true, externalAdReply:{title: `Welcome To ${mdata.subject}`,body:"",mediaType:"2",thumbnail:buff,mediaUrl:`https://youtu.be/J2ONq-963S4`}}})
             //sendButLocation(mdata.id, `${masuk}`, `${uwu}𝙿 𝙴 𝙿 𝙴 右${uwu}`, {jpegThumbnail:buff}, [{buttonId:`Zmenu`,buttonText:{displayText:'HALLO'},type:1}], {contextInfo: { mentionedJid: [num]}})
 			} else if (anu.action == 'remove') {
 			const welkom = JSON.parse(fs.readFileSync('./database/welkom.json'))
