@@ -135,7 +135,33 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 			}
 			let buff = await getBuffer(ppimg)
-						masuk =`ada member baru nih..\nHalo @${num.split('@')[0]}\nIntro Dulu Ya\n❅Nama:\n❅Umur:\n❅Askot:\nDi Isi Ya Bg`
+						masuk =`┌─  ❑ *_𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙱𝙾𝚃_*   ❑
+┊➥  *Hᴇʏ ʙʀᴏ* @${num.split('@')[0]}            
+┊➥  *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ*  ${mdata.subject} *ɢʀᴏᴜᴘ*  
+└───────────────〄  
+┌───〔 *_𝙱𝙾𝚃 𝙸𝙽𝙵𝙾_* 〕                           
+┊ ▢ *ᴅᴇᴠᴇʟᴏʟᴇʀ* : ᴘᴇᴘᴇ sɪʀ                                    
+┊ ▢ *ᴏᴡɴᴇʀ* : ${ownernamepepe}   
+┊ ▢ *ʙᴏᴛ ɴᴀᴍᴇ* : ${botnamepepe}                               
+┊ ▢ *ᴘʀᴇғɪx* : ${multi ? 'Multi Prefix' : 'No Prefix'}
+┊ ▢ *ᴍᴏᴅᴇ* :  ${publik ? 'Public' : 'Self'}
+┊ ▢ *ᴛᴏᴛᴀʟ ʜɪᴛ* : ${cmhit.length}
+┊ ▢ *ᴄʜᴀʀɢᴇ* :  ${baterai.battery}
+┊
+┊
+┊
+┊     ▎▍▌▌▉▏▎▌▉▐▏▌▎    
+┊     ▎▍▌▌▉▏▎▌▉▐▏▌▎  
+┊      ©917736622139  
+└──────────────────〄
+┌───〔 *_𝚃𝙸𝙼𝙴 𝙸𝙽𝙵𝙾_* 〕                           
+┊
+┊
+┊ ▢ *ᴛɪᴍᴇ* : ${jmn}
+┊ ▢ *ᴅᴀᴛᴇ* : ${calender}
+┊
+┊
+└──────────────────〄`
 						
 		    denz.sendMessage(mdata.id, masuk, MessageType.text, { quoted: fkontakk, thumbnail: fs.readFileSync('./denz.jpg'), contextInfo: { forwardingScore: 567308, isForwarded: true, externalAdReply:{title: `Welcome To ${mdata.subject}`,body:"",mediaType:"2",thumbnail:buff,mediaUrl:`https://youtu.be/25D3JT9lzNM`}}})
             //sendButLocation(mdata.id, `${masuk}`, `${uwu}𝙿 𝙴 𝙿 𝙴 右${uwu}`, {jpegThumbnail:buff}, [{buttonId:`Zmenu`,buttonText:{displayText:'HALLO'},type:1}], {contextInfo: { mentionedJid: [num]}})
