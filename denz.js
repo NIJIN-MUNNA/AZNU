@@ -1435,7 +1435,7 @@ anu = denz.prepareMessageFromContent(from,{
 					"productMessage": {
 						"product": {
 								"productImage": {
-								 "url": "https://telegra.ph/file/45d85333d21716b865d5f.jpg",
+								 "url": "https://mmg.whatsapp.net/d/f/Ahb4wGLv5WRRHNDjX0oscWGguHSUTuBXrBLUDCzO0_0Z.enc",
 						"mimetype": "image/jpeg",
 						"fileSha256": "LxreCgbGFLCuMD0STZaaTDsyHuNg/s06FHXg9vm+qmo=",
 						"fileLength": "109459",
