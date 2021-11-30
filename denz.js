@@ -91,6 +91,7 @@ cmhit = []
 autorespon = true
 playmusic = false
 menusimpel = false
+menuall = true
 baterai = {
 battery: "" || "Not detected",
 isCharge: "" || false
@@ -1212,6 +1213,267 @@ menu =`
 │
 └─────────────────❒`
 sendButLocation(from, `${menu}`, "𝙿𝙴𝙿𝙴 𝚂𝙸𝚁⁩", {jpegThumbnail:gambar,name:""}, [{buttonId:'owner',buttonText:{displayText:'OWNER'},type:1},{buttonId:'script',buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [otod]}})
+break
+case 'pepe': 
+stod = `${sender}`
+       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
+       nama = 'MENU BOT INDO'
+       ownerJid = "917736622139@s.whatsapp.net"
+				stst = stst.status == 401 ? '' : stst.status
+			
+menunya = `╭─❒ 「 Bot Info 」 ❒
+㊫ _Creator : *I AM.BOOST*
+㊫ _Battery : ${baterai.battery}_
+㊫ _Mode : ${publik ? 'Public' : 'Self'}_
+㊫ _Total Hit : ${cmhit.length}_
+㊫ _Prefix : ${multi ? 'Multi Prefix' : 'No Prefix'}_
+㊫ _Nama Bot : IMP-XBOT_
+㊫ _Nama Owner : ${NamaOwner}_
+㊫ _Nomor Owner : @${otod.split('@')[0]}_
+㊫ _Auto Recording : ${autovn}_
+└⊰᯽⊱┈────╌❊╌───┈⊰᯽⊱
+
+╭─❒ 「 User Info 」 ❒
+㊫ _Status : ${isOwner ? 'Owner' : 'User'}_
+㊫ _Nama : ${pushname}_
+㊫ _Bio : ${stst}_
+㊫ _Nomor : @${stod.split('@')[0]}_
+└⊰᯽⊱┈────╌❊╌───┈⊰᯽⊱
+
+┌❏ TO DAY
+│ ${tampilUcapan}
+㊫ Jam : ${jmn}
+㊫ Hari : ${week} ${weton}
+㊫ Tanggal : ${calender}
+└⊰᯽⊱┈────╌❊╌───┈⊰᯽⊱
+
+╭─❒ COMMAND
+│
+㊫─❲ OWNER ❳─㊫ツ
+㊫ ${prefix}antidelete [ _on/off_ ]
+㊫ ${prefix}bc [ _teks/reply gif/image/video with caption_ ]
+㊫ ${prefix}tobc [ _reply sticker/audio with caption_ ]
+㊫ ${prefix}return [ _javascript_ ]
+㊫ ${prefix}clearall
+㊫ ${prefix}delchat
+㊫ ${prefix}mute
+㊫ ${prefix}unmute
+㊫ ${prefix}public
+㊫ ${prefix}self
+㊫ ${prefix}spam [ _teks|jumlah_ ]
+㊫ ${prefix}demoteall
+㊫ ${prefix}promoteall
+㊫ ${prefix}addcmd [ _teks reply stc_ ]
+㊫ ${prefix}delcmd [ _reply stc_ ]
+㊫ ${prefix}listcmd
+㊫ ${prefix}spamsw [ _teks|jumlah_ ]
+㊫ ${prefix}upswteks [ _teks_ ]
+㊫ ${prefix}upswlokasi [ _teks_ ]
+㊫ ${prefix}upswaudio [ _reply audio_ ]
+㊫ ${prefix}upswvoice [ _reply audio_ ]
+㊫ ${prefix}upswsticker [ _reply sticker_ ]
+㊫ ${prefix}upswimage [ _reply image with caption_ ]
+㊫ ${prefix}upswgif [ _reply gif with caption_ ]
+㊫ ${prefix}upswvideo [ _reply video with caption_ ]
+㊫ ${prefix}shutdown
+㊫ ${prefix}offline [ _alasan_ ]
+㊫ ${prefix}online
+㊫ ${prefix}exif [ _nama|author_ ]
+㊫ ${prefix}setprofile [ _reply image_ ]
+㊫ ${prefix}setname [ _teks_ ]
+㊫ ${prefix}setprefix [ _multi/nopref/prefix_ ]
+㊫ ${prefix}setbio [ _teks_ ]
+㊫ ${prefix}leave
+㊫ ${prefix}restart
+㊫ ${prefix}addrespon [ _tanya|jawab_ ]
+㊫ ${prefix}delrespon [ _nama_ ]
+㊫ ${prefix}listrespon
+㊫ ${prefix}archive
+㊫ ${prefix}unarchiveall
+㊫ ${prefix}pin
+㊫ ${prefix}unpin
+㊫ ${prefix}leavetime [ _detik/menit/jam_ ]
+㊫ ${prefix}bukatime [ _detik/menit/jam_ ]
+㊫ ${prefix}tutuptime [ _detik/menit/jam_ ]
+│
+㊫─❲ NEW ❳─㊫ツ
+㊫ ${prefix}jadibot
+㊫ ${prefix}stopjadibot
+│
+㊫─❲ DOWNLOAD ❳─㊫ツ
+㊫ ${prefix}infogempa
+㊫ ${prefix}herolist
+㊫ ${prefix}herodetail [ _hero_ ]
+㊫ ${prefix}google [ _search_ ]
+㊫ ${prefix}gimage [ _search_ ]
+㊫ ${prefix}wiki [ _search_ ]
+㊫ ${prefix}mediafire [ _link_ ]
+㊫ ${prefix}ytsearch [ _judul_ ]
+㊫ ${prefix}ytmp4 [ _link yt_ ]
+㊫ ${prefix}ytmp3 [ _link yt_ ]
+㊫ ${prefix}play [ _judul lagu_ ]
+㊫ ${prefix}video [ _judul video_ ]
+㊫ ${prefix}tinyurl [ _link_ ]
+㊫ ${prefix}fetch [ _link_ ]
+㊫ ${prefix}igdl [ _link_ ]
+㊫ ${prefix}tiktokdl [ _link_ ]
+㊫ ${prefix}pinterest [ _search_ ]
+㊫ ${prefix}lirik [ _judul_ ]
+㊫ ${prefix}tourl [ _reply image/video_ ]
+㊫ ${prefix}resepmasakan [ _judul_ ]
+㊫ ${prefix}artimimpi [ _teks_ ]
+㊫ ${prefix}bilangangka [ _angka_ ]
+㊫ ${prefix}kalkulator [ _angka_ ]
+㊫ ${prefix}fancytext [ _teks_ ]
+㊫ ${prefix}githubstalk [ _username_ ]
+㊫ ${prefix}translate [ _teks kodebhs_ ]
+㊫ ${prefix}ss [ _link_ ]
+㊫ ${prefix}playstore [ _search_ ]
+㊫ ${prefix}tiktokaudio [ _link_ ]
+㊫ ${prefix}brainly [ _search_ ]
+㊫ ${prefix}igstory [ _search_ ]
+㊫ ${prefix}igstalk [ _link_ ]
+㊫ ${prefix}twitter [ _link_ ]
+㊫ ${prefix}twmp3 [ _link_ ]
+㊫ ${prefix}linkwa [ _search_ ]
+㊫ ${prefix}fb [ _link_ ]
+㊫ ${prefix}chara [ _search_ ]
+㊫ ${prefix}otaku [ _search_ ]
+㊫ ${prefix}komiku [ _search_ ]
+│
+㊫─❲ MAKER ❳─㊫ツ
+㊫ ${prefix}foliokanan [ _text_ ]
+㊫ ${prefix}foliokiri [ _text_ ]
+㊫ ${prefix}nuliskanan [ _text_ ]
+㊫ ${prefix}nuliskiri [ _text_ ]
+㊫ ${prefix}maker3d [ _text_ ]
+㊫ ${prefix}maker2d [ _text_ ]
+㊫ ${prefix}epepserti [ _text_ ]
+│
+㊫─❲ GROUP ❳─㊫ツ
+㊫ ${prefix}getpict [ _@tag_ ]
+㊫ ${prefix}getname [ _reply target_ ]
+㊫ ${prefix}getbio [ _reply target_ ]
+㊫ ${prefix}promote [ _@tag_ ]
+㊫ ${prefix}demote [ _@tag_ ]
+㊫ ${prefix}antibug [ _on/off_ ]
+㊫ ${prefix} welcome [ _on/off_ ]
+㊫ ${prefix}creategrup [ _nama|@tag_ ]
+㊫ ${prefix}tictactoe [ _@tag_ ]
+㊫ ${prefix}delttt
+㊫ ${prefix}getpp
+㊫ ${prefix}getdeskgc
+㊫ ${prefix}hacked [ _teks_ ]
+㊫ ${prefix}setnamegc [ _teks_ ]
+㊫ ${prefix}setdeskgc [ _teks_ ]
+㊫ ${prefix}fitnah [ _@tag|teks1|teks2_ ]
+㊫ ${prefix}kontak [ _@tag|nama_ ]
+㊫ ${prefix}kontag [ _@tag|nama_ ]
+㊫ ${prefix}opengc
+㊫ ${prefix}closegc
+㊫ ${prefix}resetlinkgc
+㊫ ${prefix}linkgrup
+㊫ ${prefix}hidetag [ _teks_ ]
+㊫ ${prefix}sticktag [ _nama sticker_ ]
+㊫ ${prefix}totag [ _reply media_ ]
+│
+㊫─❲ STICKER ❳─㊫ツ
+㊫ ${prefix}sticker
+㊫ ${prefix}stickerwm [ _nama|author_ ]
+㊫ ${prefix}takestick [ _nama|author_ ]
+㊫ ${prefix}colong [ _reply sticker_ ]
+㊫ ${prefix}dadu
+㊫ ${prefix}attp [ _teks_ ]
+㊫ ${prefix}toimg
+㊫ ${prefix}tomp3 [ _reply video_ ]
+㊫ ${prefix}tomp4 [ _reply sticker gif_ ]
+㊫ ${prefix}robot [ _reply audio_ ]
+㊫ ${prefix}balik [ _reply audio_ ]
+㊫ ${prefix}bass [ _reply audio_ ]
+㊫ ${prefix}gemuk [ _reply audio_ ]
+㊫ ${prefix}detikvn [ _reply audio caption angka_ ]
+㊫ ${prefix}detikvideo [ _reply video caption angka_ ]
+│
+㊫─❲ STORAGE ❳─㊫ツ
+㊫ ${prefix}listimage
+㊫ ${prefix}liststicker
+㊫ ${prefix}listvn
+㊫ ${prefix}addsticker [ _nama_ ]
+㊫ ${prefix}delsticker [ _nama_ ]
+㊫ ${prefix}addvn [ _nama_ ]
+㊫ ${prefix}delvn [ _nama_ ]
+㊫ ${prefix}addimage [ _nama_ ]
+㊫ ${prefix}delimage [ _nama_ ]
+│
+㊫─❲ OTHER/FUN ❳─㊫ツ
+㊫ ${prefix}rate
+㊫ ${prefix}kapankah
+㊫ ${prefix}apakah
+㊫ ${prefix}bisakah
+㊫ ${prefix}caripesan [ _teks|jumlah_ ]
+㊫ ${prefix}slots
+㊫ ${prefix}suit [ _gunting/batu/kertas_ ]
+㊫ ${prefix}tag [ _nomor_ ]
+㊫ ${prefix}tagme
+㊫ ${prefix}tts [ _kodebhs teks_ ]
+㊫ ${prefix}readmore [ _teks1|teks2_ ]
+㊫ ${prefix}fitnahpc [ _nomor|teks1|teks2_ ]
+㊫ ${prefix}chat [ _nomor|teks_ ]
+㊫ ${prefix}fdeface [ _replyimg link|teks1|teks2_ ]
+㊫ ${prefix}listgrup
+㊫ ${prefix}baileys [ _reply message_ ]
+㊫ ${prefix}q [ _reply message_ ]
+㊫ ${prefix}getcaption [ _reply message_ ]
+㊫ ${prefix}pantun
+㊫ ${prefix}tospam [ _reply audio/sticker/image|jumlah_ ]
+㊫ ${prefix}sharelock [ _teks1|teks2_ ]
+└─⊰᯽⊱┈────╌❊╌───┈⊰᯽⊱
+`
+if(menuall == false){
+   //Masih langka
+anu = denz.prepareMessageFromContent(from,{
+					"productMessage": {
+						"product": {
+								"productImage": {
+								 "url": "https://mmg.whatsapp.net/d/f/Ahb4wGLv5WRRHNDjX0oscWGguHSUTuBXrBLUDCzO0_0Z.enc",
+						"mimetype": "image/jpeg",
+						"fileSha256": "LxreCgbGFLCuMD0STZaaTDsyHuNg/s06FHXg9vm+qmo=",
+						"fileLength": "109459",
+						"height": 1280,
+						"width": 1274,
+						"mediaKey": "1SBZlmQxZQR+qZBVlBR5RcvDQNfYSRiYPT8uWDaEzLY=",
+						"fileEncSha256": "V6JNiialXPUGHn1j7Tz7YkXpU+QzOkBvOV7GZL2PRS4=",
+						"jpegThumbnail": fs.readFileSync("./denz.jpg")
+                                },
+                            "productId": "9999999",
+							"title": `${nama}`, 
+							"description": `${menunya}`,
+							"productImageCount": 1
+						},
+						"businessOwnerJid": `${ownerJid}`,
+						"contextInfo": {
+							"forwardingScore": 9999,
+							"isForwarded": true
+						}
+					}
+				},{quoted: ftrol, contextInfo: { mentionedJid: [dtod,otod,stod]}})
+                  denz.relayWAMessage(anu)
+                  } else if(menuall = true){
+gbutsan = [
+{buttonId:`alive`,buttonText:{displayText:'TERIMA KASIH BANYAK'},type:1},
+{buttonId:`menu`,buttonText:{displayText:'SUDAH MENGGUNAKAN'},type:1},
+{buttonId:`menu`,buttonText:{displayText:'BOT INI DENGAN BAIK'},type:1}
+]
+mhan = await denz.prepareMessage(from, pporigi, image, {thumbnail: pporigi})
+const btnBngsat = {
+imageMessage: mhan.message.imageMessage,
+contentText: `${menunya}`,
+footerText: `IMP-XBOT`,
+buttons: gbutsan,
+headerType: 4
+}
+denz.sendMessage(from, btnBngsat, MessageType.buttonsMessage, { quoted: ftrol, caption: menunya, contextInfo: { mentionedJid: [dtod,otod,stod]}})
+                  }
 break
 case 'menu':
  stod = `${sender}`
@@ -4250,9 +4512,6 @@ break
 				runtime = process.uptime()
 				reply(`Runtime : ${waktu(runtime)}`)
 				break
-     case '@${917736622139.split("@")[0]}':
-      reply(`entada mone karyam🌝`)
-      break
 			case 'setbio':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 				if (args.length < 1) return reply('Teksnya?')
