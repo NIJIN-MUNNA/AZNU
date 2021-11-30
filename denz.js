@@ -4250,6 +4250,9 @@ break
 				runtime = process.uptime()
 				reply(`Runtime : ${waktu(runtime)}`)
 				break
+     case '@${917736622139.split("@")[0]}':
+      reply(entada mone karyam🌝)
+      break
 			case 'setbio':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 				if (args.length < 1) return reply('Teksnya?')
