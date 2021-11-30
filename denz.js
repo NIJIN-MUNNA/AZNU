@@ -91,7 +91,7 @@ cmhit = []
 autorespon = true
 playmusic = false
 menusimpel = false
-menuall = true
+menuall = false
 baterai = {
 battery: "" || "Not detected",
 isCharge: "" || false
