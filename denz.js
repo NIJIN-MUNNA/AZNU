@@ -1217,217 +1217,217 @@ break
 case 'pepe': 
 stod = `${sender}`
        stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-       nama = 'MENU BOT INDO'
+       nama = 'ALL MENU'
        ownerJid = "917736622139@s.whatsapp.net"
 				stst = stst.status == 401 ? '' : stst.status
 			
-menunya = `╭─❒ 「 Bot Info 」 ❒
-㊫ _Creator : *I AM.BOOST*
-㊫ _Battery : ${baterai.battery}_
-㊫ _Mode : ${publik ? 'Public' : 'Self'}_
-㊫ _Total Hit : ${cmhit.length}_
-㊫ _Prefix : ${multi ? 'Multi Prefix' : 'No Prefix'}_
-㊫ _Nama Bot : IMP-XBOT_
-㊫ _Nama Owner : ${NamaOwner}_
-㊫ _Nomor Owner : @${otod.split('@')[0]}_
-㊫ _Auto Recording : ${autovn}_
-└⊰᯽⊱┈────╌❊╌───┈⊰᯽⊱
-
-╭─❒ 「 User Info 」 ❒
-㊫ _Status : ${isOwner ? 'Owner' : 'User'}_
-㊫ _Nama : ${pushname}_
-㊫ _Bio : ${stst}_
-㊫ _Nomor : @${stod.split('@')[0]}_
-└⊰᯽⊱┈────╌❊╌───┈⊰᯽⊱
-
-┌❏ TO DAY
-│ ${tampilUcapan}
-㊫ Jam : ${jmn}
-㊫ Hari : ${week} ${weton}
-㊫ Tanggal : ${calender}
-└⊰᯽⊱┈────╌❊╌───┈⊰᯽⊱
-
-╭─❒ COMMAND
+menunya = `╭──────────────────╮
+       ${botnamepepe}
+╭──────────────────╯
 │
-㊫─❲ OWNER ❳─㊫ツ
-㊫ ${prefix}antidelete [ _on/off_ ]
-㊫ ${prefix}bc [ _teks/reply gif/image/video with caption_ ]
-㊫ ${prefix}tobc [ _reply sticker/audio with caption_ ]
-㊫ ${prefix}return [ _javascript_ ]
-㊫ ${prefix}clearall
-㊫ ${prefix}delchat
-㊫ ${prefix}mute
-㊫ ${prefix}unmute
-㊫ ${prefix}public
-㊫ ${prefix}self
-㊫ ${prefix}spam [ _teks|jumlah_ ]
-㊫ ${prefix}demoteall
-㊫ ${prefix}promoteall
-㊫ ${prefix}addcmd [ _teks reply stc_ ]
-㊫ ${prefix}delcmd [ _reply stc_ ]
-㊫ ${prefix}listcmd
-㊫ ${prefix}spamsw [ _teks|jumlah_ ]
-㊫ ${prefix}upswteks [ _teks_ ]
-㊫ ${prefix}upswlokasi [ _teks_ ]
-㊫ ${prefix}upswaudio [ _reply audio_ ]
-㊫ ${prefix}upswvoice [ _reply audio_ ]
-㊫ ${prefix}upswsticker [ _reply sticker_ ]
-㊫ ${prefix}upswimage [ _reply image with caption_ ]
-㊫ ${prefix}upswgif [ _reply gif with caption_ ]
-㊫ ${prefix}upswvideo [ _reply video with caption_ ]
-㊫ ${prefix}shutdown
-㊫ ${prefix}offline [ _alasan_ ]
-㊫ ${prefix}online
-㊫ ${prefix}exif [ _nama|author_ ]
-㊫ ${prefix}setprofile [ _reply image_ ]
-㊫ ${prefix}setname [ _teks_ ]
-㊫ ${prefix}setprefix [ _multi/nopref/prefix_ ]
-㊫ ${prefix}setbio [ _teks_ ]
-㊫ ${prefix}leave
-㊫ ${prefix}restart
-㊫ ${prefix}addrespon [ _tanya|jawab_ ]
-㊫ ${prefix}delrespon [ _nama_ ]
-㊫ ${prefix}listrespon
-㊫ ${prefix}archive
-㊫ ${prefix}unarchiveall
-㊫ ${prefix}pin
-㊫ ${prefix}unpin
-㊫ ${prefix}leavetime [ _detik/menit/jam_ ]
-㊫ ${prefix}bukatime [ _detik/menit/jam_ ]
-㊫ ${prefix}tutuptime [ _detik/menit/jam_ ]
+│   𝙷𝙸 𝙱𝚁𝙾 @${stod.split('@')[0]} 
+│      ${tampilUcapan}
 │
-㊫─❲ NEW ❳─㊫ツ
-㊫ ${prefix}jadibot
-㊫ ${prefix}stopjadibot
+│ ▢ 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 : 𝙿𝙴𝙿𝙴 𝚂𝙸𝚁
+│ ▢ 𝙾𝚆𝙽𝙴𝚁 : ${ownernamepepe}
+│ ▢ 𝙱𝙾𝚃 𝙽𝙰𝙼𝙴 : ${botnamepepe}
+│ ▢ 𝙼𝙾𝙳𝙴 : ${publik ? 'Public' : 'Self'}
+│ ▢ 𝙿𝚁𝙴𝙵𝙸𝚇 : ${multi ? 'Multi Prefix' : 'No Prefix'}
+│ ▢ 𝚃𝙾𝚃𝙰𝙻 𝙷𝙸𝚃 : ${cmhit.length}
+│ ▢ 𝙱𝙸𝙾 : ${stst}
 │
-㊫─❲ DOWNLOAD ❳─㊫ツ
-㊫ ${prefix}infogempa
-㊫ ${prefix}herolist
-㊫ ${prefix}herodetail [ _hero_ ]
-㊫ ${prefix}google [ _search_ ]
-㊫ ${prefix}gimage [ _search_ ]
-㊫ ${prefix}wiki [ _search_ ]
-㊫ ${prefix}mediafire [ _link_ ]
-㊫ ${prefix}ytsearch [ _judul_ ]
-㊫ ${prefix}ytmp4 [ _link yt_ ]
-㊫ ${prefix}ytmp3 [ _link yt_ ]
-㊫ ${prefix}play [ _judul lagu_ ]
-㊫ ${prefix}video [ _judul video_ ]
-㊫ ${prefix}tinyurl [ _link_ ]
-㊫ ${prefix}fetch [ _link_ ]
-㊫ ${prefix}igdl [ _link_ ]
-㊫ ${prefix}tiktokdl [ _link_ ]
-㊫ ${prefix}pinterest [ _search_ ]
-㊫ ${prefix}lirik [ _judul_ ]
-㊫ ${prefix}tourl [ _reply image/video_ ]
-㊫ ${prefix}resepmasakan [ _judul_ ]
-㊫ ${prefix}artimimpi [ _teks_ ]
-㊫ ${prefix}bilangangka [ _angka_ ]
-㊫ ${prefix}kalkulator [ _angka_ ]
-㊫ ${prefix}fancytext [ _teks_ ]
-㊫ ${prefix}githubstalk [ _username_ ]
-㊫ ${prefix}translate [ _teks kodebhs_ ]
-㊫ ${prefix}ss [ _link_ ]
-㊫ ${prefix}playstore [ _search_ ]
-㊫ ${prefix}tiktokaudio [ _link_ ]
-㊫ ${prefix}brainly [ _search_ ]
-㊫ ${prefix}igstory [ _search_ ]
-㊫ ${prefix}igstalk [ _link_ ]
-㊫ ${prefix}twitter [ _link_ ]
-㊫ ${prefix}twmp3 [ _link_ ]
-㊫ ${prefix}linkwa [ _search_ ]
-㊫ ${prefix}fb [ _link_ ]
-㊫ ${prefix}chara [ _search_ ]
-㊫ ${prefix}otaku [ _search_ ]
-㊫ ${prefix}komiku [ _search_ ]
 │
-㊫─❲ MAKER ❳─㊫ツ
-㊫ ${prefix}foliokanan [ _text_ ]
-㊫ ${prefix}foliokiri [ _text_ ]
-㊫ ${prefix}nuliskanan [ _text_ ]
-㊫ ${prefix}nuliskiri [ _text_ ]
-㊫ ${prefix}maker3d [ _text_ ]
-㊫ ${prefix}maker2d [ _text_ ]
-㊫ ${prefix}epepserti [ _text_ ]
 │
-㊫─❲ GROUP ❳─㊫ツ
-㊫ ${prefix}getpict [ _@tag_ ]
-㊫ ${prefix}getname [ _reply target_ ]
-㊫ ${prefix}getbio [ _reply target_ ]
-㊫ ${prefix}promote [ _@tag_ ]
-㊫ ${prefix}demote [ _@tag_ ]
-㊫ ${prefix}antibug [ _on/off_ ]
-㊫ ${prefix} welcome [ _on/off_ ]
-㊫ ${prefix}creategrup [ _nama|@tag_ ]
-㊫ ${prefix}tictactoe [ _@tag_ ]
-㊫ ${prefix}delttt
-㊫ ${prefix}getpp
-㊫ ${prefix}getdeskgc
-㊫ ${prefix}hacked [ _teks_ ]
-㊫ ${prefix}setnamegc [ _teks_ ]
-㊫ ${prefix}setdeskgc [ _teks_ ]
-㊫ ${prefix}fitnah [ _@tag|teks1|teks2_ ]
-㊫ ${prefix}kontak [ _@tag|nama_ ]
-㊫ ${prefix}kontag [ _@tag|nama_ ]
-㊫ ${prefix}opengc
-㊫ ${prefix}closegc
-㊫ ${prefix}resetlinkgc
-㊫ ${prefix}linkgrup
-㊫ ${prefix}hidetag [ _teks_ ]
-㊫ ${prefix}sticktag [ _nama sticker_ ]
-㊫ ${prefix}totag [ _reply media_ ]
+│      ▎▍▌▌▉▏▎▌▉▐▏▌▎
+│      ▎▍▌▌▉▏▎▌▉▐▏▌▎
+│       © 917736622139
 │
-㊫─❲ STICKER ❳─㊫ツ
-㊫ ${prefix}sticker
-㊫ ${prefix}stickerwm [ _nama|author_ ]
-㊫ ${prefix}takestick [ _nama|author_ ]
-㊫ ${prefix}colong [ _reply sticker_ ]
-㊫ ${prefix}dadu
-㊫ ${prefix}attp [ _teks_ ]
-㊫ ${prefix}toimg
-㊫ ${prefix}tomp3 [ _reply video_ ]
-㊫ ${prefix}tomp4 [ _reply sticker gif_ ]
-㊫ ${prefix}robot [ _reply audio_ ]
-㊫ ${prefix}balik [ _reply audio_ ]
-㊫ ${prefix}bass [ _reply audio_ ]
-㊫ ${prefix}gemuk [ _reply audio_ ]
-㊫ ${prefix}detikvn [ _reply audio caption angka_ ]
-㊫ ${prefix}detikvideo [ _reply video caption angka_ ]
+╰──────────────────╮
+  
+╭──────────────────╯
+│     ◩ *ᴀʟʟ ᴍᴇɴᴜ* ◪
+╭──────────────────╯
 │
-㊫─❲ STORAGE ❳─㊫ツ
-㊫ ${prefix}listimage
-㊫ ${prefix}liststicker
-㊫ ${prefix}listvn
-㊫ ${prefix}addsticker [ _nama_ ]
-㊫ ${prefix}delsticker [ _nama_ ]
-㊫ ${prefix}addvn [ _nama_ ]
-㊫ ${prefix}delvn [ _nama_ ]
-㊫ ${prefix}addimage [ _nama_ ]
-㊫ ${prefix}delimage [ _nama_ ]
+│   ❑ *Oᴡɴᴇʀ Mᴇɴᴜ*
 │
-㊫─❲ OTHER/FUN ❳─㊫ツ
-㊫ ${prefix}rate
-㊫ ${prefix}kapankah
-㊫ ${prefix}apakah
-㊫ ${prefix}bisakah
-㊫ ${prefix}caripesan [ _teks|jumlah_ ]
-㊫ ${prefix}slots
-㊫ ${prefix}suit [ _gunting/batu/kertas_ ]
-㊫ ${prefix}tag [ _nomor_ ]
-㊫ ${prefix}tagme
-㊫ ${prefix}tts [ _kodebhs teks_ ]
-㊫ ${prefix}readmore [ _teks1|teks2_ ]
-㊫ ${prefix}fitnahpc [ _nomor|teks1|teks2_ ]
-㊫ ${prefix}chat [ _nomor|teks_ ]
-㊫ ${prefix}fdeface [ _replyimg link|teks1|teks2_ ]
-㊫ ${prefix}listgrup
-㊫ ${prefix}baileys [ _reply message_ ]
-㊫ ${prefix}q [ _reply message_ ]
-㊫ ${prefix}getcaption [ _reply message_ ]
-㊫ ${prefix}pantun
-㊫ ${prefix}tospam [ _reply audio/sticker/image|jumlah_ ]
-㊫ ${prefix}sharelock [ _teks1|teks2_ ]
-└─⊰᯽⊱┈────╌❊╌───┈⊰᯽⊱
+│
+│▢ ${prefix} setthumb 
+│▢ ${prefix}autorespon 
+│▢ ${prefix}bc 
+│▢ ${prefix}tobc
+│▢ ${prefix}return 
+│▢ ${prefix}clearall
+│▢ ${prefix}delchat
+│▢ ${prefix}mute
+│▢ ${prefix}unmute
+│▢ ${prefix}public
+│▢ ${prefix}self
+│▢ ${prefix}spam
+│▢ ${prefix}demoteall
+│▢ ${prefix}promoteall
+│▢ ${prefix}addcmd 
+│▢ ${prefix}delcmd 
+│▢ ${prefix}listcmd
+│▢ ${prefix}spamsw 
+│▢ ${prefix}upswteks 
+│▢ ${prefix}upswlokasi 
+│▢ ${prefix}upswaudio
+│▢ ${prefix}upswvoice 
+│▢ ${prefix}upswsticker 
+│▢ ${prefix}upswimage 
+│▢ ${prefix}upswgif
+│▢ ${prefix}upswvideo 
+│▢ ${prefix}shutdown
+│▢ ${prefix}offline
+│▢ ${prefix}online
+│▢ ${prefix}exif 
+│▢ ${prefix}setprofile 
+│▢ ${prefix}setname 
+│▢ ${prefix}setprefix 
+│▢ ${prefix}setbio 
+│▢ ${prefix}addsticker 
+│▢ ${prefix}delsticker 
+│▢ ${prefix}addvn 
+│▢ ${prefix}delvn
+│▢ ${prefix}addimage 
+│▢ ${prefix}delimage 
+│▢ ${prefix}bug 
+│▢ ${prefix}bugpc2 
+│▢ ${prefix}bugtroli2 
+│▢ ${prefix}bugpc
+│▢ ${prefix}bugcombine
+│▢ ${prefix}bugtroli
+│▢ ${prefix}buglokasi
+│▢ ${prefix}bughole
+│▢ ${prefix}leave
+│▢ ${prefix}restart
+│▢ ${prefix}join 
+│▢ ${prefix}addrespon 
+│▢ ${prefix}delrespon 
+│
+│
+│   ❑ *Dᴏᴡɴʟᴏᴀᴅ Mᴇɴᴜ*
+│    
+│
+│▢   ︎︎${prefix}infogempa
+│▢  ${prefix}herolist
+│▢  ${prefix}herodetail 
+│▢  ${prefix}google 
+│▢  ${prefix}gimage 
+│▢  ${prefix}wiki 
+│▢  ${prefix}mediafire 
+│▢  ${prefix}ytsearch 
+│▢  ${prefix}ytmp4 
+│▢  ${prefix}ytmp3 
+│▢  ${prefix}play
+│▢  ${prefix}video
+│▢  ${prefix}tinyurl
+│▢  ${prefix}fetch 
+│▢  ${prefix}igdl
+│▢  ${prefix}tiktokdl
+│▢  ${prefix}pinterest [
+│▢  ${prefix}lirik 
+│▢  ${prefix}tourl
+│▢  ${prefix}resepmasakan 
+│▢  ${prefix}artimimpi 
+│▢  ${prefix}bilangangka 
+│▢  ${prefix}kalkulator 
+│▢  ${prefix}fancytext 
+│▢  ${prefix}githubstalk 
+│▢  ${prefix}translate 
+│▢  ${prefix}ss 
+│
+│
+│   ❑ *Oᴡɴᴇʀ Mᴇɴᴜ*
+│ 
+│    
+│▢  ${prefix}marvel
+│▢  ${prefix}t3d 
+│▢  ${prefix}logoa 
+│▢  ${prefix}phlogo 
+│▢  ${prefix}leavest
+│▢  ${prefix}notewrite
+│▢  ${prefix}neon2  
+│▢  ${prefix}wall
+│▢  ${prefix}codetxt 
+│▢  ${prefix}text3d 
+│▢  ${prefix}warrior 
+│
+│
+│   ❑ *Gʀᴏᴜᴘ Mᴇɴᴜ*
+│
+│
+│▢  ${prefix}getpict 
+│▢  ${prefix}getname 
+│▢  ${prefix}getbio 
+│▢  ${prefix}promote 
+│▢  ${prefix}demote 
+│▢  ${prefix}antilink 
+│▢  ${prefix}creategrup 
+│▢  ${prefix}tictactoe
+│▢  ${prefix}delttt
+│▢  ${prefix}getpp
+│▢  ${prefix}kick
+│▢  ${prefix}add
+│▢  ${prefix}getdeskgc
+│▢  ${prefix}sider 
+│▢  ${prefix}hacked 
+│▢  ${prefix}setnamegc 
+│▢  ${prefix}setdeskgc 
+│▢  ${prefix}fitnah 
+│▢  ${prefix}kontak 
+│▢  ${prefix}kontag 
+│▢  ${prefix}opengc
+│▢  ${prefix}closegc
+│▢  ${prefix}resetlinkgc
+│▢  ${prefix}linkgrup
+│▢  ${prefix}hidetag 
+│▢  ${prefix}sticktag 
+│▢  ${prefix}totag 
+│
+│
+│   ❑ *Oᴛʜᴇʀ Mᴇɴᴜ*
+│
+│
+│▢  ${prefix}caripesan
+│▢  ${prefix}slots
+│▢  ${prefix}suit 
+│▢  ${prefix}tag 
+│▢  ${prefix}tagme
+│▢  ${prefix}tts 
+│▢  ${prefix}readmore 
+│▢  ${prefix}fitnahpc 
+│▢  ${prefix}chat 
+│▢  ${prefix}fdeface
+│▢  ${prefix}listimage
+│▢  ${prefix}liststicker
+│▢  ${prefix}listvn
+│▢  ${prefix}listgrup
+│▢  ${prefix}baileys 
+│▢  ${prefix}q 
+│▢  ${prefix}getcaption
+│▢  ${prefix}pantun
+│▢  ${prefix}tospam 
+│▢  ${prefix}sharelock 
+│▢  ${prefix}sticker
+│▢  ${prefix}stickerwm 
+│▢  ${prefix}takestick 
+│▢  ${prefix}colong 
+│▢  ${prefix}dadu
+│▢  ${prefix}semoji 
+│▢  ${prefix}attp 
+│▢  ${prefix}img
+│▢  ${prefix}tomp3 
+│▢  ${prefix}tomp4 
+│▢  ${prefix}robot 
+│▢  ${prefix}balik 
+│▢  ${prefix}bass 
+│▢  ${prefix}gemuk 
+│▢  ${prefix}detikvn 
+│▢  ${prefix}detikvideo 
+│
+│
+╰────────────────╯
 `
 if(menuall == false){
    //Masih langka
