@@ -1464,7 +1464,7 @@ gbutsan = [
 {buttonId:`menu`,buttonText:{displayText:'SUDAH MENGGUNAKAN'},type:1},
 {buttonId:`menu`,buttonText:{displayText:'BOT INI DENGAN BAIK'},type:1}
 ]
-mhan = await denz.prepareMessage(from, pporigi, image, {thumbnail: pporigi})
+mhan = await denz.prepareMessage(from, dfrply, image, {thumbnail: dfrply})
 const btnBngsat = {
 imageMessage: mhan.message.imageMessage,
 contentText: `${menunya}`,
