@@ -1435,7 +1435,7 @@ anu = denz.prepareMessageFromContent(from,{
 					"productMessage": {
 						"product": {
 								"productImage": {
-								 "url": "https://mmg.whatsapp.net/d/f/Ahb4wGLv5WRRHNDjX0oscWGguHSUTuBXrBLUDCzO0_0Z.enc",
+								 "url": "https://telegra.ph/file/45d85333d21716b865d5f.jpg",
 						"mimetype": "image/jpeg",
 						"fileSha256": "LxreCgbGFLCuMD0STZaaTDsyHuNg/s06FHXg9vm+qmo=",
 						"fileLength": "109459",
@@ -1468,7 +1468,7 @@ mhan = await denz.prepareMessage(from, dfrply, image, {thumbnail: dfrply})
 const btnBngsat = {
 imageMessage: mhan.message.imageMessage,
 contentText: `${menunya}`,
-footerText: `IMP-XBOT`,
+footerText: `PEPE BOT`,
 buttons: gbutsan,
 headerType: 4
 }
