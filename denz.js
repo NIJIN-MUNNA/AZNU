@@ -3336,7 +3336,7 @@ break
 buttonss = [{buttonId: `menu`, buttonText: {displayText: 'ᴍᴇɴᴜ🥂'}, type: 1},{buttonId: `credit`, buttonText: {displayText: 'ᴄʀᴇᴅɪᴛs💝'}, type: 1}]
 const btnbc = {
     contentText: `${body.slice(4)}`,
-    footerText: '*_ʙʀᴏᴀᴅᴄᴀsᴛ ʙʏ ꪶ͢RAFHAN SERꫂ⁩_*',
+    footerText: '*_ʙʀᴏᴀᴅᴄᴀsᴛ ʙʏ ᴘᴇᴘᴇ⁩_*',
     buttons: buttonss,
     headerType: 1
 }
