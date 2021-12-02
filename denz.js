@@ -259,6 +259,10 @@ try {
 		cmhit.push(command)
         mess = {
 			wait: '𝚆𝙰𝙸𝚃💖',
+			mp3pepe: 'ㅤ *Ѕᴇᴀʀᴄʜɪɴɢ ѕᴏɴɢ*  ♪  ⎙
+
+*0:35 ━━●───────── -5:33*
+ㅤ  ⇆      ◁ㅤ ❚❚ㅤ ▷      ↻*'
 			success: '𝚂𝚄𝙲𝙲𝚄𝚂𝚂✔',
 			error: {
 				stick: '𝙲𝙰𝙽𝙽𝙾𝚃 𝙰𝙲𝙲𝙴𝚂𝚂 𝚅𝙸𝙳𝙴𝙾☚',
@@ -4226,13 +4230,14 @@ break
 						let isLinks = args[0].match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/)
 						if (!isLinks) return reply(mess.error.Iv)
 						try {
-							reply(mess.wait)
+							reply(mess.mp3pepe)
 							yta(args[0])
 							.then((res) => {
 								const { dl_link, thumb, title, filesizeF, filesize } = res
 								axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
 								.then((a) => {
-								if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `❏ *𝚈𝚃𝚖𝚙3*\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP3\n*Filesize* : ${filesizeF}\n*𝙻𝙸𝙽𝙺* : ${a.data}\n\n_Sorry the duration exceeds the maximum limit, please click the link above_`)
+								if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `𓊈𒆜 *𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶* 𒆜𓊉 
+ㅤ       *ѕᴏɴɢ* ☟︎︎︎\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP3\n*Filesize* : ${filesizeF}\n*𝙻𝙸𝙽𝙺* : ${a.data}\n\n_Sorry the duration exceeds the maximum limit, please click the link above_`)
 								const captions = `❏ *𝚈𝚃𝚖𝚙3*\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP3\n❏ *𝚂𝙸𝚉𝙴* : ${filesizeF}\n❏ *𝚂𝙴𝚁𝚅𝙴𝚁* : 𝚈𝚃𝙼𝙿3 , 𝚆𝙰𝙸𝚃 𝙰 𝙼𝙸𝙽𝚄𝚃𝙴_`
 								sendMediaURL(from, thumb, captions)
 								sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
@@ -4478,19 +4483,6 @@ Link : ${get_resultP.url_audio}
 						})
 					}
 					break
-case 'toimg':
-if (!isQuotedSticker) return reply(' reply to a sticker')
-encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
-media = await zeroyt7.downloadAndSaveMediaMessage(encmedia, './database/media_user')
-ran = getRandom('.png')
-exec(`ffmpeg -i ${media} ${ran}`, (err) => {
-fs.unlinkSync(media)
-if (err) return reply(' Gagal, pada saat mengkonversi sticker ke gambar ')
-buffer = fs.readFileSync(ran)
-costum(buffer, image, Verived, `Subscribe Yt PEPE SIR`)
-fs.unlinkSync(ran)
-})
-break
 				case 'ss':
 				reply(mess.wait)
 					sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/ssweb?url=${args[0]}&apikey=${HunterApi}`)
