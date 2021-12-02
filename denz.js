@@ -259,7 +259,6 @@ try {
 		cmhit.push(command)
         mess = {
 			wait: '𝚆𝙰𝙸𝚃💖',
-			mp3pepe: 'ㅤ *Ѕᴇᴀʀᴄʜɪɴɢ ѕᴏɴɢ*  ♪  ⎙\n*0:35 ━━●───────── -5:33*\nㅤ  ⇆      ◁ㅤ ❚❚ㅤ ▷      ↻*'
 			success: '𝚂𝚄𝙲𝙲𝚄𝚂𝚂✔',
 			error: {
 				stick: '𝙲𝙰𝙽𝙽𝙾𝚃 𝙰𝙲𝙲𝙴𝚂𝚂 𝚅𝙸𝙳𝙴𝙾☚',
@@ -4227,7 +4226,7 @@ break
 						let isLinks = args[0].match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/)
 						if (!isLinks) return reply(mess.error.Iv)
 						try {
-							reply(mess.mp3pepe)
+							reply(mess.wait)
 							yta(args[0])
 							.then((res) => {
 								const { dl_link, thumb, title, filesizeF, filesize } = res
