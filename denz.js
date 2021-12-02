@@ -1029,6 +1029,7 @@ menu =`
 │
 │
 │▢ ${prefix}setthumb 
+│▢ ${prefix}setmenu
 │▢ ${prefix}autovn
 │▢ ${prefix}autotype
 │▢ ${prefix}autorespon 
@@ -1089,7 +1090,7 @@ menu =`
 │   ❑ *Dᴏᴡɴʟᴏᴀᴅ Mᴇɴᴜ*
 │    
 │
-│▢   ︎︎${prefix}infogempa
+│▢  ︎︎${prefix}infogempa
 │▢  ${prefix}herolist
 │▢  ${prefix}herodetail 
 │▢  ${prefix}google 
@@ -1255,6 +1256,7 @@ menunya = `╭──────────────────╮
 │
 │
 │▢ ${prefix}setthumb 
+│▢ ${prefix}setmenu
 │▢ ${prefix}autovn
 │▢ ${prefix}autotype
 │▢ ${prefix}autorespon 
@@ -1484,7 +1486,7 @@ break
 case 'help':
 case 'menu':
 if(menusimpel == false){   
-				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)   
+	 
  stod = `${sender}`
  listMsg = {
  buttonText: '𝙻𝙸𝚂𝚃 𝙼𝙴𝙽𝚄⁩',
@@ -1562,17 +1564,18 @@ denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mention
 }
 else if(menusimpel = true){
 
-				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
+	
 gambar = fs.readFileSync('./denz.jpg')
 
 	teksnya = `╭───────────────𒆜
 	
-|  *ᴍᴇɴᴜ ꪶ͢ᴘᴇᴘᴇ-sᴇʀꫂ⁩ 🥂*
+|   *Oᴡɴᴇʀ Mᴇɴᴜ*
 
 ╰───────────────𒈒
-
+    
 ╭───────────────𒆜
 │▢ ${prefix}setthumb 
+│▢ ${prefix}setmenu
 │▢ ${prefix}autovn
 │▢ ${prefix}autotype
 │▢ ${prefix}autorespon 
@@ -1636,9 +1639,9 @@ teks =
 
 but = [
 
-          { buttonId: `menu`, buttonText: { displayText: 'ᴍᴇɴᴜ' }, type: 1 },
+          { buttonId: `owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 },
 
-          { buttonId: `owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 }
+          { buttonId: `downloadmenu2`, buttonText: { displayText: '☞︎︎︎ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ' }, type: 1 }
 
         ]
 
@@ -1665,6 +1668,219 @@ const bttnasu = {
 await denz.sendMessage(from, bttnasu, MessageType.buttonsMessage, {quoted: ftrol})
 					}
 break
+case 'downloadmenu2':
+
+	gambar = fs.readFileSync('./denz.jpg')
+
+	teksnya = `╭───────────────𒆜
+	
+|   *Dᴏᴡɴʟᴏᴀᴅ Mᴇɴᴜ*
+
+╰───────────────𒈒
+    
+╭───────────────𒆜
+│▢  ︎︎${prefix}infogempa
+│▢  ${prefix}herolist
+│▢  ${prefix}herodetail 
+│▢  ${prefix}google 
+│▢  ${prefix}gimage 
+│▢  ${prefix}wiki 
+│▢  ${prefix}mediafire 
+│▢  ${prefix}ytsearch 
+│▢  ${prefix}ytmp4 
+│▢  ${prefix}ytmp3 
+│▢  ${prefix}play
+│▢  ${prefix}video
+│▢  ${prefix}tinyurl
+│▢  ${prefix}fetch 
+│▢  ${prefix}igdl
+│▢  ${prefix}tiktokdl
+│▢  ${prefix}pinterest [
+│▢  ${prefix}lirik 
+│▢  ${prefix}tourl
+│▢  ${prefix}resepmasakan 
+│▢  ${prefix}artimimpi 
+│▢  ${prefix}bilangangka 
+│▢  ${prefix}kalkulator 
+│▢  ${prefix}fancytext 
+│▢  ${prefix}githubstalk 
+│▢  ${prefix}translate 
+│▢  ${prefix}ss  
+╰───────────────𒈒`
+
+teks =
+
+`ᴀɴᴛʜᴀᴅᴀ ғᴇᴀʀ ᴀʏᴏ ɴᴇᴇʏ 🥂`
+
+but = [
+
+          { buttonId: `menu`, buttonText: { displayText: '☜︎︎︎ ᴏᴡɴᴇʀ ᴍᴇɴᴜ' }, type: 1 },
+
+          { buttonId: `groupmenu2`, buttonText: { displayText: 'ɢʀᴏᴜᴘ ᴍᴇɴᴜ ☞︎︎︎' }, type: 1 }
+
+        ]
+
+        sendButLocation(from, teksnya, teks, gambar, but)
+
+break
+case 'groupmenu2':
+
+	gambar = fs.readFileSync('./denz.jpg')
+
+	teksnya = `╭───────────────𒆜
+	
+|   *Gʀᴏᴜᴘ Mᴇɴᴜ*
+
+╰───────────────𒈒
+    
+╭───────────────𒆜
+│▢  ${prefix}getpict 
+│▢  ${prefix}getname 
+│▢  ${prefix}getbio 
+│▢  ${prefix}promote 
+│▢  ${prefix}demote 
+│▢  ${prefix}antilink 
+│▢  ${prefix}creategrup 
+│▢  ${prefix}tictactoe
+│▢  ${prefix}delttt
+│▢  ${prefix}getpp
+│▢  ${prefix}kick
+│▢  ${prefix}add
+│▢  ${prefix}getdeskgc
+│▢  ${prefix}sider 
+│▢  ${prefix}hacked 
+│▢  ${prefix}setnamegc 
+│▢  ${prefix}setdeskgc 
+│▢  ${prefix}fitnah 
+│▢  ${prefix}kontak 
+│▢  ${prefix}kontag 
+│▢  ${prefix}opengc
+│▢  ${prefix}closegc
+│▢  ${prefix}resetlinkgc
+│▢  ${prefix}linkgrup
+│▢  ${prefix}hidetag 
+│▢  ${prefix}sticktag 
+│▢  ${prefix}totag 
+╰───────────────𒈒`
+
+teks =
+
+`ᴀɴᴛʜᴀᴅᴀ ғᴇᴀʀ ᴀʏᴏ ɴᴇᴇʏ 🥂`
+
+but = [
+
+          { buttonId: `downloadmenu2`, buttonText: { displayText: '☜︎︎︎ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ' }, type: 1 },
+
+          { buttonId: `makermenu2`, buttonText: { displayText: 'ʟᴏɢᴏ ᴍᴀᴋᴇʀ ᴍᴇɴᴜ ☞︎︎︎' }, type: 1 }
+
+        ]
+
+        sendButLocation(from, teksnya, teks, gambar, but)
+
+break
+case 'makermenu2':
+
+	gambar = fs.readFileSync('./denz.jpg')
+
+	teksnya = `╭───────────────𒆜
+	
+|   *Lᴏɢᴏ Mᴀᴋᴇʀ Mᴇɴᴜ*
+
+╰───────────────𒈒
+    
+╭───────────────𒆜
+│▢  ${prefix}marvel
+│▢  ${prefix}t3d 
+│▢  ${prefix}logoa 
+│▢  ${prefix}phlogo 
+│▢  ${prefix}leavest
+│▢  ${prefix}notewrite
+│▢  ${prefix}neon2  
+│▢  ${prefix}wall
+│▢  ${prefix}codetxt 
+│▢  ${prefix}text3d 
+│▢  ${prefix}warrior 
+╰───────────────𒈒`
+
+teks =
+
+`ᴀɴᴛʜᴀᴅᴀ ғᴇᴀʀ ᴀʏᴏ ɴᴇᴇʏ 🥂`
+
+but = [
+
+          { buttonId: `groupmenu2`, buttonText: { displayText: '☜︎︎︎ ɢʀᴏᴜᴘ ᴍᴇɴᴜ' }, type: 1 },
+
+          { buttonId: `othermenu2`, buttonText: { displayText: 'ᴏᴛʜᴇʀ ᴍᴇɴᴜ ☞︎︎︎' }, type: 1 }
+
+        ]
+
+        sendButLocation(from, teksnya, teks, gambar, but)
+
+break
+case 'othermenu2':
+
+	gambar = fs.readFileSync('./denz.jpg')
+
+	teksnya = `╭───────────────𒆜
+	
+|   *Oᴛʜᴇʀ Mᴇɴᴜ*
+
+╰───────────────𒈒
+    
+╭───────────────𒆜
+│▢  ${prefix}caripesan
+│▢  ${prefix}slots
+│▢  ${prefix}suit 
+│▢  ${prefix}tag 
+│▢  ${prefix}tagme
+│▢  ${prefix}tts 
+│▢  ${prefix}readmore 
+│▢  ${prefix}fitnahpc 
+│▢  ${prefix}chat 
+│▢  ${prefix}fdeface
+│▢  ${prefix}listimage
+│▢  ${prefix}liststicker
+│▢  ${prefix}listvn
+│▢  ${prefix}listgrup
+│▢  ${prefix}baileys 
+│▢  ${prefix}q 
+│▢  ${prefix}getcaption
+│▢  ${prefix}pantun
+│▢  ${prefix}tospam 
+│▢  ${prefix}sharelock 
+│▢  ${prefix}sticker
+│▢  ${prefix}stickerwm 
+│▢  ${prefix}takestick 
+│▢  ${prefix}colong 
+│▢  ${prefix}dadu
+│▢  ${prefix}semoji 
+│▢  ${prefix}attp 
+│▢  ${prefix}img
+│▢  ${prefix}tomp3 
+│▢  ${prefix}tomp4 
+│▢  ${prefix}robot 
+│▢  ${prefix}balik 
+│▢  ${prefix}bass 
+│▢  ${prefix}gemuk 
+│▢  ${prefix}detikvn 
+│▢  ${prefix}detikvideo 
+╰───────────────𒈒`
+
+teks =
+
+`ᴀɴᴛʜᴀᴅᴀ ғᴇᴀʀ ᴀʏᴏ ɴᴇᴇʏ 🥂`
+
+but = [
+
+          { buttonId: `makermenu2`, buttonText: { displayText: '☜︎︎︎ ʟᴏɢᴏ ᴍᴀᴋᴇʀ ᴍᴇɴᴜ' }, type: 1 },
+
+          { buttonId: `script`, buttonText: { displayText: 'sᴄʀɪᴘᴛ︎︎︎' }, type: 1 }
+
+        ]
+
+        sendButLocation(from, teksnya, teks, gambar, but)
+
+break
 case 'ownermenu':
 menu = `╭────────────────╮
      *Oᴡɴᴇʀ Mᴇɴᴜ*
@@ -1674,6 +1890,8 @@ menu = `╭────────────────╮
 ╭────────────────
 │
 │🍒─⃝»͓̽  ${prefix}setthumb [ 𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚒𝚖𝚊𝚐𝚎 ]
+│
+│🍒─⃝»͓̽  ${prefix}setmenu
 │
 │🍒─⃝»͓̽  ${prefix}autotype [ 𝚘𝚗/𝚘𝚏𝚏 ]
 │
@@ -1994,7 +2212,7 @@ menu = `╭────────────────╮
 │
 │❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}listvn
 │
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}listgrup
+│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}listgroup
 │
 │❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}baileys [ _𝚁𝚎𝚙𝚕𝚢 𝙼𝚎𝚜𝚜𝚊𝚐𝚎_ ]
 │
