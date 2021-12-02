@@ -3251,19 +3251,19 @@ break
 	        if (!isGroup) return reply(mess.only.group)
 			if (!isOwner && !isGroupAdmins) return sticAdmin(from)
 					if (args[0] === 'on') {
-						if (isWelkom) return reply('𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙰𝙲𝚃𝙸𝚅𝙴')
+						if (isWelkom) return reply('𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙴𝙽𝙰𝙱𝙻𝙴𝙳')
 						welkom.push(from)
 						fs.writeFileSync('./database/welkom.json', JSON.stringify(welkom))
 						reply('𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝙴𝙽𝙰𝙱𝙻𝙴𝙳')
 					} else if (args[0] === 'off') {
-						if (!isWelkom) return reply('Sudah Mati Kak')
+						if (!isWelkom) return reply('𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳')
 						var ini = welkom.indexOf(from)
 						welkom.splice(ini, 1)
 						fs.writeFileSync('./database/welkom.json', JSON.stringify(welkom))
 						reply('𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳')
 					} else if (!c){
- anu =`Silahkan pilih salah satu\n\non: untuk mengaktifkan\noff: untuk menonaktifkan`
-punten = [{buttonId: 'welcome off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'welcome on', buttonText: {displayText: 'ON✔️'}, type: 1}]
+ anu =`ᴏɴ ᴛᴏ ᴇɴᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇ \n ᴏғғ ᴛᴏ ᴅɪsᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇ`
+punten = [{buttonId: 'welcome on', buttonText: {displayText: 'ON'}, type: 1},{buttonId: 'welcome off', buttonText: {displayText: 'OFF'}, type: 1}]
 const btngrass = {
     contentText: `${anu}`,
     footerText: '*© ᴘᴇᴘᴇ sɪʀ*',
