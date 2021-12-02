@@ -1614,7 +1614,6 @@ const bttnasu = {
 }
 await denz.sendMessage(from, bttnasu, MessageType.buttonsMessage, {quoted: ftrol})
 					}
-}
 break
 case 'ownermenu':
 menu = `╭────────────────╮
