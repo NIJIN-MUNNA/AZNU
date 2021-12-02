@@ -3124,7 +3124,7 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 						antilink.push(from)
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
 						reply('Sukses mengaktifkan fitur antilink')
-						kurr.sendMessage(from, `ALLERT!!! Group ini sudah di pasang anti link\nJika Kamu Melanggar Maka Akan Saya Tendang`, text)
+						denz.sendMessage(from, `ALLERT!!! Group ini sudah di pasang anti link\nJika Kamu Melanggar Maka Akan Saya Tendang`, text)
 					} else if (args[0] === 'off') {
 						if (!isAntiLink) return reply('Sudah Mati Kak')
 						var ini = antilink.indexOf(from)
@@ -3140,7 +3140,7 @@ const btnasu = {
     buttons: punten,
     headerType: 1
 }
-await kurr.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftrol})
+await denz.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftrol})
 					}
 					break
 				case 'tinyurl':
