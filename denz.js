@@ -2754,6 +2754,9 @@ const buttonMessage = {
 }
 await denz.sendMessage(from, buttonMessage, MessageType.buttonsMessage, {quoted: ftok})
 		break
+case 'git':
+		xeon.sendMessage(from, { text: "╭─➤ *ᴘᴇᴘᴇ sɪʀ*\n│       ❑  *ʙᴏᴛs ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴠᴀɪʟᴀʙʟᴇ*\n│❖   ɢɪᴛʜᴜʙ:\n│❖   https://github.com/pepesir/Bosco\n│❖   https://github.com/pepesir/PEPE-SIR\n│❖   ʏᴏᴜᴛᴜʙᴇ:\n│❖   https://youtube.com/channel/UCVJ9029PQ-gJBtFQZZ3AJuA\n╰────────────────❋ཻུ۪۪⸙\n\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘\n             ᴘᴇᴘᴇ sɪʀ\n\n╭◪ *ᴄᴏᴅᴅᴇᴅ ʙʏ ᴘᴇᴘᴇ*\n╰─────────────────❋ཻུ۪۪⸙", matchedText: 'nopee', description: "", title: "What are you doing?", jpegThumbnail: dfrply }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
+		break
 				case 'alive':
 menu = `█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█ 
 █░ ╔══╗╔╗─╔══╗╔╗─╔╗╔═╗  ░█
