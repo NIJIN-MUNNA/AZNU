@@ -4221,32 +4221,27 @@ break
 						}
 						break
                     case 'play':
-            if (args.length == 0) return reply(`Example: ${prefix + command} vide 1detik`)
-            query = args.join(" ")
-            get_resultL = await fetchJson(`https://ziy.herokuapp.com/api/play?apikey=xZiyy&judul=${query}`)
-            get_resultP = get_resultL.result
-            textP =`
-*YOUTUBE PLAY*
-
-Judul : ${get_resultP.judul}
-Link : ${get_resultP.url_audio}
-            `
-            denz.sendMessage(from, textP, text,{contextInfo:{
-            "forwardingScore": 1000000000,
-            isForwarded: false,
-            sendEphemeral: false,
-            "externalAdReply": {
-            "title": `Hallo ${pushname}` ,
-            "body": `Nih ${query} nya`,
-            "mediaType": "2",
-            "thumbnailUrl": `${get_resultP.image_thumbnail}`,
-            "mediaUrl": "https://youtu.be/vt9TbOuyhgI",
-            "thumbnail": fs.readFileSync("./denz.jpg"),
-            "sourceUrl": "http://ziy.herokuapp.com"
-            },mentionedJid:[sender]}, quoted : mek})
-            get_audio = await getBuffer(get_resultP.url_audio)
-            denz.sendMessage(from, get_audio, audio, { mimetype: Mimetype.mp4Audio, filename: `${get_resultP.title}.mp3`, quoted: mek})
-            break
+                            if (args.length === 0) return reply(`Send orders *${prefix}play* _The title of the song to be searched_`)
+                            const playy = await axios.get(`https://api-alphabot.herokuapp.com/api/downloader/youtube/playmp3?query=${body.slice(6)}&apikey=Alphabot`)
+                            const mulaikah = playy.data.result[0].url
+                            try {
+                                reply(mess.wait)
+                                yta(mulaikah)
+                                .then((res) => {
+                                    const { dl_link, thumb, title, filesizeF, filesize } = res
+                                    axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+                                    .then(async (a) => {
+                                    if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `❏ *PLAYmp3*\n\n❏ *Title* : ${title}\n❏ *Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Sorry the duration exceeds the maximum limit, Please click the link above_`)
+                                    const captions = `❏ *PLAYmp3*\n\n❏ *Title* : ${title}\n❏ *Ext* : MP3\n❏ *Size* : ${filesizeF}\n\n_Audio being sent, Please wait a few minutes bro_`
+                                    sendMediaURL(from, thumb, captions)
+                                    await sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
+                                    })
+                
+                                })
+                            } catch (err) {
+                                reply(mess.error.api)
+                            }
+                            break
                             case 'video':
                             if (args.length === 0) return reply(`send order *${prefix}video* _The title of the video to search for_`)
                             const playi = await axios.get(`https://bx-hunter.herokuapp.com/api/yt/search?query=${body.slice(6)}&apikey=${HunterApi}`)
