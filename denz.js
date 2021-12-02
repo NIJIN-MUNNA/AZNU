@@ -91,7 +91,7 @@ cmhit = []
 autorespon = true
 playmusic = false
 menusimpel = false
-menuall = false
+menuall = true
 baterai = {
 battery: "" || "Not detected",
 isCharge: "" || false
@@ -923,7 +923,7 @@ await denz.updatePresence(from, Presence.composing)
         reply(su)
 				}
         switch (command) {
-case 'help':
+case 'endi':
 if(menusimpel == false){
 stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
@@ -1482,6 +1482,7 @@ denz.sendMessage(from, btnBngsat, MessageType.buttonsMessage, { quoted: ftrol, c
                   }
 break
 case 'menu':
+if(menusimpel == false){          
  stod = `${sender}`
  listMsg = {
  buttonText: '𝙻𝙸𝚂𝚃 𝙼𝙴𝙽𝚄⁩',
@@ -1556,6 +1557,63 @@ case 'menu':
  listType: 1
 }
 denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
+}
+else if(menusimpel = true){
+
+gambar = fs.readFileSync('./denz.jpg')
+
+	teksnya = `╭───────────────𒆜
+
+ | *ᴅᴏɴᴀᴛᴇ ꪶ͢ᴘᴇᴘᴇ-sᴇʀꫂ⁩ 🥂*
+
+╰───────────────𒈒
+
+╭───────────────𒆜
+
+ | ᴀɴᴛʜᴀᴅᴀ ᴅᴏɴᴀᴛᴇ ᴄʜᴇʏᴀɴɴᴏ ?
+
+ | 𒆜┤*ᴘᴀʏᴛᴍ*
+
+ | 𒆜┤sᴏʀʀʏ ᴠʀᴏ ᴡᴇ ᴅɪᴅɴᴛ ᴛᴀᴋᴇ ᴅᴏɴᴀᴛᴇ 🥰
+ | 𒆜┤*ɢᴏᴏɢʟᴇ ᴘᴀʏ*
+
+ | 𒆜┤sᴏʀʀʏ ᴠʀᴏ ᴡᴇ ᴅɪᴅɴᴛ ᴛᴀᴋᴇ ᴅᴏɴᴀᴛᴇ 🥰
+╰───────────────𒈒`
+
+teks =
+
+`ᴀɴᴛʜᴀᴅᴀ ғᴇᴀʀ ᴀʏᴏ ɴᴇᴇʏ 🥂`
+
+but = [
+
+          { buttonId: `menu`, buttonText: { displayText: 'ᴍᴇɴᴜ' }, type: 1 },
+
+          { buttonId: `owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 }
+
+        ]
+
+        sendButLocation(from, teksnya, teks, gambar, but)
+        }
+break
+case 'setmenu':
+if (!isOwner && !mek.key.fromMe) return sticOwner(from)
+if(args[0] == 'ori'){
+menusimpel = true
+reply('Sucsess')
+}else if(args[0] == 'simpel'){
+menusimpel = false
+reply('Sucsess')
+}else if (!c) {
+anu =`Silahkan pilih salah satu di bawah`
+ buttons = [{buttonId: 'setmenu ori', buttonText: {displayText: 'BUTTON MENU'}, type: 1},{buttonId: 'setmenu simpel', buttonText: {displayText: 'LIST MENU'}, type: 1}]
+const skuygelud = {
+    contentText: `${anu}`,
+    footerText: '© ᴘᴇᴘᴇ sɪʀ',
+    buttons: buttons,
+    headerType: 1
+}
+await denz.sendMessage(from, skuygelud, MessageType.buttonsMessage, {quoted: ftrol})
+}
 break
 case 'ownermenu':
 menu = `╭────────────────╮
@@ -2298,18 +2356,6 @@ denz.sendMessage(from, {
 "displayName": `Developer ${NamaBot}`,
 "contacts": ini_list 
 }, 'contactsArrayMessage', { quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true }})
-break
-case 'setmenu':
-if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-if(args[0] == '2'){
-menusimpel = true
-reply('sᴜᴄᴄᴜss')
-}else if(args[0] == '1'){
-menusimpel = false
-reply('sᴜᴄᴄᴜss')
-}else{
-reply(`Use : ${prefix}setmenu button\n\nTersedia: 1/2`)
-}
 break
 case 'donate':
 
@@ -3132,11 +3178,11 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
 						reply('𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺 𝙷𝙰𝚅𝙴 𝙱𝙴𝙴𝙽 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈')
 					} else if (!c){
- anu =`Silahkan pilih salah satu\n\non: untuk mengaktifkan\noff: untuk menonaktifkan`
+ anu =`𝙲𝙻𝙸𝙲𝙺 𝙾𝙽 𝚃𝙾 𝙴𝙽𝙰𝙱𝙻𝙴 𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺 \n𝙲𝙻𝙸𝙲𝙺 𝙾𝙵𝙵 𝚃𝙾 𝙳𝙸𝚂𝙰𝙱𝙻𝙴 𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺`
 punten = [{buttonId: 'antilink on', buttonText: {displayText: 'ON'}, type: 1},{buttonId: 'antilink off', buttonText: {displayText: 'OFF️'}, type: 1}]
 const btnasu = {
     contentText: `${anu}`,
-    footerText: '*© ᴘᴇᴘᴇ sɪʀ*',
+    footerText: '© ᴘᴇᴘᴇ sɪʀ',
     buttons: punten,
     headerType: 1
 }
