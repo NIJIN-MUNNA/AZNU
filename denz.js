@@ -34,6 +34,7 @@ const base64Img = require('base64-img')
 const ms = require('parse-ms')
 const figlet = require('figlet')
 const ytsd = require('ytsr')
+const yts = require( 'yt-search')
 const cheerio = require('cheerio')
 const fromData = require('form-data')
 const os = require('os')
@@ -4220,28 +4221,28 @@ break
 							reply(mess.error.api)
 						}
 						break
-                    case 'play':
-                            if (args.length === 0) return reply(`Send orders *${prefix}play* _The title of the song to be searched_`)
-                            const playy = await axios.get(`https://api-alphabot.herokuapp.com/api/downloader/youtube/playmp3?query=${body.slice(6)}&apikey=Alphabot`)
-                            const mulaikah = playy.data.result[0].url
-                            try {
-                                reply(mess.wait)
-                                yta(mulaikah)
-                                .then((res) => {
-                                    const { dl_link, thumb, title, filesizeF, filesize } = res
-                                    axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-                                    .then(async (a) => {
-                                    if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `❏ *PLAYmp3*\n\n❏ *Title* : ${title}\n❏ *Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Sorry the duration exceeds the maximum limit, Please click the link above_`)
-                                    const captions = `❏ *PLAYmp3*\n\n❏ *Title* : ${title}\n❏ *Ext* : MP3\n❏ *Size* : ${filesizeF}\n\n_Audio being sent, Please wait a few minutes bro_`
-                                    sendMediaURL(from, thumb, captions)
-                                    await sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
-                                    })
-                
-                                })
-                            } catch (err) {
-                                reply(mess.error.api)
-                            }
-                            break
+						case 'play': case 'ytmp3':
+									if (args.length === 0) return reply(`Kirim perintah *${prefix}play* _Judul lagu yang akan dicari_`)
+									var srch = args.join(' ')
+									aramas = await yts(srch);
+									aramat = aramas.all 
+									var mulaikah = aramat[0].url
+									try {
+										yta(mulaikah)
+										.then((res) => {
+											const { dl_link, thumb, title, filesizeF, filesize } = res
+											axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
+											.then(async (a) => {
+												if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam bentuk link_`)
+												const captions = `🎧 *PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
+												await sendMediaURL(from, thumb, captions)
+												sendMediaURL(from, dl_link).catch(() => reply('error'))
+												}) 
+											})
+										} catch (err) {
+											reply('Terjadi kesalahan')
+											}
+									break
                             case 'video':
                             if (args.length === 0) return reply(`send order *${prefix}video* _The title of the video to search for_`)
                             const playi = await axios.get(`https://bx-hunter.herokuapp.com/api/yt/search?query=${body.slice(6)}&apikey=${HunterApi}`)
