@@ -37,7 +37,6 @@ const ytsd = require('ytsr')
 const cheerio = require('cheerio')
 const fromData = require('form-data')
 const os = require('os')
-const yts = require("yt-search")
 const ggs = require('google-it')
 const googleImage = require('g-i-s')
 const toMs = require('ms')
@@ -4221,36 +4220,33 @@ break
 							reply(mess.error.api)
 						}
 						break
-      case "play":
-        if (args.length === 0)
-          return reply(
-            `Send orders *${prefix}play* _The title of the song to be searched_`
-          );
-        var srch = args.join("");
-        aramas = await yts(srch);
-        aramat = aramas.all;
-        var mulaikah = aramat[0].url;
-        try {
-          yta(mulaikah).then((res) => {
-            const { dl_link, thumb, title, filesizeF, filesize } = res;
-            axios
-              .get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-              .then(async (a) => {
-                if (Number(filesize) >= 9999999)
-                  return sendMediaURL(
-                    from,
-                    thumb,
-                    `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_For the duration of more than the limit is presented in the link_`
-                  );
-                const captions = `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Please wait for the media file to be sent it may take a few minutes_`;
-                sendMediaURL(from, thumb, captions);
-                await sendMediaURL(from, dl_link).catch(() => reply("error"));
-              });
-          });
-        } catch (err) {
-          reply(mess.error.api);
-        }
-        break
+                    case 'play':
+            if (args.length == 0) return reply(`Example: ${prefix + command} vide 1detik`)
+            query = args.join(" ")
+            get_resultL = await fetchJson(`https://ziy.herokuapp.com/api/play?apikey=xZiyy&judul=${query}`)
+            get_resultP = get_resultL.result
+            textP =`
+*YOUTUBE PLAY*
+
+Judul : ${get_resultP.judul}
+Link : ${get_resultP.url_audio}
+            `
+            denz.sendMessage(from, textP, text,{contextInfo:{
+            "forwardingScore": 1000000000,
+            isForwarded: false,
+            sendEphemeral: false,
+            "externalAdReply": {
+            "title": `Hallo ${pushname}` ,
+            "body": `Nih ${query} nya`,
+            "mediaType": "2",
+            "thumbnailUrl": `${get_resultP.image_thumbnail}`,
+            "mediaUrl": "https://youtu.be/vt9TbOuyhgI",
+            "thumbnail": fs.readFileSync("./denz.jpg"),
+            "sourceUrl": "http://ziy.herokuapp.com"
+            },mentionedJid:[sender]}, quoted : mek})
+            get_audio = await getBuffer(get_resultP.url_audio)
+            denz.sendMessage(from, get_audio, audio, { mimetype: Mimetype.mp4Audio, filename: `${get_resultP.title}.mp3`, quoted: mek})
+            break
                             case 'video':
                             if (args.length === 0) return reply(`send order *${prefix}video* _The title of the video to search for_`)
                             const playi = await axios.get(`https://bx-hunter.herokuapp.com/api/yt/search?query=${body.slice(6)}&apikey=${HunterApi}`)
