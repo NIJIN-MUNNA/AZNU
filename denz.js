@@ -1604,8 +1604,8 @@ reply('Success')
 menusimpel = false
 reply('Success')
 }else if (!c) {
- anu =`𝙲𝙻𝙸𝙲𝙺 𝙾𝙽 𝚃𝙾 𝙴𝙽𝙰𝙱𝙻𝙴 𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺 \n𝙲𝙻𝙸𝙲𝙺 𝙾𝙵𝙵 𝚃𝙾 𝙳𝙸𝚂𝙰𝙱𝙻𝙴 𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺`
-punten = [{buttonId: 'setmenu one', buttonText: {displayText: 'ON'}, type: 1},{buttonId: 'setmenu two', buttonText: {displayText: 'OFF️'}, type: 1}]
+ anu =`𝚂𝙴𝙻𝙴𝙲𝚃 𝚃𝚈𝙿𝙴 𝙾𝙵 𝙼𝙴𝙽𝚄 𝙷𝙴𝚁𝙴`
+punten = [{buttonId: 'setmenu one', buttonText: {displayText: '𝙱𝚄𝚃𝚃𝙾𝙽 𝙼𝙴𝙽𝚄'}, type: 1},{buttonId: 'setmenu two', buttonText: {displayText: '𝙻𝙸𝚂𝚃 𝙼𝙴𝙽𝚄️'}, type: 1}]
 const bttnasu = {
     contentText: `${anu}`,
     footerText: '© ᴘᴇᴘᴇ sɪʀ',
