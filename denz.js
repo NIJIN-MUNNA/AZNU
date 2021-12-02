@@ -1481,8 +1481,10 @@ headerType: 4
 denz.sendMessage(from, btnBngsat, MessageType.buttonsMessage, { quoted: ftrol, caption: menunya, contextInfo: { mentionedJid: [dtod,otod,stod]}})
                   }
 break
+case 'help':
 case 'menu':
-if(menusimpel == false){          
+if(menusimpel == false){   
+				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)   
  stod = `${sender}`
  listMsg = {
  buttonText: '𝙻𝙸𝚂𝚃 𝙼𝙴𝙽𝚄⁩',
@@ -1491,17 +1493,17 @@ if(menusimpel == false){
 ┊     𝙷𝙸 𝙱𝚁𝙾 @${stod.split('@')[0]} 
 ┊ 
 ┊
-┊➫ ᴅᴇᴠᴇʟᴏᴘᴇʀ : ᴘᴇᴘᴇ sɪʀ
+┊ ▢ ᴅᴇᴠᴇʟᴏᴘᴇʀ : ᴘᴇᴘᴇ sɪʀ
 ┊ 
-┊➫ ᴏᴡɴᴇʀ : ${ownernamepepe}
+┊ ▢ ᴏᴡɴᴇʀ : ${ownernamepepe}
 ┊
-┊➫ ʙᴏᴛ ɴᴀᴍᴇ : ${botnamepepe}
+┊ ▢ ʙᴏᴛ ɴᴀᴍᴇ : ${botnamepepe}
 ┊
-┊➫ ᴄʀᴇᴅɪᴛs : ᴀɴᴇᴇs sɪʀ
+┊ ▢ ᴄʀᴇᴅɪᴛs : ᴀɴᴇᴇs sɪʀ
 ┊
-┊➫ ᴍᴏᴅᴇ : ${publik ? 'public' : 'self'}
+┊ ▢ ᴍᴏᴅᴇ : ${publik ? 'public' : 'self'}
 ┊
-┊➫ ᴘʀᴇғɪx :${multi ? 'Multi Prefix' : 'No Prefix'}
+┊ ▢ ᴘʀᴇғɪx :${multi ? 'Multi Prefix' : 'No Prefix'}
 ┊
 ╰────────────────`,
  sections: [
@@ -1560,24 +1562,72 @@ denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mention
 }
 else if(menusimpel = true){
 
+				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 gambar = fs.readFileSync('./denz.jpg')
 
 	teksnya = `╭───────────────𒆜
-
- | *ᴅᴏɴᴀᴛᴇ ꪶ͢ᴘᴇᴘᴇ-sᴇʀꫂ⁩ 🥂*
+	
+|  *ᴍᴇɴᴜ ꪶ͢ᴘᴇᴘᴇ-sᴇʀꫂ⁩ 🥂*
 
 ╰───────────────𒈒
 
 ╭───────────────𒆜
-
- | ᴀɴᴛʜᴀᴅᴀ ᴅᴏɴᴀᴛᴇ ᴄʜᴇʏᴀɴɴᴏ ?
-
- | 𒆜┤*ᴘᴀʏᴛᴍ*
-
- | 𒆜┤sᴏʀʀʏ ᴠʀᴏ ᴡᴇ ᴅɪᴅɴᴛ ᴛᴀᴋᴇ ᴅᴏɴᴀᴛᴇ 🥰
- | 𒆜┤*ɢᴏᴏɢʟᴇ ᴘᴀʏ*
-
- | 𒆜┤sᴏʀʀʏ ᴠʀᴏ ᴡᴇ ᴅɪᴅɴᴛ ᴛᴀᴋᴇ ᴅᴏɴᴀᴛᴇ 🥰
+│▢ ${prefix}setthumb 
+│▢ ${prefix}autovn
+│▢ ${prefix}autotype
+│▢ ${prefix}autorespon 
+│▢ ${prefix}bc 
+│▢ ${prefix}bc2
+│▢ ${prefix}tobc
+│▢ ${prefix}return 
+│▢ ${prefix}clearall
+│▢ ${prefix}delchat
+│▢ ${prefix}mute
+│▢ ${prefix}unmute
+│▢ ${prefix}public
+│▢ ${prefix}self
+│▢ ${prefix}spam
+│▢ ${prefix}demoteall
+│▢ ${prefix}promoteall
+│▢ ${prefix}addcmd 
+│▢ ${prefix}delcmd 
+│▢ ${prefix}listcmd
+│▢ ${prefix}spamsw 
+│▢ ${prefix}upswteks 
+│▢ ${prefix}upswlokasi 
+│▢ ${prefix}upswaudio
+│▢ ${prefix}upswvoice 
+│▢ ${prefix}upswsticker 
+│▢ ${prefix}upswimage 
+│▢ ${prefix}upswgif
+│▢ ${prefix}upswvideo 
+│▢ ${prefix}shutdown
+│▢ ${prefix}offline
+│▢ ${prefix}online
+│▢ ${prefix}exif 
+│▢ ${prefix}setprofile 
+│▢ ${prefix}setname 
+│▢ ${prefix}setprefix 
+│▢ ${prefix}setbio 
+│▢ ${prefix}addsticker 
+│▢ ${prefix}delsticker 
+│▢ ${prefix}addvn 
+│▢ ${prefix}delvn
+│▢ ${prefix}addimage 
+│▢ ${prefix}delimage 
+│▢ ${prefix}bug 
+│▢ ${prefix}bugpc2 
+│▢ ${prefix}bugtroli2 
+│▢ ${prefix}bugpc
+│▢ ${prefix}bugcombine
+│▢ ${prefix}bugtroli
+│▢ ${prefix}buglokasi
+│▢ ${prefix}bughole
+│▢ ${prefix}leave
+│▢ ${prefix}restart
+│▢ ${prefix}join 
+│▢ ${prefix}addrespon 
+│▢ ${prefix}delrespon 
 ╰───────────────𒈒`
 
 teks =
