@@ -90,7 +90,7 @@ tttawal= ["0️⃣","1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣",
 cmhit = []
 autorespon = true
 playmusic = false
-menusimpel = false
+menusimpel = true
 menuall = true
 baterai = {
 battery: "" || "Not detected",
