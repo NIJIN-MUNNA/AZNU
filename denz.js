@@ -1031,6 +1031,7 @@ menu =`
 │▢ ${prefix} setthumb 
 │▢ ${prefix}autorespon 
 │▢ ${prefix}bc 
+│▢ ${prefix}bc2 
 │▢ ${prefix}tobc
 │▢ ${prefix}return 
 │▢ ${prefix}clearall
@@ -1115,7 +1116,7 @@ menu =`
 │▢  ${prefix}ss 
 │
 │
-│   ❑ *Oᴡɴᴇʀ Mᴇɴᴜ*
+│   ❑ *Mᴀᴋᴇʀ Mᴇɴᴜ*
 │ 
 │    
 │▢  ${prefix}marvel
@@ -1251,7 +1252,7 @@ menunya = `╭──────────────────╮
 │   ❑ *Oᴡɴᴇʀ Mᴇɴᴜ*
 │
 │
-│▢ ${prefix} setthumb 
+│▢ ${prefix}setthumb 
 │▢ ${prefix}autorespon 
 │▢ ${prefix}bc 
 │▢ ${prefix}tobc
@@ -1309,7 +1310,7 @@ menunya = `╭──────────────────╮
 │   ❑ *Dᴏᴡɴʟᴏᴀᴅ Mᴇɴᴜ*
 │    
 │
-│▢   ︎︎${prefix}infogempa
+│▢  ︎︎${prefix}infogempa
 │▢  ${prefix}herolist
 │▢  ${prefix}herodetail 
 │▢  ${prefix}google 
@@ -1338,7 +1339,7 @@ menunya = `╭──────────────────╮
 │▢  ${prefix}ss 
 │
 │
-│   ❑ *Oᴡɴᴇʀ Mᴇɴᴜ*
+│   ❑ *Mᴀᴋᴇʀ Mᴇɴᴜ*
 │ 
 │    
 │▢  ${prefix}marvel
@@ -1565,6 +1566,8 @@ menu = `╭────────────────╮
 │
 │🍒─⃝»͓̽  ${prefix}bc [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚝𝚎𝚡𝚝_ ]
 │
+│🍒─⃝»͓̽  ${prefix}bc2 [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚝𝚎𝚡𝚝_ ]
+│
 │🍒─⃝»͓̽  ${prefix}tobc [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚊𝚞𝚍𝚒𝚘,𝚒𝚖𝚊𝚐𝚎,𝚟𝚒𝚍𝚎𝚘_ ]
 │
 │🍒─⃝»͓̽  ${prefix}return [ _𝚓𝚊𝚟𝚊𝚜𝚌𝚛𝚒𝚙𝚝_ ]
@@ -1605,7 +1608,7 @@ menu = `╭────────────────╮
 │
 │🍒─⃝»͓̽  ${prefix}upswsticker [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚜𝚝𝚌_ ]
 │
-│🍒─⃝»͓̽  ${prefix}upswimage [ _𝚛𝚎𝚙𝚕𝚢 𝚒𝚖𝚊𝚐𝚎 𝚠𝚒𝚝𝚐 𝚌𝚊𝚙𝚝𝚒𝚘𝚗_ ]
+│🍒─⃝»͓̽  ${prefix}upswimage [ _𝚛𝚎𝚙𝚕𝚢 𝚒𝚖𝚊𝚐𝚎 𝚠𝚒𝚝𝚑 𝚌𝚊𝚙𝚝𝚒𝚘𝚗_ ]
 │
 │🍒─⃝»͓̽  ${prefix}upswgif [ _𝚛𝚎𝚙𝚕𝚢 𝚐𝚒𝚏 𝚠𝚒𝚝𝚑 𝚌𝚊𝚙𝚝𝚒𝚘𝚗_ ]
 │
@@ -3304,7 +3307,7 @@ break
 				denz.updatePresence(from, Presence.composing)
 				denz.groupLeave(from)
 						break
-									case 'butbc':
+									case 'bc2':
 					denz.updatePresence(from, Presence.composing)
 					if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 					if (args.length < 1) return reply('ᴛᴇxᴛ?')
@@ -3333,7 +3336,7 @@ break
 					} else {
 						for (let _ of anu) {
 							//sendMess(_.jid, `${body.slice(4)}`)
-buttonss = [{buttonId: `menu`, buttonText: {displayText: 'ᴍᴇɴᴜ🥂'}, type: 1},{buttonId: `credit`, buttonText: {displayText: 'ᴄʀᴇᴅɪᴛs💝'}, type: 1}]
+buttonss = [{buttonId: `menu`, buttonText: {displayText: 'ᴍᴇɴᴜ'}, type: 1},{buttonId: `credit`, buttonText: {displayText: 'ᴄʀᴇᴅɪᴛs'}, type: 1}]
 const btnbc = {
     contentText: `${body.slice(4)}`,
     footerText: '*_ʙʀᴏᴀᴅᴄᴀsᴛ ʙʏ ᴘᴇᴘᴇ⁩_*',
@@ -4200,26 +4203,32 @@ break
 						}
 						break
                     case 'play':
-                            if (args.length === 0) return reply(`Send orders *${prefix}play* __The title of the song to be searched_`)
-                            const playy = await axios.get(`https://bx-hunter.herokuapp.com/api/yt/search?query=${body.slice(6)}&apikey=${HunterApi}`)
-                            const mulaikah = playy.data.result[0].url
-                            try {
-                                reply(mess.wait)
-                                yta(mulaikah)
-                                .then((res) => {
-                                    const { dl_link, thumb, title, filesizeF, filesize } = res
-                                    axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-                                    .then(async (a) => {
-                                    if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `❏ *𝙿𝙻𝙰𝚈𝙼𝙿3*\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP3\n*Filesize* : ${filesizeF}\n*𝙻𝙸𝙽𝙺* : ${a.data}\n\n_Sorry the duration exceeds the maximum limit, please click the link above_`)
-                                    const captions = `❏ *𝚈𝚃𝚖𝚙3*\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP3\n❏ *𝚂𝙸𝚉𝙴* : ${filesizeF}\n❏ *𝚂𝙴𝚁𝚅𝙴𝚁* : 𝚈𝚃𝙼𝙿3, _𝚆𝙰𝙸𝚃 𝙰 𝙼𝙸𝙽𝚄𝚃𝙴_`
-								    sendMediaURL(from, thumb, captions)
-                                    sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
-                                    })
-                                })
-                            } catch (err) {
-                                reply(mess.error.api)
-                            }
-                            break
+            if (args.length == 0) return reply(`Example: ${prefix + command} vide 1detik`)
+            query = args.join(" ")
+            get_resultL = await fetchJson(`https://ziy.herokuapp.com/api/play?apikey=xZiyy&judul=${query}`)
+            get_resultP = get_resultL.result
+            textP =`
+*YOUTUBE PLAY*
+
+Judul : ${get_resultP.judul}
+Link : ${get_resultP.url_audio}
+            `
+            denz.sendMessage(from, textP, text,{contextInfo:{
+            "forwardingScore": 1000000000,
+            isForwarded: false,
+            sendEphemeral: false,
+            "externalAdReply": {
+            "title": `Hallo ${pushname}` ,
+            "body": `Nih ${query} nya`,
+            "mediaType": "2",
+            "thumbnailUrl": `${get_resultP.image_thumbnail}`,
+            "mediaUrl": "https://youtu.be/vt9TbOuyhgI",
+            "thumbnail": fs.readFileSync("./denz.jpg"),
+            "sourceUrl": "http://ziy.herokuapp.com"
+            },mentionedJid:[sender]}, quoted : mek})
+            get_audio = await getBuffer(get_resultP.url_audio)
+            denz.sendMessage(from, get_audio, audio, { mimetype: Mimetype.mp4Audio, filename: `${get_resultP.title}.mp3`, quoted: mek})
+            break
                             case 'video':
                             if (args.length === 0) return reply(`send order *${prefix}video* _The title of the video to search for_`)
                             const playi = await axios.get(`https://bx-hunter.herokuapp.com/api/yt/search?query=${body.slice(6)}&apikey=${HunterApi}`)
