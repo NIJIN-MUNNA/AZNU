@@ -90,7 +90,7 @@ tttawal= ["0️⃣","1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣",
 cmhit = []
 autorespon = true
 playmusic = false
-menusimpel = true
+menusimpel = false
 menuall = true
 baterai = {
 battery: "" || "Not detected",
@@ -1597,22 +1597,23 @@ but = [
 break
 case 'setmenu':
 if (!isOwner && !mek.key.fromMe) return sticOwner(from)
-if(args[0] == 'ori'){
+if(args[0] == 'one'){
 menusimpel = true
-reply('Sucsess')
-}else if(args[0] == 'simpel'){
+reply('Success')
+}else if(args[0] == 'two'){
 menusimpel = false
-reply('Sucsess')
+reply('Success')
 }else if (!c) {
-anu =`Silahkan pilih salah satu di bawah`
- buttons = [{buttonId: 'setmenu ori', buttonText: {displayText: 'BUTTON MENU'}, type: 1},{buttonId: 'setmenu simpel', buttonText: {displayText: 'LIST MENU'}, type: 1}]
-const skuygelud = {
+ anu =`𝙲𝙻𝙸𝙲𝙺 𝙾𝙽 𝚃𝙾 𝙴𝙽𝙰𝙱𝙻𝙴 𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺 \n𝙲𝙻𝙸𝙲𝙺 𝙾𝙵𝙵 𝚃𝙾 𝙳𝙸𝚂𝙰𝙱𝙻𝙴 𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺`
+punten = [{buttonId: 'setmenu on', buttonText: {displayText: 'ON'}, type: 1},{buttonId: 'setmenu two', buttonText: {displayText: 'OFF️'}, type: 1}]
+const bttnasu = {
     contentText: `${anu}`,
     footerText: '© ᴘᴇᴘᴇ sɪʀ',
-    buttons: buttons,
+    buttons: punten,
     headerType: 1
 }
-await denz.sendMessage(from, skuygelud, MessageType.buttonsMessage, {quoted: ftrol})
+await denz.sendMessage(from, bttnasu, MessageType.buttonsMessage, {quoted: ftrol})
+					}
 }
 break
 case 'ownermenu':
