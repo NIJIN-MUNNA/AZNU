@@ -1029,7 +1029,7 @@ menu =`
 │
 │
 │▢ ${prefix}setthumb
-│▢ ${prefix}setbgmpic 
+│▢ ${prefix}setbcpic 
 │▢ ${prefix}autovn
 │▢ ${prefix}autotype
 │▢ ${prefix}autorespon 
@@ -1256,7 +1256,7 @@ menunya = `╭──────────────────╮
 │
 │
 │▢ ${prefix}setthumb
-│▢ ${prefix}setbgmpic 
+│▢ ${prefix}setbcpic 
 │▢ ${prefix}autovn
 │▢ ${prefix}autotype
 │▢ ${prefix}autorespon 
@@ -1569,7 +1569,7 @@ menu = `╭────────────────╮
 │
 │🍒─⃝»͓̽  ${prefix}setthumb [ 𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚒𝚖𝚊𝚐𝚎 ]
 │
-│🍒─⃝»͓̽  ${prefix}setbgmpic [ 𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚒𝚖𝚊𝚐𝚎 ]
+│🍒─⃝»͓̽  ${prefix}setbcpic [ 𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚒𝚖𝚊𝚐𝚎 ]
 │
 │🍒─⃝»͓̽  ${prefix}autotype [ 𝚘𝚗/𝚘𝚏𝚏 ]
 │
@@ -2371,7 +2371,7 @@ break
           reply(`Send a picture with a caption ${prefix}sethumb`);
         }
         break
-            case "setbgmpic":
+            case "setbcpic":
         if (
           ((isMedia && !mek.message.videoMessage) ||
             isQuotedImage ||
@@ -2387,7 +2387,7 @@ break
           fs.writeFileSync(`./pepe.jpg`, delb);
           reply("Success");
         } else {
-          reply(`Send a picture with a caption ${prefix}setbgmpic`);
+          reply(`Send a picture with a caption ${prefix}setbcpic`);
         }
         break  
 case 'addcmd': 
@@ -3397,21 +3397,21 @@ await denz.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: ftrol}
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 						buff = await denz.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							denz.sendMessage(_.jid, buff, image, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999, status: 200, thumbnail: fs.readFileSync('./denz.jpg'), surface: 200, message: `Broadcast`, orderTitle: `Broadcast`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}, caption: `${body.slice(4)}` })
+							denz.sendMessage(_.jid, buff, image, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999, status: 200, thumbnail: fs.readFileSync('./pepe.jpg'), surface: 200, message: `Broadcast`, orderTitle: `Broadcast`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}, caption: `${body.slice(4)}` })
 						}
 						reply(`Broadcast success ${body.slice(4)}`)
 						} else if (isMedia && !mek.message.videoMessage || isQuotedVideo) {
 						const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 						buff = await denz.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							denz.sendMessage(_.jid, buff, video, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999, status: 200, thumbnail: fs.readFileSync('./denz.jpg'), surface: 200, message: `Broadcast`, orderTitle: `Broadcast`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}, caption: `${body.slice(4)}` })
+							denz.sendMessage(_.jid, buff, video, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999, status: 200, thumbnail: fs.readFileSync('./pepe.jpg'), surface: 200, message: `Broadcast`, orderTitle: `Broadcast`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}, caption: `${body.slice(4)}` })
 						}
 						reply(`Broadcast success ${body.slice(4)}`)
 						} else if (isMedia && !mek.message.videoMessage || isQuotedVideo) {
 						const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 						buff = await denz.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							denz.sendMessage(_.jid, buff, video, { mimetype: Mimetype.gif, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999, status: 200, thumbnail: fs.readFileSync('./denz.jpg'), surface: 200, message: `Broadcast`, orderTitle: `Broadcast`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}, caption: `${body.slice(4)}` })
+							denz.sendMessage(_.jid, buff, video, { mimetype: Mimetype.gif, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999, status: 200, thumbnail: fs.readFileSync('./pepe.jpg'), surface: 200, message: `Broadcast`, orderTitle: `Broadcast`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}, caption: `${body.slice(4)}` })
 						}
 						reply(`Broadcast success ${body.slice(4)}`)
 					} else {
@@ -3842,13 +3842,13 @@ break
 						const encmedia = isQuotedAudio ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 						buff = await denz.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							denz.sendMessage(_.jid, buff, audio, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999999, status: 200, thumbnail: fs.readFileSync('./denz.jpg'), surface: 200, message: `${bc}`, orderTitle: `${bc}`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}, mimetype: 'audio/mp4', duration: 7356663773663, ptt: true })
+							denz.sendMessage(_.jid, buff, audio, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999999, status: 200, thumbnail: fs.readFileSync('./pepe.jpg'), surface: 200, message: `${bc}`, orderTitle: `${bc}`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}, mimetype: 'audio/mp4', duration: 7356663773663, ptt: true })
 						}
 						} else if (isMedia && !mek.message.videoMessage || isQuotedSticker) {
 						const encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 						buff = await denz.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							denz.sendMessage(_.jid, buff, sticker, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999999, status: 200, thumbnail: fs.readFileSync('./denz.jpg'), surface: 200, message: `${bc}`, orderTitle: `${bc}`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}})
+							denz.sendMessage(_.jid, buff, sticker, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999999, status: 200, thumbnail: fs.readFileSync('./pepe.jpg'), surface: 200, message: `${bc}`, orderTitle: `${bc}`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}})
 							}
 							} else{
           reply('reply sticker/audio')
