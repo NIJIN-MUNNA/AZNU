@@ -1802,7 +1802,7 @@ menu = `╭────────────────╮
 │
 │🦋⃝❉⃟࿔ꦿ ${prefix}demote [ _@𝚃𝚊𝚐_ ]
 │
-│🦋⃝❉⃟࿔ꦿ ${prefix}antilink [ _1/0_ ]
+│🦋⃝❉⃟࿔ꦿ ${prefix}antilink [ _𝚘𝚗 / 𝚘𝚏𝚏_ ]
 │
 │🦋⃝❉⃟࿔ꦿ ${prefix}creategrup [ _𝙽𝚊𝚖𝚎|@𝚃𝚊𝚐_ ]
 │
@@ -3120,23 +3120,23 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 			if (!isGroupAdmins) return reply(mess.only.admin)
 			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (args[0] === 'on') {
-						if (isAntiLink) return reply('Sudah Aktif Kak')
+						if (isAntiLink) return reply('𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙰𝙲𝚃𝙸𝚅𝙴')
 						antilink.push(from)
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-						reply('Sukses mengaktifkan fitur antilink')
-						denz.sendMessage(from, `ALLERT!!! Group ini sudah di pasang anti link\nJika Kamu Melanggar Maka Akan Saya Tendang`, text)
+						reply('𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺 𝙷𝙰𝚅𝙴 𝙱𝙴𝙴𝙽 𝙴𝙽𝙰𝙱𝙻𝙴𝙳 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈')
+						denz.sendMessage(from, `ALLERT!!! Antilink have been enabled in this group\nSo if you send any links you will be automatically removed from this group`, text)
 					} else if (args[0] === 'off') {
-						if (!isAntiLink) return reply('Sudah Mati Kak')
+						if (!isAntiLink) return reply('𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳')
 						var ini = antilink.indexOf(from)
 						antilink.splice(ini, 1)
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-						reply('Sukses menonaktifkan fitur antilink')
+						reply('𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺 𝙷𝙰𝚅𝙴 𝙱𝙴𝙴𝙽 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈')
 					} else if (!c){
  anu =`Silahkan pilih salah satu\n\non: untuk mengaktifkan\noff: untuk menonaktifkan`
 punten = [{buttonId: 'antilink on', buttonText: {displayText: 'ON'}, type: 1},{buttonId: 'antilink off', buttonText: {displayText: 'OFF️'}, type: 1}]
 const btnasu = {
     contentText: `${anu}`,
-    footerText: '*© pepe sir*',
+    footerText: '*© ᴘᴇᴘᴇ sɪʀ*',
     buttons: punten,
     headerType: 1
 }
