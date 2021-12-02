@@ -3115,25 +3115,32 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 						denz.sendMessage(from, hah, video, {mimetype: 'video/mp4', duration: cokmatane, quoted: mek})
 						fs.unlinkSync(median)
 				break
-				 case 'antilink':
-	        if (!isGroup) return reply(mess.only.group)
+								 case 'antilink':
+        if (!isGroup) return reply(mess.only.group)
 			if (!isGroupAdmins) return reply(mess.only.admin)
 			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (args.length < 1) return reply(`untuk mengaktifkan ketik : ${prefix}antilink 1`)
-					if (Number(args[0]) === 1) {
-						if (isAntiLink) return reply('Active')
+					if (args[0] === 'on') {
+						if (isAntiLink) return reply('Sudah Aktif Kak')
 						antilink.push(from)
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-						reply('Successfully activate the antilink feature')
-						denz.sendMessage(from, `ALLERT!!! Group ini sudah di pasang anti link\nJika Kamu Melanggar Maka Akan Saya Tendang`, text)
-					} else if (Number(args[0]) === 0) {
-						if (!isAntiLink) return reply('you are dead')
+						reply('Sukses mengaktifkan fitur antilink')
+						kurr.sendMessage(from, `ALLERT!!! Group ini sudah di pasang anti link\nJika Kamu Melanggar Maka Akan Saya Tendang`, text)
+					} else if (args[0] === 'off') {
+						if (!isAntiLink) return reply('Sudah Mati Kak')
 						var ini = antilink.indexOf(from)
 						antilink.splice(ini, 1)
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-						reply('Succussfully disable antilink feature')
-					} else {
-						reply('1 active, 0 deactive')
+						reply('Sukses menonaktifkan fitur antilink')
+					} else if (!c){
+ anu =`Silahkan pilih salah satu\n\non: untuk mengaktifkan\noff: untuk menonaktifkan`
+punten = [{buttonId: 'antilink on', buttonText: {displayText: 'ON'}, type: 1},{buttonId: 'antilink off', buttonText: {displayText: 'OFF️'}, type: 1}]
+const btnasu = {
+    contentText: `${anu}`,
+    footerText: '*© pepe sir*',
+    buttons: punten,
+    headerType: 1
+}
+await kurr.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftrol})
 					}
 					break
 				case 'tinyurl':
@@ -4222,7 +4229,7 @@ break
 						break
                     case 'play':
                             if (args.length === 0) return reply(`Send orders *${prefix}play* _The title of the song to be searched_`)
-                            const playy = await axios.get(`https://api-alphabot.herokuapp.com/api/downloader/youtube/playmp3?query=${body.slice(6)}&apikey=Alphabot`)              
+                            const playy = await axios.get(`https://bx-hunter.herokuapp.com/api/yt/search?query=${body.slice(6)}&apikey=ikygans`)
                             const mulaikah = playy.data.result[0].url
                             try {
                                 reply(mess.wait)
