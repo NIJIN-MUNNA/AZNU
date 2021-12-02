@@ -4478,6 +4478,19 @@ Link : ${get_resultP.url_audio}
 						})
 					}
 					break
+case 'toimg':
+if (!isQuotedSticker) return reply(' reply to a sticker')
+encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
+media = await zeroyt7.downloadAndSaveMediaMessage(encmedia, './database/media_user')
+ran = getRandom('.png')
+exec(`ffmpeg -i ${media} ${ran}`, (err) => {
+fs.unlinkSync(media)
+if (err) return reply(' Gagal, pada saat mengkonversi sticker ke gambar ')
+buffer = fs.readFileSync(ran)
+costum(buffer, image, Verived, `Subscribe Yt PEPE SIR`)
+fs.unlinkSync(ran)
+})
+break
 				case 'ss':
 				reply(mess.wait)
 					sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/ssweb?url=${args[0]}&apikey=${HunterApi}`)
