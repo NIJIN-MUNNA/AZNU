@@ -4234,7 +4234,7 @@ break
 								.then((a) => {
 								if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `𓊈𒆜 *𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶* 𒆜𓊉 
 ㅤ       *ѕᴏɴɢ* ☟︎︎︎\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP3\n*Filesize* : ${filesizeF}\n*𝙻𝙸𝙽𝙺* : ${a.data}\n\n_Sorry the duration exceeds the maximum limit, please click the link above_`)
-								const captions = 𓊈𒆜 *𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶* 𒆜𓊉 \nㅤ       *ѕᴏɴɢ* ☟︎︎︎︎︎︎\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP3\n❏ *𝚂𝙸𝚉𝙴* : ${filesizeF}\n❏ *𝚂𝙴𝚁𝚅𝙴𝚁* : 𝚈𝚃𝙼𝙿3 , 𝚆𝙰𝙸𝚃 𝙰 𝙼𝙸𝙽𝚄𝚃𝙴_`
+								const captions = `𓊈𒆜 *𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶* 𒆜𓊉 \nㅤ       *ѕᴏɴɢ* ☟︎︎︎︎︎︎\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP3\n❏ *𝚂𝙸𝚉𝙴* : ${filesizeF}\n❏ *𝚂𝙴𝚁𝚅𝙴𝚁* : 𝚈𝚃𝙼𝙿3 , 𝚆𝙰𝙸𝚃 𝙰 𝙼𝙸𝙽𝚄𝚃𝙴_`
 								sendMediaURL(from, thumb, captions)
 								sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
 							})
