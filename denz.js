@@ -2559,6 +2559,176 @@ case 'glow':
 					buffer1 = await getBuffer(anu.result.url)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
+					// logo making features added by pepe sir
+				case 'blackpink':
+                case 'neon':
+                case 'greenneon':
+                case 'advanceglow':
+                case 'futureneon':
+                case 'sandwriting':
+                case 'sandsummer':
+                case 'sandengraved':
+                case 'metaldark':
+                case 'neonlight':
+                case 'holographic':
+                case 'text1917':
+                case 'minion':
+                case 'deluxesilver':
+                case 'newyearcard':
+                case 'bloodfrosted':
+                case 'halloween':
+                case 'jokerlogo':
+                case 'fireworksparkle':
+                case 'natureleaves':
+                case 'bokeh':
+                case 'toxic':
+                case 'strawberry':
+                case 'box3d':
+                case 'roadwarning':
+                case 'breakwall':
+                case 'icecold':
+                case 'luxury':
+                case 'cloud':
+                case 'summersand':
+                case 'horrorblood':
+                case 'thunder':
+                
+                    if (args.length == 0) return reply(`Example: ${prefix + command} denz Xd`)
+                    ini_txt = args.join(" ")
+                    getBuffer(`https://api.lolhuman.xyz/api/textprome/${command}?apikey=denzXd&text=${ini_txt}`).then((gambar) => {
+                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : denzXd`, quoted : ftrol})
+                    })
+                    break
+                case 'pornhub':
+                case 'glitch':
+                case 'avenger':
+                case 'space':
+                case 'ninjalogo':
+                case 'marvelstudio':
+                case 'lionlogo':
+                case 'wolflogo':
+                case 'steel3d':
+                case 'wallgravity':
+                
+                    if (args.length == 0) return reply(`Example: ${prefix + command} denz Xd`)
+                    txt1 = args[0]
+                    txt2 = args[1]
+                    getBuffer(`https://api.lolhuman.xyz/api/textprome2/${command}?apikey=denzXd&text1=${txt1}&text2=${txt2}`).then((gambar) => {
+                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : denzXd`, quoted : ftrol})
+                    })
+                    break
+case 'neko':
+       case 'kanna':
+       case 'sagiri':
+       case 'megumin':
+       case 'wallnime':
+       
+              reply(mess.wait)
+              buff = await getBuffer(`https://api.lolhuman.xyz/api/random/${command}?apikey=denzXd`)
+              buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
+              imageMsg = (await denz.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              buttonsMessage = {footerText:'✗✗✗ denzXd', imageMessage: imageMsg,
+              contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
+              prep = await denz.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
+              denz.relayWAMessage(prep)
+    
+              break
+       
+       case 'hentai':
+       
+              reply(mess.wait)
+              buff = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/hentai?apikey=denzXd`)
+              buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
+              imageMsg = (await denz.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              buttonsMessage = {footerText:'✗✗✗ denzXd', imageMessage: imageMsg,
+              contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
+              prep = await denz.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
+              denz.relayWAMessage(prep)
+    
+              break
+
+                    // Photo Oxy //
+                case 'shadow':
+                case 'cup':
+                case 'cup1':
+                case 'romance':
+                case 'smoke':
+                case 'burnpaper':
+                case 'lovemessage':
+                case 'undergrass':
+                case 'love':
+                case 'coffe':
+                case 'woodheart':
+                case 'woodenboard':
+                case 'summer3d':
+                case 'wolfmetal':
+                case 'nature3d':
+                case 'underwater':
+                case 'golderrose':
+                case 'summernature':
+                case 'letterleaves':
+                case 'glowingneon':
+                case 'fallleaves':
+                case 'flamming':
+                case 'harrypotter':
+                case 'carvedwood':
+                
+                    if (args.length == 0) return reply(`Example: ${prefix + command} denz Xd`)
+                    ini_txt = args.join(" ")
+                    getBuffer(`https://api.lolhuman.xyz/api/photooxy1/${command}?apikey=denzXd&text=${ini_txt}`).then((gambar) => {
+                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : denzXd`, quoted : ftrol})
+                    })
+                    break
+                case 'arcade8bit':
+                case 'battlefield4':
+                case 'pubg':
+                
+                    if (args.length == 0) return reply(`Example: ${prefix + command} denz Xd`)
+                    txt1 = args[0]
+                    txt2 = args[1]
+                    getBuffer(`https://api.lolhuman.xyz/api/photooxy2/${command}?apikey=denzXd&text1=${txt1}&text2=${txt2}`).then((gambar) => {
+                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : denzXd`, quoted : ftrol})
+                    })
+                    break
+
+                    // Ephoto 360 //
+                case 'wetglass':
+                case 'multicolor3d':
+                case 'watercolor':
+                case 'luxurygold':
+                case 'galaxywallpaper':
+                case 'lighttext':
+                case 'beautifulflower':
+                case 'puppycute':
+                case 'royaltext':
+                case 'heartshaped':
+                case 'birthdaycake':
+                case 'galaxystyle':
+                case 'hologram3d':
+                case 'greenneon':
+                case 'glossychrome':
+                case 'greenbush':
+                case 'metallogo':
+                case 'noeltext':
+                case 'glittergold':
+                case 'textcake':
+                case 'starsnight':
+                case 'wooden3d':
+                case 'textbyname':
+                case 'writegalacy':
+                case 'galaxybat':
+                case 'snow3d':
+                case 'birthdayday':
+                case 'goldplaybutton':
+                case 'silverplaybutton':
+                case 'freefire':
+                
+                    if (args.length == 0) return reply(`Example: ${prefix + command} denz xd`)
+                    ini_txt = args.join(" ")
+                    getBuffer(`https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=denzXd&text=${ini_txt}`).then((gambar) => {
+                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subscribe yt : pepe sir`, quoted : ftrol}) 
+                    })
+                    break	
 //Fun
 case 'meme':
 reply(mess.wait)
@@ -2775,7 +2945,7 @@ await denz.sendMessage(from, buttonMessage, MessageType.buttonsMessage, {quoted:
 case 'git':
 		denz.sendMessage(from, { text: "╭─➤ *ᴘᴇᴘᴇ sɪʀ*\n│       ❑  *ʙᴏᴛs ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴠᴀɪʟᴀʙʟᴇ*\n│❖   ɢɪᴛʜᴜʙ:\n│❖   https://github.com/pepesir/Bosco\n│❖   https://github.com/pepesir/PEPE-SIR\n│❖   ʏᴏᴜᴛᴜʙᴇ:\n│❖   https://youtube.com/channel/UCVJ9029PQ-gJBtFQZZ3AJuA\n╰────────────────❋ཻུ۪۪⸙\n\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘\n             ᴘᴇᴘᴇ sɪʀ\n\n╭◪ *ᴄᴏᴅᴅᴇᴅ ʙʏ ᴘᴇᴘᴇ*\n╰─────────────────❋ཻུ۪۪⸙", matchedText: 'nopee', description: "", title: "What are you doing?", jpegThumbnail: dfrply }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
 		break
-		case 'pepesir':
+		case 'stickerexample':
 duda = fs.readFileSync('media/sticker/.git.webp')
 denz.sendMessage(from, duda, sticker, {quoted: mek})
 			  break
