@@ -1288,10 +1288,7 @@ menu =`
 │▢  ${prefix}getbio 
 │▢  ${prefix}promote 
 │▢  ${prefix}demote 
-│▢  ${prefix}antialllink 
-│▢  ${prefix}antigrouplink 
-│▢  ${prefix}antiiglink 
-│▢  ${prefix}antiytlink 
+│▢  ${prefix}antilink 
 │▢  ${prefix}creategrup 
 │▢  ${prefix}tictactoe
 │▢  ${prefix}delttt
@@ -1624,10 +1621,7 @@ menunya = `╭──────────────────╮
 │▢  ${prefix}getbio 
 │▢  ${prefix}promote 
 │▢  ${prefix}demote 
-│▢  ${prefix}antialllink 
-│▢  ${prefix}antigrouplink 
-│▢  ${prefix}antiiglink 
-│▢  ${prefix}antiytlink 
+│▢  ${prefix}antilink 
 │▢  ${prefix}creategrup 
 │▢  ${prefix}tictactoe
 │▢  ${prefix}delttt
@@ -1996,10 +1990,7 @@ case 'groupmenu2':
 │▢  ${prefix}getbio 
 │▢  ${prefix}promote 
 │▢  ${prefix}demote 
-│▢  ${prefix}antialllink 
-│▢  ${prefix}antigrouplink 
-│▢  ${prefix}antiiglink 
-│▢  ${prefix}antiytlink 
+│▢  ${prefix}antilink 
 │▢  ${prefix}creategrup 
 │▢  ${prefix}tictactoe
 │▢  ${prefix}delttt
@@ -2706,13 +2697,7 @@ menu = `╭────────────────╮
 │
 │🦋⃝❉⃟࿔ꦿ ${prefix}demote [ _@𝚃𝚊𝚐_ ]
 │
-│🦋⃝❉⃟࿔ꦿ ${prefix}antialllink [ _𝚘𝚗 / 𝚘𝚏𝚏_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}antigrouplink [ _𝚘𝚗 / 𝚘𝚏𝚏_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}antiiglink [ _𝚘𝚗 / 𝚘𝚏𝚏_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}antiytlink [ _𝚘𝚗 / 𝚘𝚏𝚏_ ]
+│🦋⃝❉⃟࿔ꦿ ${prefix}antilink [ _𝚘𝚗 / 𝚘𝚏𝚏_ ]
 │
 │🦋⃝❉⃟࿔ꦿ ${prefix}creategrup [ _𝙽𝚊𝚖𝚎|@𝚃𝚊𝚐_ ]
 │
