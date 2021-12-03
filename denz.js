@@ -2592,11 +2592,11 @@ case 'glow':
                 case 'summersand':
                 case 'horrorblood':
                 case 'thunder':
-                
-                    if (args.length == 0) return reply(`Example: ${prefix + command} denz Xd`)
+
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Kurr Xd`)
                     ini_txt = args.join(" ")
-                    getBuffer(`https://api.lolhuman.xyz/api/textprome/${command}?apikey=denzXd&text=${ini_txt}`).then((gambar) => {
-                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : denzXd`, quoted : ftrol})
+                    getBuffer(`https://api.lolhuman.xyz/api/textprome/${command}?apikey=KurrXd&text=${ini_txt}`).then((gambar) => {
+                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : KurrXd`, quoted : ftrol})
                     })
                     break
                 case 'pornhub':
@@ -2609,12 +2609,12 @@ case 'glow':
                 case 'wolflogo':
                 case 'steel3d':
                 case 'wallgravity':
-                
-                    if (args.length == 0) return reply(`Example: ${prefix + command} denz Xd`)
+
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Kurr Xd`)
                     txt1 = args[0]
                     txt2 = args[1]
-                    getBuffer(`https://api.lolhuman.xyz/api/textprome2/${command}?apikey=denzXd&text1=${txt1}&text2=${txt2}`).then((gambar) => {
-                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : denzXd`, quoted : ftrol})
+                    getBuffer(`https://api.lolhuman.xyz/api/textprome2/${command}?apikey=KurrXd&text1=${txt1}&text2=${txt2}`).then((gambar) => {
+                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : KurrXd`, quoted : ftrol})
                     })
                     break
 case 'neko':
@@ -2622,12 +2622,12 @@ case 'neko':
        case 'sagiri':
        case 'megumin':
        case 'wallnime':
-       
+       if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
               reply(mess.wait)
-              buff = await getBuffer(`https://api.lolhuman.xyz/api/random/${command}?apikey=denzXd`)
+              buff = await getBuffer(`https://api.lolhuman.xyz/api/random/${command}?apikey=KurrXd`)
               buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await denz.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'✗✗✗ denzXd', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'✗✗✗ KurrXd', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await denz.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               denz.relayWAMessage(prep)
@@ -2635,12 +2635,12 @@ case 'neko':
               break
        
        case 'hentai':
-       
+       if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
               reply(mess.wait)
-              buff = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/hentai?apikey=denzXd`)
+              buff = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/hentai?apikey=KurrXd`)
               buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await denz.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'✗✗✗ denzXd', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'✗✗✗ KurrXd', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await denz.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               denz.relayWAMessage(prep)
@@ -2672,22 +2672,22 @@ case 'neko':
                 case 'flamming':
                 case 'harrypotter':
                 case 'carvedwood':
-                
-                    if (args.length == 0) return reply(`Example: ${prefix + command} denz Xd`)
+
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Kurr Xd`)
                     ini_txt = args.join(" ")
-                    getBuffer(`https://api.lolhuman.xyz/api/photooxy1/${command}?apikey=denzXd&text=${ini_txt}`).then((gambar) => {
-                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : denzXd`, quoted : ftrol})
+                    getBuffer(`https://api.lolhuman.xyz/api/photooxy1/${command}?apikey=KurrXd&text=${ini_txt}`).then((gambar) => {
+                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : KurrXd`, quoted : ftrol})
                     })
                     break
                 case 'arcade8bit':
                 case 'battlefield4':
                 case 'pubg':
-                
-                    if (args.length == 0) return reply(`Example: ${prefix + command} denz Xd`)
+
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Kurr Xd`)
                     txt1 = args[0]
                     txt2 = args[1]
-                    getBuffer(`https://api.lolhuman.xyz/api/photooxy2/${command}?apikey=denzXd&text1=${txt1}&text2=${txt2}`).then((gambar) => {
-                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : denzXd`, quoted : ftrol})
+                    getBuffer(`https://api.lolhuman.xyz/api/photooxy2/${command}?apikey=KurrXd&text1=${txt1}&text2=${txt2}`).then((gambar) => {
+                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : KurrXd`, quoted : ftrol})
                     })
                     break
 
@@ -2722,11 +2722,11 @@ case 'neko':
                 case 'goldplaybutton':
                 case 'silverplaybutton':
                 case 'freefire':
-                
-                    if (args.length == 0) return reply(`Example: ${prefix + command} denz xd`)
+
+                    if (args.length == 0) return reply(`Example: ${prefix + command} kurr xd`)
                     ini_txt = args.join(" ")
-                    getBuffer(`https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=denzXd&text=${ini_txt}`).then((gambar) => {
-                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subscribe yt : pepe sir`, quoted : ftrol}) 
+                    getBuffer(`https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=KurrXd&text=${ini_txt}`).then((gambar) => {
+                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : KurrXd`, quoted : ftrol}) 
                     })
                     break	
 //Fun
