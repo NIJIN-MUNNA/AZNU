@@ -2777,7 +2777,7 @@ case 'git':
 		break
 		case 'pepesir':
 duda = fs.readFileSync('media/sticker/.git.webp')
-pemuda.sendMessage(from, duda, sticker, {quoted: mek})
+denz.sendMessage(from, duda, sticker, {quoted: mek})
 			  break
 				case 'alive':
 menu = `█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█ 
