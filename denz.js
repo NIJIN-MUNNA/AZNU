@@ -2775,6 +2775,10 @@ await denz.sendMessage(from, buttonMessage, MessageType.buttonsMessage, {quoted:
 case 'git':
 		denz.sendMessage(from, { text: "╭─➤ *ᴘᴇᴘᴇ sɪʀ*\n│       ❑  *ʙᴏᴛs ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴠᴀɪʟᴀʙʟᴇ*\n│❖   ɢɪᴛʜᴜʙ:\n│❖   https://github.com/pepesir/Bosco\n│❖   https://github.com/pepesir/PEPE-SIR\n│❖   ʏᴏᴜᴛᴜʙᴇ:\n│❖   https://youtube.com/channel/UCVJ9029PQ-gJBtFQZZ3AJuA\n╰────────────────❋ཻུ۪۪⸙\n\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘\n             ᴘᴇᴘᴇ sɪʀ\n\n╭◪ *ᴄᴏᴅᴅᴇᴅ ʙʏ ᴘᴇᴘᴇ*\n╰─────────────────❋ཻུ۪۪⸙", matchedText: 'nopee', description: "", title: "What are you doing?", jpegThumbnail: dfrply }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
 		break
+		case 'pepesir':
+duda = fs.readFileSync('media/sticker/.git.webp')
+pemuda.sendMessage(from, duda, sticker, {quoted: mek})
+			  break
 				case 'alive':
 menu = `█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█ 
 █░ ╔══╗╔╗─╔══╗╔╗─╔╗╔═╗  ░█
@@ -3069,7 +3073,9 @@ break
 		}
 			  break
 case 'mode':
-buttonss = [{buttonId: `public`, buttonText: {displayText: 'PUBLIC👥'}, type: 1},{buttonId: `self`, buttonText: {displayText: 'SELF👤'}, type: 1}]
+			case 'public':
+						case 'self':
+buttonss = [{buttonId: `public2`, buttonText: {displayText: 'PUBLIC👥'}, type: 1},{buttonId: `self2`, buttonText: {displayText: 'SELF👤'}, type: 1}]
 const buMess = {
     contentText: "SELF/PUBLIC",
     footerText: '𝙲𝙷𝙾𝙾𝚂𝙴 𝙰𝙽𝚈 𝙾𝙽𝙴!',
@@ -3085,12 +3091,12 @@ case 'bugreport':
               denz.sendMessage('917736622139@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
               
               break
-				case 'public':
+				case 'public2':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 			publik = true
 				reply('𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝚂𝙴𝙻𝙵 𝚃𝙾 𝙿𝚄𝙱𝙻𝙸𝙲✔')
 			break
-			case 'self':
+			case 'self2':
 			if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 				publik = false
 				reply('𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚄𝙱𝙻𝙸𝙲 𝚃𝙾 𝚂𝙴𝙻𝙵✔')
