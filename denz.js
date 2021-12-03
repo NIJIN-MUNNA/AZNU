@@ -1157,6 +1157,7 @@ menu =`
 │▢  ${prefix}promote 
 │▢  ${prefix}demote 
 │▢  ${prefix}antilink 
+│▢  ${prefix}antigrouplink 
 │▢  ${prefix}creategrup 
 │▢  ${prefix}tictactoe
 │▢  ${prefix}delttt
@@ -1384,6 +1385,7 @@ menunya = `╭──────────────────╮
 │▢  ${prefix}promote 
 │▢  ${prefix}demote 
 │▢  ${prefix}antilink 
+│▢  ${prefix}antigrouplink 
 │▢  ${prefix}creategrup 
 │▢  ${prefix}tictactoe
 │▢  ${prefix}delttt
@@ -1753,6 +1755,7 @@ case 'groupmenu2':
 │▢  ${prefix}promote 
 │▢  ${prefix}demote 
 │▢  ${prefix}antilink 
+│▢  ${prefix}antigrouplink 
 │▢  ${prefix}creategrup 
 │▢  ${prefix}tictactoe
 │▢  ${prefix}delttt
@@ -2142,6 +2145,8 @@ menu = `╭────────────────╮
 │🦋⃝❉⃟࿔ꦿ ${prefix}demote [ _@𝚃𝚊𝚐_ ]
 │
 │🦋⃝❉⃟࿔ꦿ ${prefix}antilink [ _𝚘𝚗 / 𝚘𝚏𝚏_ ]
+│
+│🦋⃝❉⃟࿔ꦿ ${prefix}antigrouplink [ _𝚘𝚗 / 𝚘𝚏𝚏_ ]
 │
 │🦋⃝❉⃟࿔ꦿ ${prefix}creategrup [ _𝙽𝚊𝚖𝚎|@𝚃𝚊𝚐_ ]
 │
@@ -3445,7 +3450,7 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 						denz.sendMessage(from, hah, video, {mimetype: 'video/mp4', duration: cokmatane, quoted: mek})
 						fs.unlinkSync(median)
 				break
-								 case 'antilink':
+								 case 'antigrouplink':
         if (!isGroup) return reply(mess.only.group)
 			if (!isGroupAdmins) return reply(mess.only.admin)
 			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -3453,16 +3458,16 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 						if (isAntiLink) return reply('𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙰𝙲𝚃𝙸𝚅𝙴')
 						antilink.push(from)
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-						reply('𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺 𝙷𝙰𝚅𝙴 𝙱𝙴𝙴𝙽 𝙴𝙽𝙰𝙱𝙻𝙴𝙳 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈')
-						denz.sendMessage(from, `ALLERT!!! Antilink have been enabled in this group\nSo if you send any links you will be automatically removed from this group`, text)
+						reply('𝙰𝙽𝚃𝙸-𝙶𝚁𝙾𝚄𝙿-𝙻𝙸𝙽𝙺 𝙷𝙰𝚅𝙴 𝙱𝙴𝙴𝙽 𝙴𝙽𝙰𝙱𝙻𝙴𝙳 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈')
+						denz.sendMessage(from, `ALLERT!!! Anti-group-link have been enabled in this group\nSo if you send any group links you will be automatically removed from this group`, text)
 					} else if (args[0] === 'off') {
 						if (!isAntiLink) return reply('𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳')
 						var ini = antilink.indexOf(from)
 						antilink.splice(ini, 1)
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-						reply('𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺 𝙷𝙰𝚅𝙴 𝙱𝙴𝙴𝙽 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈')
+						reply('𝙰𝙽𝚃𝙸-𝙶𝚁𝙾𝚄𝙿-𝙻𝙸𝙽𝙺 𝙷𝙰𝚅𝙴 𝙱𝙴𝙴𝙽 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈')
 					} else if (!c){
- anu =`𝙲𝙻𝙸𝙲𝙺 𝙾𝙽 𝚃𝙾 𝙴𝙽𝙰𝙱𝙻𝙴 𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺 \n𝙲𝙻𝙸𝙲𝙺 𝙾𝙵𝙵 𝚃𝙾 𝙳𝙸𝚂𝙰𝙱𝙻𝙴 𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺`
+ anu =`𝙲𝙻𝙸𝙲𝙺 𝙾𝙽 𝚃𝙾 𝙴𝙽𝙰𝙱𝙻𝙴 𝙰𝙽𝚃𝙸-𝙶𝚁𝙾𝚄𝙿-𝙻𝙸𝙽𝙺  \n𝙲𝙻𝙸𝙲𝙺 𝙾𝙵𝙵 𝚃𝙾 𝙳𝙸𝚂𝙰𝙱𝙻𝙴 𝙰𝙽𝚃𝙸-𝙶𝚁𝙾𝚄𝙿-𝙻𝙸𝙽𝙺 `
 punten = [{buttonId: 'antilink on', buttonText: {displayText: 'ON'}, type: 1},{buttonId: 'antilink off', buttonText: {displayText: 'OFF️'}, type: 1}]
 const btnasu = {
     contentText: `${anu}`,
@@ -3473,7 +3478,7 @@ const btnasu = {
 await denz.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftrol})
 					}
 					break
-							 case 'antialllink':
+							 case 'antilink':
         if (!isGroup) return reply(mess.only.group)
 			if (!isGroupAdmins) return reply(mess.only.admin)
 			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
