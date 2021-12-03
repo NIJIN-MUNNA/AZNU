@@ -2593,10 +2593,10 @@ case 'glow':
                 case 'horrorblood':
                 case 'thunder':
 
-                    if (args.length == 0) return reply(`Example: ${prefix + command} Kurr Xd`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Pepe sir`)
                     ini_txt = args.join(" ")
                     getBuffer(`https://api.lolhuman.xyz/api/textprome/${command}?apikey=KurrXd&text=${ini_txt}`).then((gambar) => {
-                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : KurrXd`, quoted : ftrol})
+                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `SUBSCRIBE YT : PEPE SIR`, quoted : ftrol})
                     })
                     break
                 case 'pornhub':
@@ -2610,11 +2610,11 @@ case 'glow':
                 case 'steel3d':
                 case 'wallgravity':
 
-                    if (args.length == 0) return reply(`Example: ${prefix + command} Kurr Xd`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Pepe sir`)
                     txt1 = args[0]
                     txt2 = args[1]
                     getBuffer(`https://api.lolhuman.xyz/api/textprome2/${command}?apikey=KurrXd&text1=${txt1}&text2=${txt2}`).then((gambar) => {
-                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : KurrXd`, quoted : ftrol})
+                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `SUBSCRIBE YT : PEPE SIR`, quoted : ftrol})
                     })
                     break
 case 'neko':
@@ -2673,21 +2673,21 @@ case 'neko':
                 case 'harrypotter':
                 case 'carvedwood':
 
-                    if (args.length == 0) return reply(`Example: ${prefix + command} Kurr Xd`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Pepe sir`)
                     ini_txt = args.join(" ")
                     getBuffer(`https://api.lolhuman.xyz/api/photooxy1/${command}?apikey=KurrXd&text=${ini_txt}`).then((gambar) => {
-                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : KurrXd`, quoted : ftrol})
+                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `SUBSCRIBE YT : PEPE SIR`, quoted : ftrol})
                     })
                     break
                 case 'arcade8bit':
                 case 'battlefield4':
                 case 'pubg':
 
-                    if (args.length == 0) return reply(`Example: ${prefix + command} Kurr Xd`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Pepe sir`)
                     txt1 = args[0]
                     txt2 = args[1]
                     getBuffer(`https://api.lolhuman.xyz/api/photooxy2/${command}?apikey=KurrXd&text1=${txt1}&text2=${txt2}`).then((gambar) => {
-                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : KurrXd`, quoted : ftrol})
+                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `SUBSCRIBE YT : PEPE SIR`, quoted : ftrol})
                     })
                     break
 
@@ -2723,10 +2723,10 @@ case 'neko':
                 case 'silverplaybutton':
                 case 'freefire':
 
-                    if (args.length == 0) return reply(`Example: ${prefix + command} kurr xd`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Pepe sir`)
                     ini_txt = args.join(" ")
                     getBuffer(`https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=KurrXd&text=${ini_txt}`).then((gambar) => {
-                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : KurrXd`, quoted : ftrol}) 
+                        denz.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `SUBSCRIBE YT : PEPE SIR`, quoted : ftrol}) 
                     })
                     break	
 //Fun
