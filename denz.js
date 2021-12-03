@@ -79,6 +79,7 @@ const commandsDB = JSON.parse(fs.readFileSync('./database/commands.json'))
 const tictactoe = JSON.parse(fs.readFileSync("./database/tictactoe.json"))
 const antilink = JSON.parse(fs.readFileSync('./database/antilink.json'))
 const antialllink = JSON.parse(fs.readFileSync('./database/antialllink.json'))
+const antiiglink = JSON.parse(fs.readFileSync('./database/antilink.json'))
 const welkom = JSON.parse(fs.readFileSync('./database/welkom.json'))
 const mute = JSON.parse(fs.readFileSync('./database/mute.json'))
 const settings = JSON.parse(fs.readFileSync('./settings.json'))
@@ -293,6 +294,7 @@ try {
 		const isKickArea = isGroup ? kickarea.includes(from) : false
 		const isAntiLink = isGroup ? antilink.includes(from) : false
 		const isAntiallLink = isGroup ? antialllink.includes(from) : false
+		const isAntiigLink = isGroup ? antiiglink.includes(from) : false
 		const isWelkom = isGroup ? welkom.includes(from) : true
 		const isAuto = isGroup ? autosticker.includes(from) : false
 		const isMuted = isGroup ? mute.includes(from) : false
@@ -848,6 +850,17 @@ reply(String(e))
 			    denz.groupRemove(from, [kic]).catch((e) => { reply(mess.only.Badmin) })
 			}
 			        }
+        if (budy.includes("https://www.instagram.com/")) {
+        	if (!mek.key.fromMe){
+				if (!isGroup) return
+				if (!isAntiigLink) return
+				if (isGroupAdmins) return reply('The group boss is free, right?')
+				denz.updatePresence(from, Presence.composing)
+				var kic = `${sender.split("@")[0]}@s.whatsapp.net`
+				reply('Link detected, Auto kick!')
+			    denz.groupRemove(from, [kic]).catch((e) => { reply(mess.only.Badmin) })
+			}
+			        }
         if (budy.includes("https://","http://")) {
         	if (!mek.key.fromMe){
 				if (!isGroup) return
@@ -1262,7 +1275,7 @@ menu =`
 │▢  ${prefix}getbio 
 │▢  ${prefix}promote 
 │▢  ${prefix}demote 
-│▢  ${prefix}antilink 
+│▢  ${prefix}antialllink 
 │▢  ${prefix}antigrouplink 
 │▢  ${prefix}creategrup 
 │▢  ${prefix}tictactoe
@@ -1596,7 +1609,7 @@ menunya = `╭──────────────────╮
 │▢  ${prefix}getbio 
 │▢  ${prefix}promote 
 │▢  ${prefix}demote 
-│▢  ${prefix}antilink 
+│▢  ${prefix}antialllink 
 │▢  ${prefix}antigrouplink 
 │▢  ${prefix}creategrup 
 │▢  ${prefix}tictactoe
@@ -1966,7 +1979,7 @@ case 'groupmenu2':
 │▢  ${prefix}getbio 
 │▢  ${prefix}promote 
 │▢  ${prefix}demote 
-│▢  ${prefix}antilink 
+│▢  ${prefix}antialllink 
 │▢  ${prefix}antigrouplink 
 │▢  ${prefix}creategrup 
 │▢  ${prefix}tictactoe
@@ -2674,7 +2687,7 @@ menu = `╭────────────────╮
 │
 │🦋⃝❉⃟࿔ꦿ ${prefix}demote [ _@𝚃𝚊𝚐_ ]
 │
-│🦋⃝❉⃟࿔ꦿ ${prefix}antilink [ _𝚘𝚗 / 𝚘𝚏𝚏_ ]
+│🦋⃝❉⃟࿔ꦿ ${prefix}antialllink [ _𝚘𝚗 / 𝚘𝚏𝚏_ ]
 │
 │🦋⃝❉⃟࿔ꦿ ${prefix}antigrouplink [ _𝚘𝚗 / 𝚘𝚏𝚏_ ]
 │
@@ -4184,7 +4197,35 @@ const btnasu = {
 await denz.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftrol})
 					}
 					break
-							 case 'antilink':
+								 case 'antiiglink':
+        if (!isGroup) return reply(mess.only.group)
+			if (!isGroupAdmins) return reply(mess.only.admin)
+			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+					if (args[0] === 'on') {
+						if (isAntiigLink) return reply('𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙰𝙲𝚃𝙸𝚅𝙴')
+						antiiglink.push(from)
+						fs.writeFileSync('./database/antilink.json', JSON.stringify(antiiglink))
+						reply('𝙰𝙽𝚃𝙸-𝙶𝚁𝙾𝚄𝙿-𝙻𝙸𝙽𝙺 𝙷𝙰𝚅𝙴 𝙱𝙴𝙴𝙽 𝙴𝙽𝙰𝙱𝙻𝙴𝙳 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈')
+						denz.sendMessage(from, `ALLERT!!! Anti-ig-link have been enabled in this group\nSo if you send any group links you will be automatically removed from this group`, text)
+					} else if (args[0] === 'off') {
+						if (!isAntiigLink) return reply('𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳')
+						var ini = antiiglink.indexOf(from)
+						antiiglink.splice(ini, 1)
+						fs.writeFileSync('./database/antilink.json', JSON.stringify(antiiglink))
+						reply('𝙰𝙽𝚃𝙸-𝙶𝚁𝙾𝚄𝙿-𝙻𝙸𝙽𝙺 𝙷𝙰𝚅𝙴 𝙱𝙴𝙴𝙽 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈')
+					} else if (!c){
+ anu =`𝙲𝙻𝙸𝙲𝙺 𝙾𝙽 𝚃𝙾 𝙴𝙽𝙰𝙱𝙻𝙴 𝙰𝙽𝚃𝙸-𝙶𝚁𝙾𝚄𝙿-𝙻𝙸𝙽𝙺  \n𝙲𝙻𝙸𝙲𝙺 𝙾𝙵𝙵 𝚃𝙾 𝙳𝙸𝚂𝙰𝙱𝙻𝙴 𝙰𝙽𝚃𝙸-𝙶𝚁𝙾𝚄𝙿-𝙻𝙸𝙽𝙺 `
+punten = [{buttonId: 'antiiglink on', buttonText: {displayText: 'ON'}, type: 1},{buttonId: 'antiiglink off', buttonText: {displayText: 'OFF️'}, type: 1}]
+const btnasu = {
+    contentText: `${anu}`,
+    footerText: '© ᴘᴇᴘᴇ sɪʀ',
+    buttons: punten,
+    headerType: 1
+}
+await denz.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftrol})
+					}
+					break
+							 case 'antialllink':
         if (!isGroup) return reply(mess.only.group)
 			if (!isGroupAdmins) return reply(mess.only.admin)
 			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
