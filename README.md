@@ -1,50 +1,57 @@
-</p>
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=Welcome+to+HUSNI-SER+WA+Bot+repo;Created+by+HUSNI;This+is+a+Featured+bot;With+Love+HUSNI-SER)](https://git.io/typing-svg)
+<p align="center">
+<img src="https://i.ibb.co/XXJzY7C/denz.jpg" alt="𝑺𝑷𝒀𝑹𝑶 𝑺𝑬𝑹" width="170" />
+<p align="center">
+ ⻼H̸USNI⇥SER̸󱿋
 
-![My card name](https://cardivo.vercel.app/api?name=PEPE-SIR&description=Hi,%20Welcome%20To%20My%20Profile%20❤&image=https://avatars.githubusercontent.com/u/90826638?v=4&s=10?v=4&backgroundColor=%23ecf0f1&instagram=_roshan_p_r&github=pepesir&twitter=&pattern=leaf&colorPattern=%23eaeaea)
 
-
-<div align="center">
-<img src="https://i.imgur.com/6nR8tPu.jpeg" alt="paul" width="300" />
-
-# PAUL WALKER
-
->
->
->
 </div>
 <p align="center">
-  <a href="https://instagram.com/synzx_nbx"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/> 
-  <a href="https://wa.me/917356378949"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+  <a href="https://instagram.com/_husni_ser_"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/> 
+  <a href="https://wa.me/917025868709"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </p>
 
-## HOW TO INSTALL ON TERMUX
-```bash
-> pkg install nodejs && pkg install git
-> git clone https://github.com/aneeslub/paul-walker
-> cd paul-walker
-> npm i -g npm@6.14.14
-> npm install @adiwajshing/bailyes
-> npm install terminal-kit
-> bash install.sh
-> npm start/node index.js
-```
-## HOW TO INSTALL ON PC
-```bash
-> git clone https://github.com/aneeslub/paul-walker
-> cd paul-walker
-> npm install terminal-kit
-> npm i
-> npm start/node index.js
-```
+<div align="center">
 
-# INSTALL
-* [Node.js](https://nodejs.org/en/)
-* [Git](https://github.com/aneeslub/paul-walker) 
-* [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip)
-* [Libwebp](https://developers.google.com/speed/webp/download)
+ ### BIG THANKS TO💝
+
+<div align="center">
+
+![roshan](https://github.com/roshanpepe.png?size=100)
+
+
+
+---
+
+
+
+
+# Installation
+## For Windows
+```bash
+git clone https://github.com/nijin-husni/HUSNI-SER
+cd HUSNI-SER
+npm install
+node main.js
+```
+## For Termux
+```bash
+apt update && apt upgrade
+pkg update && pkg upgrade
+pkg install git
+git clone https://github.com/nijin-husni/HUSNI-SER
+ls
+cd HUSNI-SER
+npm i -g npm@6.14.14
+npm install
+npm audit
+npm audit fix
+npm start
+```
 
 # THANKS TO
-* [`Baileys`](https://github.com/adiwajshing/Baileys) 
-* [`aneeslub`](https://github.com/aneeslub) 
-  
-  
+* [`Husniser`](https://github.com/nijin-husni)
+* [`PEPE`](https://github.com/roshanpepe)
+* [`DenisSer`](https://github.com/DENIS)
+)
+
