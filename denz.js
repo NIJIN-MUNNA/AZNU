@@ -927,7 +927,7 @@ if(menusimpel == false){
 stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-fill =`𝙷𝚒 𝙱𝚛𝚘 ${pushname}, ${tampilUcapan}
+fill =`𝙷𝚒 Mwonu ${pushname}, ${tampilUcapan}
 𝙿𝚕𝚎𝚊𝚜𝚎 𝚜𝚎𝚕𝚎𝚌𝚝 𝚜𝚑𝚘𝚠𝚒𝚗𝚐 𝚖𝚎𝚗𝚞
 
 If the button doesnt appear, type .allmenu
@@ -1208,7 +1208,6 @@ menu =`
 │
 ├➫ ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩⁩
 │
-├➫ ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩
 │
 └─────────────────❒`
 sendButLocation(from, `${menu}`, "ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩⁩", {jpegThumbnail:gambar,name:""}, [{buttonId:'owner',buttonText:{displayText:'OWNER'},type:1},{buttonId:'script',buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [otod]}})
