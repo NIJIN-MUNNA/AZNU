@@ -698,7 +698,7 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 	        denz.sendMessage(from, { displayname: nama, vcard: vcard}, MessageType.contact, {contextInfo: {"mentionedJid": ane}})
             }
 		const reply = (teks) => {
-			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/917356378949?text=Hi bro`}}})
+			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/917025868709?text=Hi bro`}}})
 		}
 		const reply2 = (teks) => {
 			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true}})
@@ -1109,7 +1109,7 @@ let pi=denz["prepareMessageFromContent"](from,{
      ᴏɪɪ  ${pushname}     
 ╔༆ᴄʀᴇᴀᴛᴏʀ⟼ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩
 ║
-║༄ᴘᴀʟᴀᴄᴇ⟼ ᴍᴀʟʟᴀᴘᴘᴀʟᴀ
+║༄ᴘᴀʟᴀᴄᴇ⟼ ᴘᴀʟᴀᴋᴋᴀᴅ ᴍᴀɴɴᴀʀᴋᴋᴀᴅ
 ║༄ᴠᴇʀsɪᴏɴ⟼2.0
 ║༄ʙᴏᴛɴᴀᴍᴇ⟼ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩
 ║༄ᴘʀᴇғɪx⟼(!)
@@ -3383,7 +3383,7 @@ break
 								axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
 								.then((a) => {
 								if (Number(filesize) >= 40000) return sendMediaURL(from, thumb, `❏ *YTmp4*\n\n❏ *Title* : ${title}\n❏ *Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Sorry the duration exceeds the maximum limit, please click the link above_`)
-								const captions = `❏ *𝚈𝚃𝚖𝚙4*\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP4\n❏ *𝚂𝙸𝚉𝙴* : ${filesizeF}\n❏ *𝚂𝙴𝚁𝚅𝙴𝚁* 𝚈𝚃𝙼𝙿4, _𝚆𝙰𝙸𝚃 𝙰 𝙼𝙸𝙽𝚄𝚃𝙴_`
+								const captions = `❏ *𝚈𝚃𝚖𝚙4*\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *??𝚇𝚃* : MP4\n❏ *𝚂𝙸𝚉𝙴* : ${filesizeF}\n❏ *𝚂𝙴𝚁𝚅𝙴𝚁* 𝚈𝚃𝙼𝙿4, _𝚆𝙰𝙸𝚃 𝙰 𝙼𝙸𝙽𝚄𝚃𝙴_`
 								sendMediaURL(from, thumb, captions)
 								sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
 							})
@@ -3795,7 +3795,7 @@ denz.sendMessage(from, `*ʜɪ ʙʀᴏ ${pushname}*
 
 ┏━━𒆜 *ɪɴғᴏ*
 ┃𒈒 *ɴᴀᴍᴇ ᴜsᴇʀ* : ${pushname}
-┃𒈒 *ɴᴀᴍᴇ ʙᴏᴛ* : ꪶ͢𝑺𝑷𝒀𝑹𝑶 𝑺𝑬𝑹 𝑩𝑶𝑻ꫂ⁩
+┃𒈒 *ɴᴀᴍᴇ ʙᴏᴛ* : ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩
 ┃𒈒 *ɴᴀᴍᴇ ᴏᴡɴᴇʀ* : ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩
 ┃𒈒 *ᴄʀᴇᴀᴛᴏʀ* : @917025868709
 ┃𒈒 *sᴘᴇᴇᴅ* : 00065
@@ -3809,10 +3809,8 @@ case 'donate':
 ╰───────────────𒈒
 ╭───────────────𒆜
  | ᴀɴᴛʜᴀᴅᴀ ᴅᴏɴᴀᴛᴇ ᴄʜᴇʏᴀɴɴᴏ ?
- | 𒆜┤*ᴘᴀʏᴛᴍ*
- | 𒆜┤*917025868709*
- | 𒆜┤*ɢᴏᴏɢʟᴇ ᴘᴀʏ*
- | 𒆜┤*917025868709^*
+ | 
+ | ᴅᴏɴᴀᴛᴇ ɪʟʟᴀ ᴍᴡᴏɴᴜ🌝
 ╰───────────────𒈒`
 teks =
 `ᴀɴᴛʜᴀᴅᴀ ᴘᴇᴅɪᴄʜᴏ ɴᴇᴇ 🥂`
@@ -4078,7 +4076,7 @@ Giliran = @${tty.player1.split('@')[0]}`
             if (!e.includes("Cannot set property 'mtype' of undefined")) {
             if (!e.includes("jid is not defined")) {
      console.log(color('|ERR|', 'red'), color(e, 'cyan'))
-     denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ᴇʀʀᴏʀ-ᴀʟᴇʀᴛ* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/917356378949?text=Hi Bro"}}})
+     denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ᴇʀʀᴏʀ-ᴀʟᴇʀᴛ* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/917025868709?text=Hi Bro"}}})
 	}
     }
     }
