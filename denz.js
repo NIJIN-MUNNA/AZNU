@@ -105,16 +105,6 @@ NamaOwner = settings.NamaOwner
 multi = true
 nopref = false
 
-// HUSNI
-ApiZeks = "https://api.zeks.xyz",
-zeksApikey = "Alphabott",
-ownernamehusni = "ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩"
-botnamehusni = "ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩"
-autovn = false;
-autoketik = false;
-
-// ------------- fear aavanda keto -----------
-
 // APIKEY
 HunterApi = settings.HunterApi
 YuzApi = 'Yuzzu'
@@ -130,7 +120,7 @@ function kyun(seconds) {
 	var seconds = Math.floor(seconds % 60);
 
 	//return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
-	return `${pad(hours)}𝙷𝙾𝚄𝚁 ${pad(minutes)}𝙼𝙸𝙽𝚄𝚃𝙴 ${pad(seconds)}𝚂𝙴𝙲𝙾𝙽𝙳𝚂`
+	return `${pad(hours)}ʜᴏᴜʀ ${pad(minutes)}ᴍɪɴᴜᴛᴇ ${pad(seconds)}sᴇᴄᴏɴᴅ`
 }
 const sleep = async (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -257,19 +247,19 @@ try {
 		const dfrply = fs.readFileSync('./denz.jpg')
 		cmhit.push(command)
         mess = {
-			wait: '𝚆𝙰𝙸𝚃 MWONU💖',
-			success: '𝚂𝚄𝙲𝙲𝚄𝚂𝚂✔',
+			wait: 'ᴡᴀɪᴛ ʙʀᴏ💖',
+			success: 'sᴜᴄᴄᴜss🤕',
 			error: {
-				stick: '𝙲𝙰𝙽𝙽𝙾𝚃 𝙰𝙲𝙲𝙴𝚂𝚂 𝚅𝙸𝙳𝙴𝙾☚',
-				Iv: '𝙸𝙽𝚅𝙰𝙸𝙻𝙳 𝙻𝙸𝙽𝙺☚',
-                api: '𝙴𝚁𝚁𝙾𝚁'
+				stick: 'ᴄᴀɴɴᴏᴛ ᴀᴄᴄᴇss ᴠɪᴅᴇᴏ🤕',
+				Iv: 'ɪɴᴠᴀɪʟᴅ ʟɪɴᴋ😖',
+                api: 'ᴇʀʀᴏʀ💔'
 			},
 			only: {
-				group: '𝙾𝙽𝙻𝚈 𝚆𝙸𝚃𝙷 𝙸𝙽 𝙶𝚁𝙾𝚄𝙿𝚂',
-				ownerG: '𝙾𝙽𝙻𝚈 𝙵𝙾𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙳𝙼𝙸𝙽',
-				ownerB: 'ATH ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩⁩IN MAATHRAME PATTU',
-				admin: 'AVANE KONDONNUM PATTILLA SAARE',
-				Badmin: '𝙼𝙰𝙺𝙴 𝙱𝙾𝚃 𝙶𝚁𝙾𝚄𝙿 𝙰𝙳𝙼𝙸𝙽'
+				group: 'ᴏɴʟʏ ᴡɪᴛʜ ɪɴ ɢʀᴏᴜᴘ ᴅᴏɴᴛ ᴛʀʏ🙂',
+				ownerG: 'ᴏɴʟʏ ғᴏʀ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴ ᴅᴏɴᴛ ᴛʀʏ🙂',
+				ownerB: 'ᴏɴʟʏ ғᴏʀ ⁩ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩🥂',
+				admin: 'ᴏɴʟʏ ғᴏʀ ᴀᴅᴍɪɴ🙂',
+				Badmin: 'ᴍᴀᴋᴇ ʙᴏᴛ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴ😣'
 			}
 		}
 		const botNumber = denz.user.jid
@@ -290,7 +280,7 @@ try {
 		const isGroupAdmins = groupAdmins.includes(sender) || false
 		const isKickArea = isGroup ? kickarea.includes(from) : false
 		const isAntiLink = isGroup ? antilink.includes(from) : false
-		const isWelkom = isGroup ? welkom.includes(from) : true
+		const isWelkom = isGroup ? welkom.includes(from) : false
 		const isAuto = isGroup ? autosticker.includes(from) : false
 		const isMuted = isGroup ? mute.includes(from) : false
 		const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
@@ -300,7 +290,7 @@ try {
 		}
 		if (antibot === true) return
 		const katalog = (teks) => {
-             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 2021, "message": teks, "footerText": "*_© ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩⁩_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
+             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 777888, "message": teks, "footerText": "*_© ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
              denz.relayWAMessage(res)
         }
         const grupinv = (teks) => {
@@ -330,33 +320,61 @@ try {
 			//-
 			//WAKTU
 			var ase = new Date();
+                        var waktoo = ase.getHours();
                         var jamss = ase.getHours();
-                         switch(jamss){
-                case 0: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 1: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 2: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 3: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 4: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 5: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 6: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 7: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 8: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 9: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 10: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 11: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 12: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 13: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 14: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 15: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 16: jamss = "️ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 17: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 18: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 19: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 20: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 21: jamss = "ᴀʏsʜ ᴀᴀʀᴀ ɪᴛʜᴜ😌"; break;
-                case 22: jamss = "𝙼𝙸𝙳𝙽𝙸𝙶𝙷𝚃 🌉"; break;
-                case 23: jamss = "𝙼𝙸𝙳𝙽𝙸𝙶𝙷𝚃 🌉"; break;
+                        switch(waktoo){
+               case 0: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ - ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩🙂"; break;
+                case 1: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ - ī.ᴀᴍ/ꪶ͢sᴘʏʀᴏ sᴇʀꫂ🙂"; break;
+                case 2: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ - ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩🙂"; break;
+                case 3: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ - ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩🙂"; break;
+                case 4: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ😊"; break;
+                case 5: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ😊"; break;
+                case 6: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ\n- ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩😊"; break;
+                case 7: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ\n- ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩🌚"; break;
+                case 8: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ\n- ī.ᴀᴍ/ꪶ͢sᴘʏʀᴏ sᴇʀꫂ😊⁩"; break;
+                case 9: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ\n- ī.ᴀᴍ/ꪶ͢sᴘʏʀᴏ sᴇʀꫂ🤗⁩"; break;
+                case 10: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ\n- ī.ᴀᴍ/ꪶ͢sᴘʏʀᴏ sᴇʀꫂ😚⁩"; break;
+                case 11: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ\n- ī.ᴀᴍ/ꪶ͢sᴘʏʀᴏ sᴇʀꫂ🤠⁩"; break;
+                case 12: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ\n- ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩😵"; break;
+                case 13: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ\n- ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩🌝"; break;
+                case 14: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ\n- ī.ᴀᴍ/ꪶ͢sᴘʏʀᴏ sᴇʀꫂ🙃⁩"; break;
+                case 15: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ\n- ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩🤭"; break;
+                case 16: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ\n- ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩😉"; break;
+                case 17: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ\n- ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩😌"; break;
+                case 18: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ\n- ī.ᴀᴍ/ꪶ͢sᴘʏʀᴏ sᴇʀꫂ😉⁩"; break;
+                case 19: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ🌝"; break;
+                case 20: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ🌝"; break;
+                case 21: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ🌝"; break;
+                case 22: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ\n- ī.ᴀᴍ/ꪶ͢sᴘʏʀᴏ sᴇʀꫂ🌚⁩"; break;
+                case 23: waktoo = "ᴀʏɪsʜ ᴀʀᴀ ᴀᴛʜᴜ\n- ī.ᴀᴍ/ꪶ͢sᴘʏʀᴏ sᴇʀꫂ🌚⁩"; break;
             }
+            switch(jamss){
+                case 0: jamss = "ᴍɪᴅɴɪɢʜᴛ??"; break;
+                case 1: jamss = "ᴍɪᴅɴɪɢʜᴛ🌃"; break;
+                case 2: jamss = "ᴍɪᴅɴɪɢʜᴛ🌃"; break;
+                case 3: jamss = "ᴍɪᴅɴɪɢʜᴛ🌃"; break;
+                case 4: jamss = "sᴀʜᴜʀ🍙"; break;
+                case 5: jamss = "ɢᴏᴅ ʙʟᴇss ʏᴏᴜ🕌"; break;
+                case 6: jamss = "ᴍᴏʀɴɪɴɢ🏙"; break;
+                case 7: jamss = "ᴍᴏʀɴɪɴɢ🏙"; break;
+                case 8: jamss = "ᴍᴏʀɴɪɴɢ🏙"; break;
+                case 9: jamss = "ᴍᴏʀɴɪɴɢ🏙"; break;
+                case 10: jamss = "ᴍᴏʀɴɪɴɢ🏙"; break;
+                case 11: jamss = "ᴀғᴛᴇʀɴᴏᴏɴ🌁"; break;
+                case 12: jamss = "സുപ്രഭാതം🕌"; break;
+                case 13: jamss = "ᴀғᴛᴇʀɴᴏᴏɴ🌁"; break;
+                case 14: jamss = "ᴀғᴛᴇʀɴᴏᴏɴ🌁"; break;
+                case 15: jamss = "ɢᴏᴅ ʙʟᴇss ʏᴏᴜ🕌"; break;
+                case 16: jamss = "ᴀғᴛᴇʀɴᴏᴏɴ🌇"; break;
+                case 17: jamss = "ᴇᴠᴇɴɪɴɢ🌆"; break;
+                case 18: jamss = "ʙʀᴇᴀᴋɪɴɢ ᴛʜᴇ ғᴀsᴛ👨‍👩‍👧‍👦"; break;
+                case 19: jamss = "ɢᴏᴅ ʙʟᴇss ʏᴏᴜ🕌"; break;
+                case 20: jamss = "ɴɪɢʜᴛ🌆"; break;
+                case 21: jamss = "ɴɪɢʜᴛ🌆"; break;
+                case 22: jamss = "ʟᴏᴠᴇʟʏ ɴɪɢʜᴛ ᴠɪʙᴇ🌌"; break;
+                case 23: jamss = "ᴍɪᴅɴɪɢʜᴛ🌃"; break;
+            }
+            var tampilHari = "" + waktoo;
             var tampilUcapan = "" + jamss;
             const jmn = moment.tz('Asia/Kolkata').format('HH:mm:ss')
 				let d = new Date
@@ -369,7 +387,7 @@ try {
 				month: 'long',
 				year: 'numeric'
 		       })
- // FAKE REPLY BY YOGI PEWE
+// FAKE REPLY BY YOGI PEWE
 // PRODUCT
 const ftok = {
 key: {
@@ -385,15 +403,15 @@ key: {
 					},
 					"title": `${tampilUcapan} ${pushname}`, //Kasih namalu 
 					"description": `${tampilUcapan} ${pushname}`, 
-					"currencyCode": "USD",
-					"priceAmount1000": "2000",
+					"currencyCode": "INR",
+					"priceAmount1000": "9999999",
 					"retailerId": `${tampilUcapan} ${pushname}`,
 					"productImageCount": 1
 				},
 				    "businessOwnerJid": `0@s.whatsapp.net`
 		}
 	}
-}
+}		       
 // TROLI
 const ftrol = {
 	key : {
@@ -603,7 +621,7 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
             if (isAfk(mek.key.remoteJid)) return
             addafk(mek.key.remoteJid)
 			heheh = ms(Date.now() - waktuafk)
-		  sendButMessage(from, `Hai ${pushname}, Sorry it seems at this time ${NamaOwner} currently Offline\n\n*Reason :* ${alasanafk}\n*Since :* ${heheh.hours} Hour, ${heheh.minutes} Minutes, ${heheh.seconds} second\n\nPlease contact again after Online`, "*_© ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩⁩_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+		  sendButMessage(from, `Hai ${pushname}, Sorry it seems at this time ${NamaOwner} currently Offline\n\n*Reason :* ${alasanafk}\n*Since :* ${heheh.hours} Hour, ${heheh.minutes} Minutes, ${heheh.seconds} second\n\nPlease contact again after Online`, "*_© ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 			}
 		}
 		if (mek.key.remoteJid.endsWith('@g.us') && offline) {
@@ -616,7 +634,7 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                         if (isAfk(mek.key.remoteJid)) return
                         addafk(mek.key.remoteJid)
 						heheh = ms(Date.now() - waktuafk)
-			       sendButMessage(from, `Hai ${pushname}, Sorry it seems at this time ${NamaOwner} currently Offline\n\n*Reason :* ${alasanafk}\n*Since :* ${heheh.hours} Hour, ${heheh.minutes} Minutes, ${heheh.seconds} second\n\nPlease contact again after Online`, "*_© ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩⁩_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+			       sendButMessage(from, `Hai ${pushname}, Sorry it seems at this time ${NamaOwner} currently Offline\n\n*Reason :* ${alasanafk}\n*Since :* ${heheh.hours} Hour, ${heheh.minutes} Minutes, ${heheh.seconds} second\n\nPlease contact again after Online`, "*_© ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 					}
 				}
 						}
@@ -680,7 +698,7 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 	        denz.sendMessage(from, { displayname: nama, vcard: vcard}, MessageType.contact, {contextInfo: {"mentionedJid": ane}})
             }
 		const reply = (teks) => {
-			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https;//wa.me/917025868709`}}})
+			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/917356378949?text=Hi bro`}}})
 		}
 		const reply2 = (teks) => {
 			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true}})
@@ -771,7 +789,7 @@ return reply(parse)
             
 if (budy.startsWith('>')){
 if (!isOwner)return reply(`This command can not be carried out by Jadibot temporarily`)
-console.log(color('[EVAL]'), color(moment(mek.messageTimestamp * 1000).format('DD/MM/YY HH:mm:ss'), 'yellow'), color(`tamp V1 brooo`))
+console.log(color('[EVAL]'), color(moment(mek.messageTimestamp * 1000).format('DD/MM/YY HH:mm:ss'), 'yellow'), color(`Paul V1 brooo`))
 ras = budy.slice(1)
 function _(rem) {
 ren = JSON.stringify(rem,null,2)
@@ -823,7 +841,49 @@ reply(String(e))
 }
 }
 			// AUTO
-			const _0x1e32=['lI9Kzw56lMPWzW','mJu5mZKXqvbAvMTJ','lI9TzwrPys9ZDgLJA2vYlW','mJGYzgj1EuLk','CMvHzezPBgvtEw5J','mtGYmti1ohH1vNvKtW','mte0ndK5uvfAEwrQ','mebZlNDOyxrZyxbWlM5LDa','lMPWzW','lI9TzwrPys9PBwfNzs8','odC4mdu4uMDOz1bm','mLHAvfzXBa','44cmigLTywDLiooaJsdIIRFVUi8G','C3rHDhvZqgjYB2fKy2fZDa','C2vUze1LC3nHz2u','mZu1mZa3vhj5tujb','mMvpuMzVvq','n0LVyMnpBW','yxvKAw8VBxa0','44cmigf1zgLViooaJsdIIRFVUi8G','ndm5otfJwwDVufi','44cmihn0AwnRzxiG44cniokkT++4JYa','lM1WmW','mtKZmu51vMfutq'];const _0x28cf0e=_0x2568;(function(_0x5e6930,_0x29a525){const _0x186e3e=_0x2568;while(!![]){try{const _0x104dff=parseInt(_0x186e3e(0x130))*parseInt(_0x186e3e(0x144))+-parseInt(_0x186e3e(0x13a))*-parseInt(_0x186e3e(0x131))+parseInt(_0x186e3e(0x13c))*-parseInt(_0x186e3e(0x138))+parseInt(_0x186e3e(0x13f))*parseInt(_0x186e3e(0x132))+parseInt(_0x186e3e(0x143))+parseInt(_0x186e3e(0x135))+-parseInt(_0x186e3e(0x13e));if(_0x104dff===_0x29a525)break;else _0x5e6930['push'](_0x5e6930['shift']());}catch(_0xfc8ccd){_0x5e6930['push'](_0x5e6930['shift']());}}}(_0x1e32,0x8f582));for(let anji of setik){budy===anji&&(result=fs[_0x28cf0e(0x13d)](_0x28cf0e(0x13b)+anji+'.webp'),denz[_0x28cf0e(0x147)](from,result,sticker,{'quoted':{'key':{'fromMe':![],'participant':'0@s.whatsapp.net',...from?{'remoteJid':_0x28cf0e(0x146)}:{}},'message':{'orderMessage':{'itemCount':0x0,'status':0xc8,'thumbnail':fs[_0x28cf0e(0x13d)](_0x28cf0e(0x139)),'surface':0xc8,'message':_0x28cf0e(0x136)+anji,'orderTitle':'ꪶ\x20ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩\x20ꫂ⁩\x20➫➬➭️\x20'+anji,'sellerJid':'0@s.whatsapp.net'}}}}));}for(let anju of vien){budy===anju&&(result=fs[_0x28cf0e(0x13d)]('./media/vn/'+anju+_0x28cf0e(0x137)),denz[_0x28cf0e(0x147)](from,result,audio,{'quoted':{'key':{'fromMe':![],'participant':'0@s.whatsapp.net',...from?{'remoteJid':_0x28cf0e(0x146)}:{}},'message':{'orderMessage':{'itemCount':0x0,'status':0xc8,'thumbnail':fs[_0x28cf0e(0x13d)](_0x28cf0e(0x139)),'surface':0xc8,'message':'ꪶ\x20ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩\x20ꫂ⁩\x20➫➬➭\x20'+anju,'orderTitle':_0x28cf0e(0x134)+anju,'sellerJid':_0x28cf0e(0x140)}}},'mimetype':_0x28cf0e(0x133),'duration':0x3b9ac9ff,'ptt':!![]}));}for(let anjh of imagi){budy===anjh&&(result=fs[_0x28cf0e(0x13d)](_0x28cf0e(0x142)+anjh+_0x28cf0e(0x141)),denz['sendMessage'](from,result,image,{'quoted':{'key':{'fromMe':![],'participant':'0@s.whatsapp.net',...from?{'remoteJid':_0x28cf0e(0x146)}:{}},'message':{'orderMessage':{'itemCount':0x0,'status':0xc8,'thumbnail':fs[_0x28cf0e(0x13d)](_0x28cf0e(0x139)),'surface':0xc8,'message':'ꪶ\x20ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩⁩\x20ꫂ⁩\x20➫➬➭\x20'+anjh,'orderTitle':_0x28cf0e(0x145)+anjh,'sellerJid':'0@s.whatsapp.net'}}}}));}function _0x2568(_0x5c60f5,_0x243808){_0x5c60f5=_0x5c60f5-0x130;let _0x1e328=_0x1e32[_0x5c60f5];if(_0x2568['wYlITc']===undefined){var _0x256842=function(_0x19941a){const _0x503b3b='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x535711='';for(let _0x317981=0x0,_0x4893fb,_0x48b948,_0x49e499=0x0;_0x48b948=_0x19941a['charAt'](_0x49e499++);~_0x48b948&&(_0x4893fb=_0x317981%0x4?_0x4893fb*0x40+_0x48b948:_0x48b948,_0x317981++%0x4)?_0x535711+=String['fromCharCode'](0xff&_0x4893fb>>(-0x2*_0x317981&0x6)):0x0){_0x48b948=_0x503b3b['indexOf'](_0x48b948);}return _0x535711;};_0x2568['OkPRAX']=function(_0xab1073){const _0x307ab4=_0x256842(_0xab1073);let _0x46316b=[];for(let _0x3c8d6e=0x0,_0x591a5d=_0x307ab4['length'];_0x3c8d6e<_0x591a5d;_0x3c8d6e++){_0x46316b+='%'+('00'+_0x307ab4['charCodeAt'](_0x3c8d6e)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x46316b);},_0x2568['qokPrw']={},_0x2568['wYlITc']=!![];}const _0x339f96=_0x1e32[0x0],_0x4c8a9a=_0x5c60f5+_0x339f96,_0x44c0a3=_0x2568['qokPrw'][_0x4c8a9a];return _0x44c0a3===undefined?(_0x1e328=_0x2568['OkPRAX'](_0x1e328),_0x2568['qokPrw'][_0x4c8a9a]=_0x1e328):_0x1e328=_0x44c0a3,_0x1e328;}for(var i=0x0;i<commandsDB['length'];i++){budy['toLowerCase']()===commandsDB[i]['pesan']&&reply(commandsDB[i]['balasan']);}	
+			
+ rspndbutton = (type == 'listResponseMessage') ? mek.message.listResponseMessage.selectedDisplayText : '';
+ if (rspndbutton) { if (rspndbutton == 'ping')
+ {denz.sendMessage(from, dwldm(), text, {quoted: mek})}}
+ if (rspndbutton) { if (rspndbutton == 'downloadmenu')
+ {denz.sendMessage(from, dwldm(), text, {quoted: mek})}} 		
+ if (rspndbutton) { if (rspndbutton == 'groupmenu')
+ {denz.sendMessage(from, grpm(), text, {quoted: mek})}} 		
+ if (rspndbutton) { if (rspndbutton == 'makermenu')
+ {denz.sendMessage(from, mkrm(), text, {quoted: mek})}} 		
+ if (rspndbutton) { if (rspndbutton == 'othermenu')
+ {denz.sendMessage(from, otrm(), text, {quoted: mek})}} 		
+ if (rspndbutton) { if (rspndbutton == 'ownermenu')
+ {denz.sendMessage(from, ownm(), text, {quoted: mek})}} 		 		
+ if (rspndbutton) { if (rspndbutton == 'help')
+ {denz.sendMessage(from, stkrm(), text, {quoted: mek})}} 		
+ if (rspndbutton) { if (rspndbutton == 'owner')
+ {denz.sendMessage(from, tlsm(), text, {quoted: mek})}} 	
+ 			
+			for (let anji of setik){
+				if (budy === anji){
+					result = fs.readFileSync(`./media/sticker/${anji}.webp`)
+					denz.sendMessage(from, result, sticker, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999, status: 200, thumbnail: fs.readFileSync('./denz.jpg'), surface: 200, message: `✘ ꪶ͢sᴘʏʀᴏ sᴇʀꫂ ⁩✘ ➫➬➭ ${anji}`, orderTitle: `𒈒 ꪶ͢sᴘʏʀᴏꫂ⁩ 𒈒➫➬➭ ${anji}`, sellerJid: '0@s.whatsapp.net'}}}})
+					}
+			}
+			for (let anju of vien){
+				if (budy === anju){
+					result = fs.readFileSync(`./media/vn/${anju}.mp3`)
+					denz.sendMessage(from, result, audio, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999, status: 200, thumbnail: fs.readFileSync('./denz.jpg'), surface: 200, message: `✘ ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩ ✘ ➫➬➭ ${anju}`, orderTitle: `𒈒 ꪶ͢sᴘʏʀᴏꫂ⁩ 𒈒➫➬➭  ${anju}`, sellerJid: '0@s.whatsapp.net'}}}, mimetype: 'audio/mp4', duration: 359996400, ptt: true})
+					}
+			}
+			for (let anjh of imagi){
+				if (budy === anjh){
+					result = fs.readFileSync(`./media/image/${anjh}.jpg`)
+					denz.sendMessage(from, result, image, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999, status: 200, thumbnail: fs.readFileSync('./denz.jpg'), surface: 200, message: `✘ ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩ ✘ ➫➬➭ ${anjh}`, orderTitle: `𒈒 ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩ 𒈒➫➬➭ ${anjh}`, sellerJid: '0@s.whatsapp.net'}}}})
+					}
+			}
+			for (var i = 0; i < commandsDB.length ; i++) {
+				if (budy.toLowerCase() === commandsDB[i].pesan) {
+					reply(commandsDB[i].balasan)
+				}
+			}	
+			
 			// MUTE
         if (isMuted){
             if (!isGroupAdmins && !isOwner && !mek.key.fromMe) return
@@ -860,15 +920,15 @@ numd = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${send
                      sami = simi.success
                         denz.sendMessage(from, `_${sami}_`, text, {thumbnail: ofrply, sendEphemeral: true, quoted:mek, contextInfo : {forwardingScore: 508, isForwarded: true}})
                       }
-// 𝘼𝙪𝙩𝙤 𝙑𝙣:𝙫
-if (autovn) {
-	if (autovn === false) return
-await denz.updatePresence(from, Presence.recording)
-} else if (autoketik) {
-	if (autoketik === false) return
-await denz.updatePresence(from, Presence.composing)
+if (!settings.autoread) {
+denz.chatRead(from)
 }
-
+if (!settings.autocomposing) {
+denz.updatePresence(from, Presence.composing)
+}
+if (!settings.autorecording) {
+denz.updatePresence(from, Presence.recording)
+}
    const sotoy = [
         '🍊 : 🍒 : 🍐',
         '🍒 : 🔔 : 🍊',
@@ -922,21 +982,21 @@ await denz.updatePresence(from, Presence.composing)
         reply(su)
 				}
         switch (command) {
-case 'help':
+case 'allmenu':
 if(menusimpel == false){
 stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-fill =`𝙷𝚒 Mwonu ${pushname}, ${tampilUcapan}
+fill =`𝙷𝚒 𝙱𝚛𝚘 ${pushname}, ${tampilUcapan}
 𝙿𝚕𝚎𝚊𝚜𝚎 𝚜𝚎𝚕𝚎𝚌𝚝 𝚜𝚑𝚘𝚠𝚒𝚗𝚐 𝚖𝚎𝚗𝚞
 
 If the button doesnt appear, type .allmenu
 `
-menu =`ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩⁩`
+menu =`ī.ᴀᴍ/sᴘʏʀᴏ sᴇʀꪶ͢ꫂ⁩`
 gbutsan = [
-{buttonId:`allmenu`,buttonText:{displayText:'😱SHOW MENU'},type:1},
-{buttonId:`owner`,buttonText:{displayText:'😎OWNER'},type:1},
-{buttonId:`script`,buttonText:{displayText:'📃SCRIPT'},type:1}
+{buttonId:`allmenu`,buttonText:{displayText:'ᴍᴇɴᴜ'},type:1},
+{buttonId:`owner`,buttonText:{displayText:'ᴏᴡɴᴇʀ'},type:1},
+{buttonId:`script`,buttonText:{displayText:'sᴄʀɪᴘᴛ'},type:1}
 ]
 mhan = await denz.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
 const buttonMessages = {
@@ -980,687 +1040,229 @@ gambar = await getBuffer(randKey.result)
 ☯ 𝚃𝙸𝙼𝙴 : ${timeWit}  
 ☯ 𝙳𝙰𝚈 : ${week} ${weton}
 ☯ 𝙳𝙰𝚃𝙴 : ${calender}`
-sendButLocation(from, `${menu}`, "ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩⁩", {jpegThumbnail:gambar,name:""}, [
-{buttonId:`allmenu`,buttonText:{displayText:'😱SHOW MENU'},type:1},
-{buttonId:`owner`,buttonText:{displayText:'😎OWNER'},type:1},
-{buttonId:`script`,buttonText:{displayText:'📃SCRIPT'},type:1}
+sendButLocation(from, `${menu}`, "ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩", {jpegThumbnail:gambar,name:""}, [
+{buttonId:`allmenu`,buttonText:{displayText:'ᴍᴇɴᴜ'},type:1},
+{buttonId:`owner`,buttonText:{displayText:'ᴏᴡɴᴇʀ'},type:1},
+{buttonId:`script`,buttonText:{displayText:'sᴄʀɪᴘᴛ'},type:1}
 ], {contextInfo: { mentionedJid: [otod]}})
 }
            	break
-case 'allmenu':
-denz.sendMessage(from, '𝚆𝚊𝚒𝚝', text, {quoted: ftok})
+case 'help':
+case '?':
+denz.sendMessage(from, 'ᴡᴀɪᴛ ʙʀᴏ🙂', text, {quoted: ftok})
 stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
 data = fs.readFileSync('./lib/logo.js');
 jsonData = JSON.parse(data);
-stod = `${sender}`;
 randIndex = Math.floor(Math.random() * jsonData.length);
 randKey = jsonData[randIndex];
 gambar = await getBuffer(randKey.result)
-menu =`
-╭──────────────────╮
-       ${botnamehusni}
-╭──────────────────╯
-│
-│   𝙷𝙸 ᴍᴡᴏɴᴜ @${stod.split('@')[0]} 
-│
-│ ▢ 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 : ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩
-│ ▢ 𝙾𝚆𝙽𝙴𝚁 : ${ownernamehusni}
-│ ▢ 𝙱𝙾𝚃 𝙽𝙰𝙼𝙴 : ${botnamehusni}
-│ ▢ 𝙼𝙾𝙳𝙴 : ${publik ? 'Public' : 'Self'}
-│ ▢ 𝙿𝚁𝙴𝙵𝙸𝚇 : ${multi ? 'Multi Prefix' : 'No Prefix'}
-│ ▢ 𝚃𝙾𝚃𝙰𝙻 𝙷𝙸𝚃 : ${cmhit.length}
-│
-│
-│
-│      ▎▍▌▌▉▏▎▌▉▐▏▌▎
-│      ▎▍▌▌▉▏▎▌▉▐▏▌▎
-│       © @${otod.split('@')[0]}
-│
-╰──────────────────╮
-  
-╭──────────────────╯
-│     ◩ *ᴀʟʟ ᴍᴇɴᴜ* ◪
-╭──────────────────╯
-│
-│   ❑ *Oᴡɴᴇʀ Mᴇɴᴜ*
-│
-│
-│▢ ${prefix} setthumb 
-│▢ ${prefix}autorespon 
-│▢ ${prefix}bc 
-│▢ ${prefix}tobc
-│▢ ${prefix}return 
-│▢ ${prefix}clearall
-│▢ ${prefix}delchat
-│▢ ${prefix}mute
-│▢ ${prefix}unmute
-│▢ ${prefix}public
-│▢ ${prefix}self
-│▢ ${prefix}spam
-│▢ ${prefix}demoteall
-│▢ ${prefix}promoteall
-│▢ ${prefix}addcmd 
-│▢ ${prefix}delcmd 
-│▢ ${prefix}listcmd
-│▢ ${prefix}spamsw 
-│▢ ${prefix}upswteks 
-│▢ ${prefix}upswlokasi 
-│▢ ${prefix}upswaudio
-│▢ ${prefix}upswvoice 
-│▢ ${prefix}upswsticker 
-│▢ ${prefix}upswimage 
-│▢ ${prefix}upswgif
-│▢ ${prefix}upswvideo 
-│▢ ${prefix}shutdown
-│▢ ${prefix}offline
-│▢ ${prefix}online
-│▢ ${prefix}exif 
-│▢ ${prefix}setprofile 
-│▢ ${prefix}setname 
-│▢ ${prefix}setprefix 
-│▢ ${prefix}setbio 
-│▢ ${prefix}addsticker 
-│▢ ${prefix}delsticker 
-│▢ ${prefix}addvn 
-│▢ ${prefix}delvn
-│▢ ${prefix}addimage 
-│▢ ${prefix}delimage 
-│▢ ${prefix}bug 
-│▢ ${prefix}bugpc2 
-│▢ ${prefix}bugtroli2 
-│▢ ${prefix}bugpc
-│▢ ${prefix}bugcombine
-│▢ ${prefix}bugtroli
-│▢ ${prefix}buglokasi
-│▢ ${prefix}bughole
-│▢ ${prefix}leave
-│▢ ${prefix}restart
-│▢ ${prefix}join 
-│▢ ${prefix}addrespon 
-│▢ ${prefix}delrespon 
-│
-│
-│   ❑ *Dᴏᴡɴʟᴏᴀᴅ Mᴇɴᴜ*
-│    
-│
-│▢   ︎︎${prefix}infogempa
-│▢  ${prefix}herolist
-│▢  ${prefix}herodetail 
-│▢  ${prefix}google 
-│▢  ${prefix}gimage 
-│▢  ${prefix}wiki 
-│▢  ${prefix}mediafire 
-│▢  ${prefix}ytsearch 
-│▢  ${prefix}ytmp4 
-│▢  ${prefix}ytmp3 
-│▢  ${prefix}play
-│▢  ${prefix}video
-│▢  ${prefix}tinyurl
-│▢  ${prefix}fetch 
-│▢  ${prefix}igdl
-│▢  ${prefix}tiktokdl
-│▢  ${prefix}pinterest [
-│▢  ${prefix}lirik 
-│▢  ${prefix}tourl
-│▢  ${prefix}resepmasakan 
-│▢  ${prefix}artimimpi 
-│▢  ${prefix}bilangangka 
-│▢  ${prefix}kalkulator 
-│▢  ${prefix}fancytext 
-│▢  ${prefix}githubstalk 
-│▢  ${prefix}translate 
-│▢  ${prefix}ss 
-│
-│
-│   ❑ *Oᴡɴᴇʀ Mᴇɴᴜ*
-│ 
-│    
-│▢  ${prefix}marvel
-│▢  ${prefix}t3d 
-│▢  ${prefix}logoa 
-│▢  ${prefix}phlogo 
-│▢  ${prefix}leavest
-│▢  ${prefix}notewrite
-│▢  ${prefix}neon2  
-│▢  ${prefix}wall
-│▢  ${prefix}codetxt 
-│▢  ${prefix}text3d 
-│▢  ${prefix}warrior 
-│
-│
-│   ❑ *Gʀᴏᴜᴘ Mᴇɴᴜ*
-│
-│
-│▢  ${prefix}getpict 
-│▢  ${prefix}getname 
-│▢  ${prefix}getbio 
-│▢  ${prefix}promote 
-│▢  ${prefix}demote 
-│▢  ${prefix}antilink 
-│▢  ${prefix}creategrup 
-│▢  ${prefix}tictactoe
-│▢  ${prefix}delttt
-│▢  ${prefix}getpp
-│▢  ${prefix}kick
-│▢  ${prefix}add
-│▢  ${prefix}getdeskgc
-│▢  ${prefix}sider 
-│▢  ${prefix}hacked 
-│▢  ${prefix}setnamegc 
-│▢  ${prefix}setdeskgc 
-│▢  ${prefix}fitnah 
-│▢  ${prefix}kontak 
-│▢  ${prefix}kontag 
-│▢  ${prefix}opengc
-│▢  ${prefix}closegc
-│▢  ${prefix}resetlinkgc
-│▢  ${prefix}linkgrup
-│▢  ${prefix}hidetag 
-│▢  ${prefix}sticktag 
-│▢  ${prefix}totag 
-│
-│
-│   ❑ *Oᴛʜᴇʀ Mᴇɴᴜ*
-│
-│
-│▢  ${prefix}caripesan
-│▢  ${prefix}slots
-│▢  ${prefix}suit 
-│▢  ${prefix}tag 
-│▢  ${prefix}tagme
-│▢  ${prefix}tts 
-│▢  ${prefix}readmore 
-│▢  ${prefix}fitnahpc 
-│▢  ${prefix}chat 
-│▢  ${prefix}fdeface
-│▢  ${prefix}listimage
-│▢  ${prefix}liststicker
-│▢  ${prefix}listvn
-│▢  ${prefix}listgrup
-│▢  ${prefix}baileys 
-│▢  ${prefix}q 
-│▢  ${prefix}getcaption
-│▢  ${prefix}pantun
-│▢  ${prefix}tospam 
-│▢  ${prefix}sharelock 
-│▢  ${prefix}sticker
-│▢  ${prefix}stickerwm 
-│▢  ${prefix}takestick 
-│▢  ${prefix}colong 
-│▢  ${prefix}dadu
-│▢  ${prefix}semoji 
-│▢  ${prefix}attp 
-│▢  ${prefix}img
-│▢  ${prefix}tomp3 
-│▢  ${prefix}tomp4 
-│▢  ${prefix}robot 
-│▢  ${prefix}balik 
-│▢  ${prefix}bass 
-│▢  ${prefix}gemuk 
-│▢  ${prefix}detikvn 
-│▢  ${prefix}detikvideo 
-│
-│
-╰────────────────╯
-╭─❒ ❣️ 𝚃𝙷𝙰𝙽𝙺𝚉 𝚃𝙾 ❣️
-│
-├➫ ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩⁩
-│
-│
-└─────────────────❒`
-sendButLocation(from, `${menu}`, "ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩⁩", {jpegThumbnail:gambar,name:""}, [{buttonId:'owner',buttonText:{displayText:'OWNER'},type:1},{buttonId:'script',buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [otod]}})
+menu =`━━━━━━━━━━━━━━━━
+
+
+                 ${tampilHari}
+                 
+                 
+                 
+                 
+  ╔𒆜ᴄʀᴇᴀᴛᴏʀ : wa.me/+917025868709                                      
+  ║🖇️ᴄʜᴀʀɢᴇ : ${baterai.battery}                                                                    
+  ║🖇️sᴛᴀᴛᴜs : ${publik ? 'ᴘᴜʙʟɪᴄ ɴᴏᴡ ʙʀᴏ' : 'sᴇʟғ ɴᴏᴡ ʙʀᴏ'}        
+  ║🖇️ᴘʟᴀᴛғᴏʀᴍ : ${os.platform()}
+  ║🖇️ᴜᴘᴛɪᴍᴇ : ${kyun(os.uptime())}
+  ╚𒆜ᴅᴇᴠɪᴄᴇ : ᴏᴘᴘᴏ ᴀ5s
+━━━━━━━━━━━━━━━━            
+┏━━━━━━━━━━━━━━━𒈒
+┃      ʜɪ ʙʀᴏ  ${pushname}!
+┃ *_ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍᴇɴᴜ_*    
+┗━━━━━━━━━━━━━━━𒈒
+⎉⇵⇵⇵⇵⇵⇵⇵⇵⇵⇵⇵⇵⇵⇵⇵⇵⎉
+╔༆*ᴀʙᴏᴜᴛ༄༄༄༄༄༄
+║༄ ${prefix}ᴅᴇʟᴇᴛᴇ
+║༄ ${prefix}sᴛᴀᴛᴜs
+║༄ ${prefix}ʀᴜɴᴛɪᴍᴇ
+║༄ ${prefix}sᴘᴇᴇᴅ
+╚༄ ${prefix}sᴇᴅ ʟʏғᴇ
+ ╔༆
+ ║ ғᴏʟʟᴏᴡ ᴍᴇ ᴏɴ ɪɴsᴛᴀɢʀᴀᴍ:https://instagram.com/_husni_ser_
+ ╚༄
+╔✘*ᴛʀʏ ᴀɴʏ ᴛʜɪɴɢ✘
+║༊ ${prefix}ᴏᴡɴᴇʀᴍᴇɴᴜ
+║༊ ${prefix}ᴍᴀᴋᴇʀᴍᴇɴᴜ
+║༊ ${prefix}ᴅᴏᴡɴʟᴏᴀᴅᴍᴇɴᴜ
+║༊ ${prefix}ɢʀᴏᴜᴘᴍᴇɴᴜ
+║༊ ${prefix}ᴏᴡɴᴇʀ
+║༊ ${prefix}ʜᴇʟᴘ
+║༊ ${prefix}ᴏᴛʜᴇʀᴍᴇɴᴜ
+╚✘HI DA MANDANKONAPPI✘
+
+༆ ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩༄
+ʟᴏᴠᴇ ʏᴏᴜ ᴀʟʟ!`
+sendButLocation(from, `${menu}`, "ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩", {jpegThumbnail:gambar,name:""}, [{buttonId:`about`,buttonText:{displayText:'ᴀʙᴏᴜᴛ'},type:1},{buttonId:`donate`,buttonText:{displayText:'ᴅᴏɴᴀᴛᴇ'},type:1}], {contextInfo: { mentionedJid: [otod]}})
 break
 case 'menu':
- stod = `${sender}`
- listMsg = {
- buttonText: '𝙻𝙸𝚂𝚃 𝙼𝙴𝙽𝚄⁩',
- footerText: '*© ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩*',
- description: `╭────────────────
-┊     𝙷𝙸 ᴍᴡᴏɴᴜ @${stod.split('@')[0]} 
-┊ 
-┊
-┊➫ ᴅᴇᴠᴇʟᴏᴘᴇʀ : ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩
-┊ 
-┊➫ ᴏᴡɴᴇʀ : ${ownernamehusni}
-┊
-┊➫ ʙᴏᴛ ɴᴀᴍᴇ : ${botnamehusni}
-┊
-┊➫ ᴄʀᴇᴅɪᴛs : ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩
-┊
-┊➫ ᴍᴏᴅᴇ : ${publik ? 'public' : 'self'}
-┊
-┊➫ ᴘʀᴇғɪx :${multi ? 'Multi Prefix' : 'No Prefix'}
-┊
-╰────────────────`,
- sections: [
-                     {
-                      "title": `ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ`,
- rows: [
-                          {
-                              "title": "Script",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "Speed",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "Status",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "Creator",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "group",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "Runtime",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "OwnerMenu",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "MakerMenu",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "GroupMenu",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "OtherMenu",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "DownloadMenu",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
+case 'p':
+let pi=denz["prepareMessageFromContent"](from,{
+"listMessage":{
+"title":"ʜɪ ʙʀᴏ ᴛʜɪs ɪs ʙᴏᴛ ᴍᴇɴᴜ","description":`${""}
+     ᴏɪɪ  ${pushname}     
+╔༆ᴄʀᴇᴀᴛᴏʀ⟼ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩
+║
+║༄ᴘᴀʟᴀᴄᴇ⟼ ᴍᴀʟʟᴀᴘᴘᴀʟᴀ
+║༄ᴠᴇʀsɪᴏɴ⟼2.0
+║༄ʙᴏᴛɴᴀᴍᴇ⟼ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩
+║༄ᴘʀᴇғɪx⟼(!)
+║༄sᴛᴀᴛᴜs⟼ ${publik ? 'ᴘᴜʙʟɪᴄ ɴᴏᴡ' : 'sᴇʟғ ɴᴏᴡ'} 
+╚༄ᴏᴡɴᴇʀ⟼ @${dtod.split('@917025868709')[0]}             
+${tampilUcapan}
+${" "}
+   ʜɪ ʙʀᴏ ${pushname}   ᴅᴏɴᴛ ᴄʟɪᴄᴋ ᴍᴇɴᴜ
+${""}
+`,"buttonText":" ᴍᴇɴᴜ ","listType":"SINGLE_SELECT","sections":[{
+"title":"sᴇʟᴇᴄᴛ𓀐ᴀ𓀐ᴍᴇɴᴜ","rows":[{
+"title":"ping","rowId":"0"
 }
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
+,{"title":"downloadmenu","rowId":"0"}
+,{"title":"groupmenu","rowId":"0"}
+,{"title":"makermenu","rowId":"0"}
+,{"title":"othermenu","rowId":"0"}
+,{"title":"ownermenu","rowId":"0"}
+,{"title":"help","rowId":"0"}
+,{"title":"owner","rowId":"0"}
+]}]}},{});denz.relayWAMessage(pi,{waitForAck:true})
+
 break
 case 'ownermenu':
-menu = `╭────────────────╮
-     *Oᴡɴᴇʀ Mᴇɴᴜ*
-╰────────────────╯
-
-❏ *ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs*
-╭────────────────
-│
-│🍒─⃝»͓̽  ${prefix} setthumb [ 𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚒𝚖𝚊𝚐𝚎 ]
-│
-│🍒─⃝»͓̽  ${prefix}autorespon [ _on/off_ ]
-│
-│🍒─⃝»͓̽  ${prefix}bc [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚝𝚎𝚡𝚝_ ]
-│
-│🍒─⃝»͓̽  ${prefix}tobc [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚊𝚞𝚍𝚒𝚘,𝚒𝚖𝚊𝚐𝚎,𝚟𝚒𝚍𝚎𝚘_ ]
-│
-│🍒─⃝»͓̽  ${prefix}return [ _𝚓𝚊𝚟𝚊𝚜𝚌𝚛𝚒𝚙𝚝_ ]
-│
-│🍒─⃝»͓̽  ${prefix}clearall
-│
-│🍒─⃝»͓̽  ${prefix}delchat
-│
-│🍒─⃝»͓̽  ${prefix}mute
-│
-│🍒─⃝»͓̽  ${prefix}unmute
-│
-│🍒─⃝»͓̽  ${prefix}public
-│
-│🍒─⃝»͓̽  ${prefix}self
-│
-│🍒─⃝»͓̽  ${prefix}spam [ _𝚝𝚎𝚡𝚝|𝚊𝚖𝚘𝚞𝚗𝚝_ ]
-│
-│🍒─⃝»͓̽  ${prefix}demoteall
-│
-│🍒─⃝»͓̽  ${prefix}promoteall
-│
-│🍒─⃝»͓̽  ${prefix}addcmd [ _𝚝𝚎𝚡𝚝 𝚛𝚎𝚙𝚕𝚢 𝚜𝚝𝚌_ ]
-│
-│🍒─⃝»͓̽  ${prefix}delcmd [ _𝚛𝚎𝚙𝚕𝚢 𝚜𝚝𝚌_ ]
-│
-│🍒─⃝»͓̽  ${prefix}listcmd
-│
-│🍒─⃝»͓̽  ${prefix}spamsw [ _𝚝𝚎𝚡𝚝|𝚊𝚖𝚘𝚞𝚗𝚝_ ]
-│
-│🍒─⃝»͓̽  ${prefix}upswteks [ _𝚝𝚎𝚡𝚝_ ]
-│
-│🍒─⃝»͓̽  ${prefix}upswlokasi [ _𝚝𝚎𝚡𝚝_ ]
-│
-│🍒─⃝»͓̽  ${prefix}upswaudio [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚊𝚞𝚍𝚒𝚘_ ]
-│
-│🍒─⃝»͓̽  ${prefix}upswvoice [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚊𝚞𝚍𝚒𝚘_ ]
-│
-│🍒─⃝»͓̽  ${prefix}upswsticker [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚜𝚝𝚌_ ]
-│
-│🍒─⃝»͓̽  ${prefix}upswimage [ _𝚛𝚎𝚙𝚕𝚢 𝚒𝚖𝚊𝚐𝚎 𝚠𝚒𝚝𝚐 𝚌𝚊𝚙𝚝𝚒𝚘𝚗_ ]
-│
-│🍒─⃝»͓̽  ${prefix}upswgif [ _𝚛𝚎𝚙𝚕𝚢 𝚐𝚒𝚏 𝚠𝚒𝚝𝚑 𝚌𝚊𝚙𝚝𝚒𝚘𝚗_ ]
-│
-│🍒─⃝»͓̽  ${prefix}upswvideo [ _𝚛𝚎𝚙𝚕𝚢 𝚟𝚒𝚍𝚎𝚘 𝚠𝚒𝚝𝚑 𝚌𝚊𝚙𝚝𝚒𝚘𝚗_ ]
-│
-│🍒─⃝»͓̽  ${prefix}shutdown
-│
-│🍒─⃝»͓̽  ${prefix}offline [ _𝚛𝚎𝚊𝚜𝚘𝚗_ ]
-│
-│🍒─⃝»͓̽  ${prefix}online
-│
-│🍒─⃝»͓̽  ${prefix}exif [ _𝚗𝚊𝚖𝚎|𝚊𝚞𝚝𝚑𝚘𝚛_ ]
-│
-│🍒─⃝»͓̽  ${prefix}setprofile [ _𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚒𝚖𝚊𝚐𝚎_ ]
-│
-│🍒─⃝»͓̽  ${prefix}setname [ _𝚝𝚎𝚡𝚝_ ]
-│
-│🍒─⃝»͓̽  ${prefix}setprefix [ _multi/nopref/prefix_ ]
-│
-│🍒─⃝»͓̽  ${prefix}setbio [ _𝚝𝚎𝚡𝚝_ ]
-│
-│🍒─⃝»͓̽  ${prefix}addsticker [ _𝚗𝚊𝚖𝚎_ ]
-│
-│🍒─⃝»͓̽  ${prefix}delsticker [ _𝚗𝚊𝚖𝚎_ ]
-│
-│🍒─⃝»͓̽  ${prefix}addvn [ _𝚗𝚊𝚖𝚎_ ]
-│
-│🍒─⃝»͓̽  ${prefix}delvn [ _𝚗𝚊𝚖𝚎_ ]
-│
-│🍒─⃝»͓̽  ${prefix}addimage [ _𝚗𝚊𝚖𝚎_ ]
-│
-│🍒─⃝»͓̽  ${prefix}delimage [ _𝚗𝚊𝚖𝚎_ ]
-│
-│🍒─⃝»͓̽  ${prefix}bug [ _𝚊𝚖𝚘𝚞𝚗𝚝_ ]
-│
-│🍒─⃝»͓̽  ${prefix}bugpc2 [ _𝚊𝚖𝚘𝚞𝚗𝚝_ ]
-│
-│🍒─⃝»͓̽  ${prefix}bugtroli2 [ _𝚊𝚖𝚘𝚞𝚗𝚝_ ]
-│
-│🍒─⃝»͓̽  ${prefix}bugpc
-│
-│🍒─⃝»͓̽  ${prefix}bugcombine
-│
-│🍒─⃝»͓̽  ${prefix}bugtroli
-│
-│🍒─⃝»͓̽  ${prefix}buglokasi
-│
-│🍒─⃝»͓̽  ${prefix}bughole
-│
-│🍒─⃝»͓̽  ${prefix}leave
-│
-│🍒─⃝»͓̽  ${prefix}restart
-│
-│🍒─⃝»͓̽  ${prefix}join [ _𝚐𝚛𝚘𝚞𝚙 𝚕𝚒𝚗𝚔_ ]
-│
-│🍒─⃝»͓̽  ${prefix}addrespon [ _𝚊𝚜𝚔|𝚊𝚗𝚠𝚜𝚎𝚛_ ]
-│
-│🍒─⃝»͓̽  ${prefix}delrespon [ _𝚗𝚊𝚖𝚎_ ]
-╰────────────────
-╭────────────────╮
-      ɴᴇɴ ᴀᴀʀᴀɴᴇɴɴ ᴘᴀʀᴇ 
-ᴇɴɴᴀ ɴᴇᴇ ᴀʀᴀɴᴇɴɴ ɴᴊᴀɴ ᴘᴀʀᴀʏᴀᴀ😎
-╰────────────────╯`
+menu = `❏ 「 *ᴏᴡɴᴇʀ ᴍᴇɴᴜ* 」
+╔✘${prefix}bc 「 _ᴛᴇxᴛ/ʀᴇᴘʟʏ ɢɪғ/ɪᴍɢᴀᴇ/ᴠɪᴅᴇᴏ ᴡɪᴛʜ ᴄᴀᴘᴛɪᴏɴ_ 」
+║✘${prefix}tobc 「 _ʀᴇᴘʟʏ sᴛɪᴄᴋᴇʀ/ᴀᴜᴅɪᴏ ᴡɪᴛʜ ᴄᴀᴘᴛɪᴏɴ_ 」
+║✘${prefix}return 「 _ᴊᴀᴠᴀsᴄʀɪᴘᴛ_ 」
+║✘${prefix}clearall
+║✘${prefix}public
+║✘${prefix}self
+║✘${prefix}upswteks 「 _ᴛᴇxᴛ_ 」
+║✘${prefix}upswlokasi 「 _ᴛᴇxᴛ_ 」
+║✘${prefix}upswaudio 「 _ʀᴇᴘʟʏ ᴀᴜᴅɪᴏ_ 」
+║✘${prefix}upswvoice 「 _ʀᴇᴘʟʏ ᴀᴜᴅɪᴏ_ 」
+║✘${prefix}upswsticker 「 _ʀᴇᴘʟʏ sᴛɪᴄᴋᴇʀ_ 」
+║✘${prefix}upswimage 「 _ʀᴇᴘʟʏ ɪᴍᴀɢᴇ ᴡɪᴛʜ ᴄᴀᴘᴛɪᴏɴ_ 」
+║✘${prefix}upswgif 「 _ʀᴇᴘʟʏ ɢɪғ ᴡɪᴛʜ ᴄᴀᴘᴛɪᴏɴ_ 」
+║✘${prefix}upswvideo 「 _ʀᴇᴘʟʏ ᴠɪᴅᴇᴏ ᴡɪᴛʜ ᴄᴀᴘᴛɪᴏɴ_ 」
+║✘${prefix}shutdown
+║✘${prefix}offline 「 _ʀᴇᴀsᴏɴ_ 」
+║✘${prefix}online
+║✘${prefix}exif 「 _ɴᴀᴍᴇ|ᴀᴜᴛʜᴏʀ_ 」
+║✘${prefix}setprofile 「 _ʀᴇᴘʟʏ ɪᴍᴀɢᴇ_ 」
+║✘${prefix}setthumb 「 _ʀᴇᴘʟʏ ɪᴍᴀɢᴇ_ 」
+║✘${prefix}setprefix 「 _ᴛᴇxᴛ_ 」
+║✘${prefix}setname 「 _ᴛᴇxᴛ_ 」
+║✘${prefix}setbio 「 _ᴛᴇxᴛ_ 」
+║✘${prefix}addsticker 「 _ɴᴀᴍᴇ_ 」
+║✘${prefix}delsticker 「 _ɴᴀᴍᴇ_ 」
+║✘${prefix}addvn 「 _ɴᴀᴍᴇ_ 」
+║✘${prefix}delvn 「 _ɴᴀᴍᴇ_ 」
+║✘${prefix}addimage 「 _ɴᴀᴍᴇ_ 」
+║✘${prefix}delimage 「 _ɴᴀᴍᴇ_ 」
+║✘${prefix}bug
+║✘${prefix}bugtroli
+║✘${prefix}buglokasi
+║✘${prefix}bughole
+║✘${prefix}leave
+║✘${prefix}join 「 _ɢʀᴏᴜᴘ ʟɪɴᴋ_ 」
+║✘${prefix}addrespon 「 _ᴀsᴋ|ᴀɴᴡsᴇʀ_ 」
+╚✘${prefix}delrespon 「 _ɴᴀᴍᴇ_ 」`
 katalog(menu)
 break
 case 'downloadmenu':
-menu = `╭────────────────╮
-    *Dᴏᴡɴʟᴏᴀᴅ Mᴇɴᴜ*
-╰────────────────╯
-
-❏ *ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs*
-╭────────────────
-│🌸─⃝»͓̽  ︎︎${prefix}infogempa
-│
-│🌸─⃝»͓̽  ${prefix}herolist
-│
-│🌸─⃝»͓̽  ${prefix}herodetail [ _𝙷𝚎𝚛𝚘_ ]
-│
-│🌸─⃝»͓̽  ${prefix}google [ _𝚂𝚎𝚊𝚛𝚌𝚑_ ]
-│
-│🌸─⃝»͓̽  ${prefix}gimage [ _𝚂𝚎𝚊𝚛𝚌𝚑_ ]
-│
-│🌸─⃝»͓̽  ${prefix}wiki [ _𝚂𝚎𝚊𝚛𝚌𝚑_ ]
-│
-│🌸─⃝»͓̽  ${prefix}mediafire [ _𝙻𝚒𝚗𝚔_ ]
-│
-│🌸─⃝»͓̽  ${prefix}ytsearch [ _𝚃𝚒𝚝𝚕𝚎_ ]
-│
-│🌸─⃝»͓̽  ${prefix}ytmp4 [ _𝚈𝚃 𝙻𝚒𝚗𝚔_ ]
-│
-│🌸─⃝»͓̽  ${prefix}ytmp3 [ _𝚈𝚃 𝙻𝚒𝚗𝚔_ ]
-│
-│🌸─⃝»͓̽  ${prefix}play [ _𝚃𝚒𝚕𝚝𝚎 𝚘𝚏 𝚜𝚘𝚗𝚐_ ]
-│
-│🌸─⃝»͓̽  ${prefix}video [ _𝚃𝚒𝚝𝚕𝚎 𝚘𝚏 𝚟𝚒𝚍𝚎𝚘_ ]
-│
-│🌸─⃝»͓̽  ${prefix}tinyurl [ _𝙻𝚒𝚗𝚔_ ]
-│
-│🌸─⃝»͓̽  ${prefix}fetch [ _𝙻𝚒𝚗𝚔_ ]
-│
-│🌸─⃝»͓̽  ${prefix}igdl [ _𝙻𝚒𝚗𝚔_ ]
-│
-│🌸─⃝»͓̽  ${prefix}tiktokdl [ _𝙻𝚒𝚗𝚔_ ]
-│
-│🌸─⃝»͓̽  ${prefix}pinterest [ _𝚂𝚎𝚊𝚛𝚌𝚑_ ]
-│
-│🌸─⃝»͓̽  ${prefix}lirik [ _𝚃𝚒𝚝𝚕𝚎_ ]
-│
-│🌸─⃝»͓̽  ${prefix}tourl [ _𝚁𝚎𝚙𝚕𝚢 𝚝𝚘 𝚒𝚖𝚊𝚐𝚎/𝚅𝚒𝚍𝚎𝚘_ ]
-│
-│🌸─⃝»͓̽  ${prefix}resepmasakan [ _𝚃𝚒𝚝𝚕𝚎_ ]
-│
-│🌸─⃝»͓̽  ${prefix}artimimpi [ _𝚃𝚎𝚡𝚝_ ]
-│
-│🌸─⃝»͓̽  ${prefix}bilangangka [ _𝙽𝚞𝚖𝚋𝚎𝚛_ ]
-│
-│🌸─⃝»͓̽  ${prefix}kalkulator [ _𝙽𝚞𝚖𝚋𝚎𝚛_ ]
-│
-│🌸─⃝»͓̽  ${prefix}fancytext [ _𝚃𝚎𝚡𝚝_ ]
-│
-│🌸─⃝»͓̽  ${prefix}githubstalk [ _𝚄𝚜𝚎𝚛𝚗𝚊𝚖𝚎_ ]
-│
-│🌸─⃝»͓̽  ${prefix}translate [ _𝙻𝚊𝚗𝚐𝚞𝚊𝚐𝚎|𝚃𝚎𝚡𝚝_ ]
-│
-│🌸─⃝»͓̽  ${prefix}ss [ _link_ ]
-╰────────────────
-╭────────────────╮
-   ɴᴇɴ ᴀᴀʀᴀɴᴇɴɴ ᴘᴀʀᴇ 
-ᴇɴɴᴀ ɴᴇᴇ ᴀʀᴀɴᴇɴɴ ɴᴊᴀɴ ᴘᴀʀᴀʏᴀᴀ😎
-╰────────────────╯`
+menu = `❏ 「 *ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ* 」
+╔𒈒${prefix}ytsearch 「 _sᴇᴀʀᴄʜ_ 」
+║𒈒${prefix}ytmp4 「 _ʏᴛ ʟɪɴᴋ_ 」
+║𒈒${prefix}ytmp3 「 _ʏᴛ ʟɪɴᴋ_ 」
+║𒈒${prefix}play 「 _sᴏɴɢ ɴᴀᴍᴇ_ 」
+║𒈒${prefix}video 「 _ᴠɪᴅᴇᴏ ɴᴀᴍᴇ_ 」
+║𒈒${prefix}tinyurl 「 _ɴᴀᴍᴇ_ 」
+║𒈒${prefix}lirik 「 _ɴᴀᴍᴇ_ 」
+║𒈒${prefix}resepmasakan 「 _ɴᴀᴍᴇ_ 」
+║𒈒${prefix}artimimpi 「 _ᴛᴇxᴛ_ 」
+║𒈒${prefix}bilangangka 「 _ɴᴜᴍʙᴇʀ_ 」
+║𒈒${prefix}kalkulator 「 _ɴᴜᴍʙᴇʀ_ 」
+║𒈒${prefix}fancytext 「 _ᴛᴇxᴛ_ 」
+║𒈒${prefix}githubstalk 「 _ᴜsᴇʀɴᴀᴍᴇ_ 」
+╚𒈒${prefix}ss 「 _ᴜʀʟ_ 」`
 katalog(menu)
 break
 case 'makermenu':
-menu = `╭────────────────╮
-     *Oᴡɴᴇʀ Mᴇɴᴜ*
-╰────────────────╯
-
-❏ *ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs*
-╭────────────────
-│🍁⃝❉⃟🍂 ${prefix}marvel [ text1 | text2 ]
-│
-│🍁⃝❉⃟🍂 ${prefix}t3d [ _𝚃𝚎𝚡𝚝_ ]
-│
-│🍁⃝❉⃟🍂 ${prefix}logoa [ _𝚃𝚎𝚡𝚝_ ]
-│
-│🍁⃝❉⃟🍂 ${prefix}phlogo [ _𝚃𝚎𝚡𝚝_ ]
-│
-│🍁⃝❉⃟🍂 ${prefix}leavest [ _𝚃𝚎𝚡𝚝_ ]
-│
-│🍁⃝❉⃟🍂 ${prefix}notewrite [ _𝚃𝚎𝚡𝚝_ ]
-│
-│🍁⃝❉⃟🍂 ${prefix}neon2 [ _𝚃𝚎𝚡𝚝_ ]
-│
-│🍁⃝❉⃟🍂 ${prefix}wall [ _𝚃𝚎𝚡𝚝_ ]
-│
-│🍁⃝❉⃟🍂 ${prefix}codetxt [ _𝚃𝚎𝚡𝚝_ ]
-│
-│🍁⃝❉⃟🍂 ${prefix}text3d [ _𝚃𝚎𝚡𝚝_ ]
-│
-│🍁⃝❉⃟🍂 ${prefix}warrior [ _𝚃𝚎𝚡𝚝_ ]
-╰────────────────╯
-╭────────────────╮
-   ɴᴇɴ ᴀᴀʀᴀɴᴇɴɴ ᴘᴀʀᴇ 
-ᴇɴɴᴀ ɴᴇᴇ ᴀʀᴀɴᴇɴɴ ɴᴊᴀɴ ᴘᴀʀᴀʏᴀᴀ😎
-╰────────────────╯`
+menu = `❏ 「 *ᴍᴀᴋᴇʀ ᴍᴇɴᴜ* 」
+╔༊${prefix}matrix 「 _ᴛᴇxᴛ_ 」
+║༊${prefix}googletxt 「 _ᴛᴇxᴛ_ 」
+║༊${prefix}spiderman 「 _ᴛᴇxᴛ_ 」
+║༊${prefix}express 「 _ᴛᴇxᴛ_ 」
+║༊${prefix}dance 「 _ᴛᴇxᴛ_ 」
+║༊${prefix}blackbird 「 _ᴛᴇxᴛ_ 」
+║༊${prefix}halloween 「 _ᴛᴇxᴛ_ 」
+║༊${prefix}vampire 「 _ᴛᴇxᴛ_ 」
+║༊${prefix}codetxt 「 _ᴛᴇxᴛ_ 」
+║༊${prefix}text3d 「 _ᴛᴇxᴛ_ 」
+╚༊${prefix}warrior 「 _ᴛᴇxᴛ1|ᴛᴇxᴛ2_ 」`
 katalog(menu)
 break
 case 'groupmenu':
-menu = `╭────────────────╮
-     *Gʀᴏᴜᴘ Mᴇɴᴜ*
-╰────────────────╯
-
-❏ *ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs*
-╭────────────────
-│🦋⃝❉⃟࿔ꦿ ${prefix}getpict [ _@𝚃𝚊𝚐_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}getname [ _𝚁𝚎𝚙𝚕𝚢 𝚃𝚊𝚛𝚐𝚎𝚝_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}getbio [ _𝚁𝚎𝚙𝚕𝚢 𝚃𝚊𝚛𝚐𝚎𝚝_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}promote [ _@𝚃𝚊𝚐_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}demote [ _@𝚃𝚊𝚐_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}antilink [ _1/0_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}creategrup [ _𝙽𝚊𝚖𝚎|@𝚃𝚊𝚐_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}tictactoe [ _@𝚃𝚊𝚐_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}delttt
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}getpp
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}kick [ _𝚁𝚎𝚙𝚕𝚢_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}add [ _𝙽𝚞𝚖𝚋𝚎𝚛_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}getdeskgc
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}sider [ _𝚁𝚎𝚙𝚕𝚢 𝙼𝚊𝚜𝚜𝚊𝚐𝚎 𝙱𝚘𝚝_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}hacked [ _𝚃𝚎𝚡𝚝_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}setnamegc [ _𝚃𝚎𝚡𝚝_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}setdeskgc [ _𝚃𝚎𝚡𝚝_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}fitnah [ _@𝚃𝚊𝚐|𝚃𝚎𝚡𝚝1|𝚃𝚎𝚡𝚝2_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}kontak [ _@𝚃𝚊𝚐|𝙽𝚊𝚖𝚎_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}kontag [ _@𝚃𝚊𝚐|𝙽𝚊𝚖𝚎_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}opengc
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}closegc
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}resetlinkgc
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}linkgrup
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}hidetag [ _𝚃𝚎𝚡𝚝_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}sticktag [ _𝙽𝚊𝚖𝚎 𝚂𝚝𝚒𝚌𝚔𝚎𝚛_ ]
-│
-│🦋⃝❉⃟࿔ꦿ ${prefix}totag [ _𝚁𝚎𝚙𝚕𝚢 𝙼𝚎𝚍𝚒𝚊_ ]
-╰────────────────╯
-╭────────────────╮
-    ɴᴇɴ ᴀᴀʀᴀɴᴇɴɴ ᴘᴀʀᴇ 
-ᴇɴɴᴀ ɴᴇᴇ ᴀʀᴀɴᴇɴɴ ɴᴊᴀɴ ᴘᴀʀᴀʏᴀᴀ😎
-╰────────────────╯`
+menu = `❏ 「 *ɢʀᴏᴜᴘ ᴍᴇɴᴜ* 」
+╔𒆜${prefix}getpict 「 _@ᴛᴀɢ_ 」
+║𒆜${prefix}getbio 「 _@ᴛᴀɢ_ 」
+║𒆜${prefix}promote 「 _@ᴛᴀɢ_ 」
+║𒆜${prefix}demote 「 _@ᴛᴀɢ_ 」
+║𒆜${prefix}antilink 「 _1/0_ 」
+║𒆜${prefix}autosticker 「 _1/0_ 」
+║𒆜${prefix}welcome 「 _1/0_ 」
+║𒆜${prefix}antibule 「 _1/0_ 」
+║𒆜${prefix}creategrup 「 _ɴᴀᴍᴇ|@ᴛᴀɢ_ 」
+║𒆜${prefix}getppgc
+║𒆜${prefix}getdeskgc
+║𒆜${prefix}sider 「 _ʀᴇᴘʟʏ ᴛᴇxᴛ_ 」
+║𒆜${prefix}hacked 「 _ᴛᴇxᴛ_ 」
+║𒆜${prefix}setnamegc 「 _ᴛᴇxᴛ_ 」
+║𒆜${prefix}setdeskgc 「 _ᴛᴇxᴛ_ 」
+║𒆜${prefix}tictactoe「 _x/o @ᴛᴀɢ_ 」
+║𒆜${prefix}delttt
+║𒆜${prefix}fitnah 「 _@ᴛᴀɢ|ᴛᴇxᴛ1|ᴛᴇxᴛ2_ 」
+║𒆜${prefix}kontak 「 _@ᴛᴀɢ|ɴᴀᴍᴇ_ 」
+║𒆜${prefix}kontag 「 _@ᴛᴀɢ|ɴᴀᴍᴇ_ 」
+║𒆜${prefix}group 「 _ᴏᴘᴇɴ/ᴄʟᴏsᴇ_ 」
+║𒆜${prefix}linkgrup
+║𒆜${prefix}hidetag 「 _ᴛᴇxᴛ_ 」
+║𒆜${prefix}sticktag 「 _ɴᴀᴍᴇ sᴛɪᴄᴋᴇʀ_ 」
+╚𒆜${prefix}totag 「 _ʀᴇᴘʟʏ ᴍᴇᴅɪᴀ_ 」`
 katalog(menu)
 break
 case 'othermenu':
-menu = `╭────────────────╮
-     *Oᴛʜᴇʀ Mᴇɴᴜ*
-╰────────────────╯
-
-❏ *ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs*
-╭────────────────
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}caripesan [ _𝚃𝚎𝚡𝚝|𝙰𝚖𝚘𝚞𝚗𝚝_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}slots
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}suit [ _𝚂𝚌𝚒𝚜𝚜𝚘𝚛𝚜/𝚂𝚝𝚘𝚗𝚎/𝙿𝚊𝚙𝚎𝚛_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}tag [ _𝙽𝚞𝚖𝚋𝚎𝚛_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}tagme
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}tts [ _𝚃𝚎𝚡𝚝 𝙲𝚘𝚍𝚎_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}readmore [ _𝚃𝚎𝚡𝚝1|𝚃𝚎𝚡𝚝2_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}fitnahpc [ _𝙽𝚞𝚖𝚋𝚎𝚛|𝚃𝚎𝚡𝚝1|𝚃𝚎𝚡𝚝2_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}chat [ _𝙽𝚞𝚖𝚋𝚎𝚛|𝚃𝚎𝚡𝚝_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}fdeface [ _𝚁𝚎𝚙𝚕𝚢𝚒𝚖𝚐 𝙻𝚒𝚗𝚔|𝚃𝚎𝚡𝚝1|𝚃𝚎𝚡𝚝2_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}listimage
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}liststicker
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}listvn
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}listgrup
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}baileys [ _𝚁𝚎𝚙𝚕𝚢 𝙼𝚎𝚜𝚜𝚊𝚐𝚎_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}q [ _𝚁𝚎𝚙𝚕𝚢 𝙼𝚊𝚜𝚜𝚊𝚐𝚎_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}getcaption [ _𝚁𝚎𝚙𝚕𝚢 𝙼𝚎𝚜𝚜𝚊𝚐𝚎_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}pantun
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}tospam [ _𝚁𝚎𝚙𝚕𝚢 𝙰𝚞𝚍𝚒𝚘/𝚂𝚝𝚒𝚌𝚔𝚎𝚛/𝙸𝚖𝚊𝚐𝚎|𝙰𝚖𝚘𝚞𝚗𝚝_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}sharelock [ _𝚃𝚎𝚡𝚝1|𝚃𝚎𝚡𝚝2_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}sticker
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}stickerwm [ _𝙽𝚊𝚖𝚎|𝙰𝚞𝚝𝚑𝚘𝚛_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}takestick [ _𝙽𝚊𝚖𝚎|𝙰𝚞𝚝𝚑𝚘𝚛_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}colong [ _𝚁𝚎𝚙𝚕𝚢 𝚂𝚝𝚒𝚌𝚔𝚎𝚛_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}dadu
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}semoji [ _𝙴𝚖𝚘𝚓𝚒_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}attp [ _𝚃𝚎𝚡𝚝_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}img
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}tomp3 [ _𝚁𝚎𝚙𝚕𝚢 𝚅𝚒𝚍𝚎𝚘_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}tomp4 [ _𝚁𝚎𝚙𝚕𝚢 𝚂𝚝𝚒𝚌𝚔𝚎𝚛 𝙶𝚒𝚏_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}robot [ _𝚁𝚎𝚙𝚕𝚢 𝙰𝚞𝚍𝚒𝚘_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}balik [ _𝚁𝚎𝚙𝚕𝚢 𝙰𝚞𝚍𝚒𝚘_ ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}bass [ 𝚁𝚎𝚙𝚕𝚢 𝙰𝚞𝚍𝚒𝚘 ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}gemuk [ 𝚁𝚎𝚙𝚕𝚢 𝙰𝚞𝚍𝚒𝚘 ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}detikvn [ 𝚁𝚎𝚙𝚕𝚢 𝙰𝚞𝚍𝚒𝚘 𝙲𝚊𝚙𝚝𝚒𝚘𝚗 𝙽𝚞𝚖𝚋𝚎𝚛 ]
-│
-│❤️⃝➤⃟̱̱̱̱̄̄̄̄🐦 ${prefix}detikvideo [ 𝚁𝚎𝚙𝚕𝚢 𝚅𝚒𝚍𝚎𝚘 𝙲𝚊𝚙𝚝𝚒𝚘𝚗 𝙽𝚞𝚖𝚋𝚎𝚛 ]
-╰────────────────╯
-╭────────────────╮
-   ɴᴇɴ ᴀᴀʀᴀɴᴇɴɴ ᴘᴀʀᴇ 
-ᴇɴɴᴀ ɴᴇᴇ ᴀʀᴀɴᴇɴɴ ɴᴊᴀɴ ᴘᴀʀᴀʏᴀᴀ😎
-╰────────────────╯`
+menu = `❏ 「 *ᴏᴛʜᴇʀ ᴍᴇɴᴜ* 」
+╔𒋨${prefix}slots
+║𒋨${prefix}suit 「 _sᴄɪssᴏʀs/sᴛᴏɴᴇ/ᴘᴀᴘᴇʀ_ 」
+║𒋨${prefix}tag「 _ɴᴜᴍʙᴇʀ_ 」
+║𒋨${prefix}tagme
+║𒋨${prefix}tts 「 _ᴛᴇxᴛ_ 」
+║𒋨${prefix}readmore 「 _ᴛᴇxᴛ1|ᴛᴇxᴛ2_ 」
+║𒋨${prefix}fitnahpc 「 _ɴᴜᴍʙᴇʀ|ᴛᴇxᴛ1|ᴛᴇxᴛ2_ 」
+║𒋨${prefix}chat 「 _ɴᴜᴍʙᴇʀ|ᴛᴇxᴛ_ 」
+║𒋨${prefix}fdeface 「 _ʀᴇᴘʟʏ ɪᴍɢ|ᴛᴇxᴛ1|ᴛᴇxᴛ2_ 」
+║𒋨${prefix}listimage
+║𒋨${prefix}liststicker
+║𒋨${prefix}semoji 「 _ʀᴇᴘʟʏ ᴛᴏ ᴇᴍᴏᴊɪ_ 」
+║𒋨${prefix}attp 「 _ᴛᴇxᴛ_ 」
+║𒋨${prefix}toimg
+║𒋨${prefix}tomp3 「 _ʀᴇᴘʟʏ ᴛᴏ ᴠɪᴅᴇᴏ_ 」
+║𒋨${prefix}tomp4 「 _ʀᴇᴘʟʏ ᴛᴏ sᴛɪᴄᴋᴇʀ_ 」
+║𒋨${prefix}robot 「 _ʀᴇᴘʟʏ ᴛᴏ ᴀᴜᴅɪᴏ_ 」
+║𒋨${prefix}balik 「 _ʀᴇᴘʟʏ ᴛᴏ ᴀᴜᴅɪᴏ_ 」
+║𒋨${prefix}bass 「 _ʀᴇᴘʟʏ ᴛᴏ ᴀᴜᴅɪᴏ_ 」
+║𒋨${prefix}listvn
+║𒋨${prefix}infogempa
+║𒋨${prefix}pantun
+║𒋨${prefix}spam 「 _ᴛᴇxᴛ|ᴀᴍᴏᴜɴᴛ_ 」
+║𒋨${prefix}sharelock 「 _ᴛᴇxᴛ1|ᴛᴇxᴛ2_ 」
+╚𒋨${prefix}ephemeral 「 _ᴛᴇxᴛ_ 」`
 katalog(menu)
 break
 //Now
@@ -1691,36 +1293,6 @@ reply(mess.wait)
 kon = (`https://hardianto-chan.herokuapp.com/api/foliokiri?text=${c}&apikey=hardianto`)
 anu = await getBuffer(kon)
 denz.sendMessage(from, anu, image, { quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
-break
-       case 'autotype':
-if (!isOwner && !mek.key.fromMe) return
-if (args.length < 1) return reply('Choose on or off')
-if (args[0] === "on") {
-if (autoketik === true) return
-autoketik = true
-reply(`Success activate autotype`)
-} else if (args[0] === "off") {
-if (autoketik === false) return
-autoketik = false
-reply(`Success turns off autotype`)
-} else {
-reply(`Choose on or off`)
-}
-break
-case 'autovn':
-if (!isOwner && !mek.key.fromMe) return
-if (args.length < 1) return reply('Select on or off')
-if (args[0] === "on") {
-if (autovn === true) return
-autovn = true
-reply(`Succesfully activated autovn`)
-} else if (args[0] === "off") {
-if (autovn === false) return
-autovn = false
-reply(`Successfully turned off autovn`)
-} else {
-reply(`Select on or off`)
-}
 break
 //My Api
        case 'maker2d2': 
@@ -1787,69 +1359,17 @@ break
 					buffer1 = await getBuffer(anu.result.results)
 					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
 					break
-					
-        case 't3d':
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} husni*`)
-                   F = body.slice(5)
-                   reply(mess.wait)
-                   anu = await getBuffer(`${ApiZeks}/api/text3dbox?apikey=${zeksApikey}&text=${F}`)
-                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
-                   break
-       case 'logoa':
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} husni&lol*`)
-                   var F = body.slice(7)
-				   var F1 = F.split("|")[0];
-				   var F2 = F.split("|")[1]; 
-                   reply(mess.wait)
-                   anu = await getBuffer(`${ApiZeks}/api/logoaveng?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
-                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
-                   break
-       case 'phlogo':  
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} husni&lol*`)
-                   var F = body.slice(9)
-				   var F1 = F.split("|")[0];
-				   var F2 = F.split("|")[1]; 
-                   reply(mess.wait)
-                   anu = await getBuffer(`${ApiZeks}/api/phlogo?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
-                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
-                   break
-       case 'marvel':
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} husni&lol*`)
-                   var F = body.slice(8)
-				   var F1 = F.split("|")[0];
-				   var F2 = F.split("|")[1]; 
-                   reply(mess.wait)
-                   anu = await getBuffer(`${ApiZeks}/api/marvellogo?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
-                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
-                   break
-       case 'leavest':  
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} husni*`)
-                   F = body.slice(9)
-                   reply(mess.wait)
-                   anu = await getBuffer(`${ApiZeks}/api/leavest?text=${F}&apikey=${zeksApikey}`)
-                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
-                   break                   
-       case 'notewrite':
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} husni*`)
-                   F = body.slice(7)
-                   reply(mess.wait)
-                   anu = await getBuffer(`${ApiZeks}/api/nulis?text=${F}&apikey=${zeksApikey}`)
-                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
-                   break
-       case 'neon2':
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} husni*`)
-                   F = body.slice(7)
-                   reply(mess.wait)
-                   anu = await getBuffer(`${ApiZeks}/api/bneon?apikey=${zeksApikey}&text=${F}`)
-                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
-                   break                   
-       case 'wall':
-                   if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} husni*`)
-                   F = body.slice(6)
-                   reply(mess.wait)
-                   anu = await getBuffer(`${ApiZeks}/api/breakwall?apikey=${zeksApikey}&text=${F}`)
-                   denz.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it?q`, quoted: mek})
-                   break
+			case 'googletxt':
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} 𝙿𝙰𝚄𝙻|𝚆𝙰𝙻𝙺𝙴𝚁|𝙱𝙾𝚃`)
+					makell = args.join(" ")
+					ll1 = makell.split("|")[0];
+					ll2 = makell.split("|")[1];
+					ll3 = makell.split("|")[0];
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker?text=${ll1}&text2=${ll2}&text3=${ll3}&theme=google-suggestion&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.url)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
 			case 'battlefield': 
                     if (args.length < 1) return reply(`*Example :*\n${prefix}${command} 𝙿𝙰𝚄𝙻|𝚆𝙰𝙻𝙺𝙴𝚁`)
 					makell = args.join(" ")
@@ -1950,7 +1470,7 @@ mhan = await denz.prepareMessage(from, buff, image, {thumbnail: buff})
 const buttonMessagessss = {
 imageMessage: mhan.message.imageMessage,
 contentText: `𝙱𝚘𝚜𝚜`,
-footerText: '*_©ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩⁩_*',
+footerText: '*_©ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩_*',
 buttons: gbutsan,
 headerType: 4
 }
@@ -1996,6 +1516,23 @@ reply('Successfully connected with WhatsApp .\n*NOTE: Its just a ride*\n' + JSON
 reply('Error! only 1 person can access the jadibot feature')
 }
 break
+case 'autosticker':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (args.length < 1) return reply(`ᴜsᴇ:\n\n${prefix}autosticker 1\natau\n${prefix}autosticker 0`)
+					if (Number(args[0]) === 1) {
+						if (isAuto) return reply('Activated')
+						autosticker.push(from)
+						fs.writeFileSync('./database/autosticker.json', JSON.stringify(autosticker))
+						sendFakeStatus(from, `Sukses`, fake)
+					} else if (Number(args[0]) === 0) {
+						autosticker.splice(from)
+						fs.writeFileSync('./database/autosticker.json', JSON.stringify(autosticker))
+						sendFakeStatus(from, `Sukses`, fake)
+					} else {
+						reply('1 ᴛᴏ ᴀᴄᴛɪᴠᴇ🙂, 0 ᴛᴏ ᴅᴇᴀᴄᴛɪᴠᴇ')
+					}
+                                      break
 case 'stopjadibot':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 try {
@@ -2016,7 +1553,7 @@ for (let i of ownerNumber) {
 const vname = denz.contacts[i] != undefined ? denz.contacts[i].vname || denz.contacts[i].notify : undefined
 ini_list.push({
 "displayName": `Developer ${NamaBot}`,
-"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;husni ser;;;\nFN:${vname ? `${vname}` : `${denz.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:ɪɴᴅɪᴀ\nEND:VCARD`
+"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;paul walker;;;\nFN:${vname ? `${vname}` : `${denz.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:ɪɴᴅɪᴀ\nEND:VCARD`
 })
 }
 denz.sendMessage(from, {
@@ -2036,58 +1573,16 @@ reply('sᴜᴄᴄᴜss')
 reply(`Use : ${prefix}setmenu button\n\nTersedia: 1/2`)
 }
 break
-case 'donate':
-
-	gambar = fs.readFileSync('./denz.jpg')
-
-	teksnya = `╭───────────────𒆜
-
- | *ᴅᴏɴᴀᴛᴇ ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩ 🥂*
-
-╰───────────────𒈒
-
-╭───────────────𒆜
-
- | ᴀɴᴛʜᴀᴅᴀ ᴅᴏɴᴀᴛᴇ ᴄʜᴇʏᴀɴɴᴏ ?
-
-  | sᴏʀʀʏ ᴅᴀ ᴍᴜᴛʜᴇ ᴅᴏɴᴀᴛᴇ ɪʟʟᴀᴅᴀ
-
-╰───────────────𒈒`
-
-teks =
-
-`ᴀɴᴛʜᴀᴅᴀ ғᴇᴀʀ ᴀʏᴏ ɴᴇᴇʏ 🥂`
-
-but = [
-
-          { buttonId: `menu`, buttonText: { displayText: 'ᴍᴇɴᴜ' }, type: 1 },
-
-          { buttonId: `owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 }
-
-        ]
-
-        sendButLocation(from, teksnya, teks, gambar, but)
-
-break
-      case "setthumb":
-        if (
-          ((isMedia && !mek.message.videoMessage) ||
-            isQuotedImage ||
-            isQuotedSticker) &&
-          args.length == 0
-        ) {
-          boij =
-            isQuotedImage || isQuotedSticker
-              ? JSON.parse(JSON.stringify(mek).replace("quotedM", "m")).message
-                  .extendedTextMessage.contextInfo
-              : mek;
-          delb = await denz.downloadMediaMessage(boij);
-          fs.writeFileSync(`./denz.jpg`, delb);
-          reply("Success");
-        } else {
-          reply(`Send a picture with a caption ${prefix}sethumb`);
-        }
-        break
+case 'setthumb':
+			if (!isQuotedImage) return reply('Reply image!')
+			if (!arg) return reply
+				boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
+				delb = await denz.downloadMediaMessage(boij)
+				fs.unlinkSync(`./denz.jpg`)
+                await sleep(1000)
+				fs.writeFileSync(`./denz.jpg`, delb)
+				denz.sendMessage(_.jid, buff, sticker, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999999, status: 200, thumbnail: fs.readFileSync('./denz.jpg'), surface: 200, message: `${bc}`, orderTitle: `${bc}`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}})
+				  break
 case 'addcmd': 
 case 'setcmd':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
@@ -2145,44 +1640,35 @@ break
 				case 'script':
 		case 'sc':
 		case 'sourcecode':
-		anu =`╭─❒ SCRIPT
-│➩➬SCRIPT ILLADA PRIVATE BOT AAN
+		anu =`╭─𒆜 sᴄʀɪᴘᴛ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ
+│✘ᴘʀɪᴠᴀᴛᴇ ʙᴏᴛ ᴀɴɴ ᴍᴡᴏɴᴇ🙂
 │
-└──────[ 𝚂𝙲𝚁𝙸𝙿𝚃 ]──────❒
-  │➬➩ : 😞ғᴜᴍʙɪ😞
-  └──────────────────❒`
-const buttons = [{buttonId: `menu`, buttonText: {displayText: 'BACK➡️'}, type: 1},{buttonId: `owner`, buttonText: {displayText: 'OWNER👤'}, type: 1}]
+└──────😔sᴇᴅ ʟʏғᴇ😔─────𒆜`
+const buttons = [{buttonId: `menu`, buttonText: {displayText: 'ᴍᴇɴᴜ️'}, type: 1},{buttonId: `credit`, buttonText: {displayText: 'ᴄʀᴇᴀᴛᴏʀs'}, type: 1}]
 const buttonMessage = {
     contentText: `${anu}`,
-    footerText: '*_©ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩_*',
+    footerText: '*_©ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩_*',
     buttons: buttons,
     headerType: 1
 }
 await denz.sendMessage(from, buttonMessage, MessageType.buttonsMessage, {quoted: ftok})
 		break
-				case 'alive':
-menu = `
-╔══╗╔╗─╔══╗╔╗─╔╗╔═╗  
-║╔╗║║║─╚║║╝║╚╦╝║║╦╝  
-║╠╣║║╚╗╔║║╗╚╗║╔╝║╩╗  
-╚╝╚╝╚═╝╚══╝─╚═╝─╚═╝  
-
-
-*╭➤ 𝐈𝐀𝐌 𝐒𝐓𝐈𝐋𝐋 𝐀𝐋𝐈𝐕𝐄 𝐁𝐑𝐎*»
-*│❖ Dᴇᴠᴇʟᴏᴘᴇʀ : ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩*
-*│❖ Oᴡɴᴇʀ : ${ownernamehusni}*
-*│❖ Bᴏᴛ ɴᴀᴍᴇ : ${botnamehusni}*
-*│❖ Wᴏʀᴋ ᴛʏᴘᴇ : ${publik ? 'public' : 'self'}*
-*│❖ Pʀᴇғɪx : ${multi ? 'Multi Prefix' : 'No Prefix'}*     
-*│❖ Cʀᴇᴅɪᴛs : ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩*
-*╰────────────────❋ཻུ۪۪⸙*
-*⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘*
-         *${botnamehusni}*
-     
-*╭◪ ᴄᴏᴅᴅᴇᴅ ʙʏ ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩*
-*╰─────────────────❋ཻུ۪۪⸙*`
-katalog(menu)
-		break
+		case 'credit':
+   dtod = '917025868709'
+   dtod1 = '919946470485'
+   dtod2 = '6587253226'
+   dtod3 = '917560810451'
+   dtod4 ='0'
+   var yez = `
+╭───𒆜 𝑪𝑹𝑬𝑨𝑻𝑶𝑹𝑺
+│
+│🥂 wa.me/917025868709
+╰───────────────𒈒
+ ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩💝
+ `
+     credit = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 8888888, "message": `${yez}`, "footerText": "©ī.ᴀᴍ/ꪶ͢ʜᴜsɴɪꫂ⁩", "thumbnail": fs.readFileSync('./denz.jpg'), "surface": 'CATALOG'}}, {quoted: mek})
+            denz.relayWAMessage(credit)
+        break
 case 'inibuatwelcome':
 reply2('Dont just press it, see the rules, okay?')
 break
@@ -2193,7 +1679,7 @@ break
 			 res = await denz.prepareMessageFromContent(from,{
 "templateMessage": {
 						"hydratedTemplate": {
-							"hydratedContentText": `Hi ${pushname} 👋,\n\nꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩`,
+							"hydratedContentText": `Hi ${pushname} 🥂,\n\nꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩`,
 							"hydratedFooterText": `${NamaBot}`,
 							"hydratedButtons": [
 								{
@@ -2240,7 +1726,7 @@ case 'debug2':
     ]
   },
   "hydratedTemplate": {
-    "hydratedContentText": `Hi ${pushname} 👋,\n\nꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩`,
+    "hydratedContentText": `Hi ${pushname} 🥂,\n\nꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩`,
     "hydratedFooterText": `${NamaBot}`,
     "hydratedButtons": [
       {
@@ -2258,7 +1744,7 @@ denz.relayWAMessage(res)
 break
 case 'ig':
 case 'igdl':
-case 'instagram':
+case 'insta':
 if (!c) return reply('Give link?')
 var { igDownloader } = require('./lib/igdown')
    res = await igDownloader(`${c}`).catch(e => {
@@ -2454,31 +1940,24 @@ break
 		}
 			  break
 case 'mode':
-buttonss = [{buttonId: `public`, buttonText: {displayText: 'PUBLIC👥'}, type: 1},{buttonId: `self`, buttonText: {displayText: 'SELF👤'}, type: 1}]
+buttonss = [{buttonId: `public`, buttonText: {displayText: '𝑷𝑼𝑩𝑳𝑰𝑪'}, type: 1},{buttonId: `self`, buttonText: {displayText: '𝑺𝑬𝑳𝑭'}, type: 1}]
 const buMess = {
-    contentText: "SELF/PUBLIC",
-    footerText: '𝙲𝙷𝙾𝙾𝚂𝙴 𝙰𝙽𝚈 𝙾𝙽𝙴!',
+    contentText: "𝑺𝑬𝑳𝑭/𝑷𝑼𝑩𝑳𝑰𝑪",
+    footerText: 'ᴄʜᴏᴏsᴇ ᴀɴʏ ᴏɴᴇ!',
     buttons: buttonss,
     headerType: 1
 }
 await denz.sendMessage(from, buMess, MessageType.buttonsMessage, {quoted: ftok})
 break
-case 'bugreport':
-              if (args.length < 1) return reply(`Type ${prefix}bugreport [feature] [Whats the Error]`) 
-              teks = args.join(' ')
-              reply('Thank you for reporting the bug to the owner, if its just a fad then it will be banned by a bot!')
-              denz.sendMessage('917025868709@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
-              
-              break
 				case 'public':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 			publik = true
-				reply('𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝚂𝙴𝙻𝙵 𝚃𝙾 𝙿𝚄𝙱𝙻𝙸𝙲✔')
+				reply('ᴍᴏᴅᴇ ᴄʜᴀɴɢᴇᴅ ᴛᴏ ᴘᴜʙʟɪᴄ')
 			break
 			case 'self':
 			if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 				publik = false
-				reply('𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚄𝙱𝙻𝙸𝙲 𝚃𝙾 𝚂𝙴𝙻𝙵✔')
+				reply('ᴍᴏᴅᴇ ᴄʜᴀɴɢᴇᴅ ᴛᴏ sᴇʟғ')
 			break
 		case 'gimage':
 case 'googleimage':
@@ -2764,6 +2243,50 @@ if (Number(oi2) >= 50) return reply('most!')
 	  }
 }
 	  break
+	case 'halloween':
+	if (!arg) return reply(from, `use ${prefix}halloween text`, mek)
+	sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/halloween?text=${arg}&apikey=${HunterApi}`)
+   break
+   case 'vampire':
+   if (!arg) return reply(from, `use ${prefix}vampire text`, mek)
+   sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/vampire?text=${arg}&apikey=${HunterApi}`)
+   break
+   case 'codetxt':
+   if (!arg) return reply(from, `use ${prefix}codetxt text`, mek)
+   sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/maker/carbon?code=${arg}&apikey=${HunterApi}`)
+   break
+case 'matrix':
+				if (!arg) return reply(from, `use ${prefix}matrix text`, mek)
+				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/matrix?text=${arg}&apikey=${HunterApi}`)
+				break
+				case 'googletxt':
+				if (!arg) return reply(from, `use ${prefix}googletxt text`, mek)
+				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/google?text=${arg}&apikey=${HunterApi}`)
+				break
+				case 'spiderman':
+				if (!arg) return reply(from, `use ${prefix}sipderman text`, mek)
+				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/spider?text=${arg}&apikey=${HunterApi}`)
+				break
+				case 'express':
+				if (!arg) return reply(from, `use ${prefix}express text`, mek)
+				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/express?text=${arg}&apikey=${HunterApi}`)
+				break
+				case 'dance':
+				if (!arg) return reply(from, `use ${prefix}dance text`, mek)
+				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/dance?text=${arg}&apikey=${HunterApi}`)
+				break
+				case 'blackbird':
+				if (!arg) return reply(from, `use ${prefix}blackbird text`, mek)
+				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/blackbird?text=${arg}&apikey=${HunterApi}`)
+				break
+				case 'text3d':
+				if (!arg) return reply(from, `use ${prefix}text3d text`, mek)
+				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/text3d?text=${arg}&apikey=${HunterApi}`)
+				break
+				case 'warrior':
+				if (!arg) return reply(from, `use ${prefix}warrior text`, mek)
+				sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/flamingtext/warrior?text=${arg}&apikey=${HunterApi}`)
+				break
 				case 'd':
 				case 'del':
 				case 'delete':
@@ -2817,7 +2340,7 @@ if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 reply(`_Restarting ${NamaBot}_`)
 exec(`cd &&  node index`)
 sleep(4000)
-reply('𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙴𝙳✔')
+reply('sʏsᴛᴇᴍ ғᴜʟʟʏ oᴘᴇʀᴀᴛɪᴏɴᴀʟ🥂')
 break
 				case 'detikvn':
 encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -2901,7 +2424,7 @@ case 'tts':
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply targetnya!')
 			demote = mek.message.extendedTextMessage.contextInfo.participant
 		    denz.groupDemoteAdmin(from, [demote])
-						reply('succuss demote admin')
+						reply('ᴅᴇᴍᴏᴛᴇᴅ ᴛʜᴀᴛ ʙʟᴏᴏᴅʏ ғᴏᴏʟ🥵')
 						break
 					case 'promote':
 					if (!isGroup) return reply(mess.only.group)
@@ -2910,7 +2433,7 @@ case 'tts':
 				  if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply targetnya!')
 			promote = mek.message.extendedTextMessage.contextInfo.participant
 		    denz.groupMakeAdmin(from, [promote])
-						reply('Succuss promote member')
+						reply('ᴘʀᴏᴛᴏᴍᴇᴅ ᴛʜᴀᴛ ɢᴏᴏᴅ ʙᴏʏ🥂')
 						break
 				case 'linkgrup':
 				case 'linkgroup':
@@ -2929,7 +2452,7 @@ case 'tts':
                    if (!isBotGroupAdmins) return reply(mess.only.Badmin)
           json = ['action', 'inviteReset', from]
          denz.query({json, expect200: true})
-          reply('Succuss reseted Link Group')
+          reply('ɢʀᴏᴜᴘ ʟɪɴᴋ ʀᴇsᴇᴛᴇᴅ')
          break
 					case 'opengc':
 					if (!isGroup) return reply(mess.only.group)
@@ -2945,16 +2468,6 @@ case 'tts':
 						reply(`Succuss closing group ${groupName}`)
 						denz.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					break
-case 'group':
-buttonss = [{buttonId: `opengc`, buttonText: {displayText: 'OPEN🌝'}, type: 1},{buttonId: `closegc`, buttonText: {displayText: 'CLOSE🌚'}, type: 1}]
-const husnie = {
-    contentText: "OPEN OR CLOSE GROUP",
-    footerText: '𝙲𝙷𝙾𝙾𝚂𝙴 𝙰𝙽𝚈 𝙾𝙽𝙴!',
-    buttons: buttonss,
-    headerType: 1
-}
-await denz.sendMessage(from, husnie, MessageType.buttonsMessage, {quoted: ftok})
-break
 				case 'spam':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 					if (!arg) return reply(`use ${prefix}spam text|amount`)
@@ -2969,7 +2482,7 @@ break
             case 'welcome': 
 	        if (!isGroup) return reply(mess.only.group)
 			if (!isOwner && !isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply(`Hey bro , send : ${prefix}welcome 1/0`)
+					if (args.length < 1) return reply(`untuk mengaktifkan ketik : ${prefix}welcome 1/0`)
 					if (Number(args[0]) === 1) {
 						if (isWelkom) return reply('𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙰𝙲𝚃𝙸𝚅𝙴')
 						welkom.push(from)
@@ -3156,7 +2669,7 @@ if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
                         break
 					case 'shutdown':
 					if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-				reply2('Succuss')
+				reply2('ʙʏᴇ ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩💔')
 				await sleep(1000)
 				return denz.sendMessage(from, JSON.stringify(eval(process.exit())))
 				reply2('Erorr')
@@ -3175,19 +2688,6 @@ if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
             }
             fs.unlinkSync(owgi)
             break
-          case 'mp3':
-					denz.updatePresence(from, Presence.composing)
-					encmediad = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
-					mediad = await denz.downloadAndSaveMediaMessage(encmediad)
-					ran = getRandom('.mp4')
-					exec(`ffmpeg -i ${mediad} ${ran}`, (err) => {
-						fs.unlinkSync(mediad)
-						if (err) return reply(mess.error.api)
-						mhee = fs.readFileSync(ran)
-						denz.sendMessage(from, mhee, audio, { mimetype: 'audio/mp4', duration: 4, quoted: mek })
-						fs.unlinkSync(ran)
-					})
-					break
             case 'tomp3':
 					denz.updatePresence(from, Presence.composing)
 					if (!isQuotedVideo) return reply('Reply Video')
@@ -3480,7 +2980,7 @@ case 'stats':
 ⍟ ────────────────── ⍟`
 reply(stamtus)
 break
-				case 'sed':
+                case 'sed':
 				if (!isOwner) return reply(mess.only.ownerB)
 				if (args.length < 1) return reply('𝚃𝙴𝚇𝚃?')
 				var bc = body.slice(6)
@@ -3534,7 +3034,7 @@ break
 						const encmedia = isQuotedAudio ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 						buff = await denz.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							denz.sendMessage(_.jid, buff, audio, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999999, status: 200, thumbnail: fs.readFileSync('./denz.jpg'), surface: 200, message: `${bc}`, orderTitle: `${bc}`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}, mimetype: 'audio/mp4', duration: 7356663773663, ptt: true })
+							denz.sendMessage(_.jid, buff, audio, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 9999999999, status: 200, thumbnail: fs.readFileSync('./denz.jpg'), surface: 200, message: `${bc}`, orderTitle: `${bc}`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}, mimetype: 'audio/mp4', duration: 359996400, ptt: true })
 						}
 						} else if (isMedia && !mek.message.videoMessage || isQuotedSticker) {
 						const encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
@@ -3617,8 +3117,8 @@ var nn = body.slice(9)
               if (!isGroup) return reply(mess.only.group)
               if (!isGroupAdmins) return reply(mess.only.admin)
               if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-              if (args.length < 1) return reply('Teksnya?')
-              reply('Otw Hack')
+              if (args.length < 1) return reply('Text?')
+              reply('ᴛʜɪs ɢʀᴏᴜᴘ ʜᴀᴄᴋɪɴɢ ʙʏ sᴘʏʀᴏ sᴇʀ')
                 tessgc = await getBuffer(`https://i.ibb.co/m4Qx3JG/20210319-204838.jpg`)
                    denz.updateProfilePicture (from, tessgc)
                    await sleep(1000)
@@ -3719,7 +3219,7 @@ denz.sendMessage(nomor, `▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒�
     itemCount: -969769349, // Bug
     status: 1,
     surface: 1,
-    message: '☠️ HUSNI BOMBER ☠️',
+    message: '☠️HUSNI BOMBER☠️',
     orderTitle: 'AsylumVirus', // Idk what this does
     sellerJid: '0@s.whatsapp.net' // Seller
    }
@@ -3918,8 +3418,8 @@ break
                 reply('Didn\'t find anything or there is any error!')
                 reply(`Error: ${e.message}`)
             }
-            break
-					case 'ytmp3':
+            break	
+            case 'ytmp3':
 						if (args.length === 0) return reply(`send order *${prefix}ytmp3 [linkYt]*`)
 						let isLinks = args[0].match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/)
 						if (!isLinks) return reply(mess.error.Iv)
@@ -3931,7 +3431,7 @@ break
 								axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
 								.then((a) => {
 								if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `❏ *𝚈𝚃𝚖𝚙3*\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP3\n*Filesize* : ${filesizeF}\n*𝙻𝙸𝙽𝙺* : ${a.data}\n\n_Sorry the duration exceeds the maximum limit, please click the link above_`)
-								const captions = `❏ *𝚈𝚃𝚖𝚙3*\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP3\n❏ *𝚂𝙸𝚉𝙴* : ${filesizeF}\n❏ *𝚂𝙴𝚁𝚅𝙴𝚁* : 𝚈𝚃𝙼𝙿3 , 𝚆𝙰𝙸𝚃 𝙰 𝙼𝙸𝙽𝚄𝚃𝙴_`
+								const captions = `❏ *𝚈𝚃𝚖𝚙3*\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP3\n❏ *𝚂𝙴𝚁𝚅𝙴𝚁* : 𝚈𝚃𝙼𝙿3 , 𝚆𝙰𝙸𝚃 𝙰 𝙼𝙸𝙽𝚄𝚃𝙴_`
 								sendMediaURL(from, thumb, captions)
 								sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
 							})
@@ -3939,7 +3439,7 @@ break
 						} catch (err) {
 							reply(mess.error.api)
 						}
-						break
+						break	
                     case 'play':
                             if (args.length === 0) return reply(`Send orders *${prefix}play* __The title of the song to be searched_`)
                             const playy = await axios.get(`https://bx-hunter.herokuapp.com/api/yt/search?query=${body.slice(6)}&apikey=${HunterApi}`)
@@ -3951,7 +3451,7 @@ break
                                     const { dl_link, thumb, title, filesizeF, filesize } = res
                                     axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
                                     .then(async (a) => {
-                                    if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `❏ *𝙿𝙻𝙰𝚈𝙼𝙿3*\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP3\n*Filesize* : ${filesizeF}\n*𝙻𝙸𝙽𝙺* : ${a.data}\n\n_Sorry the duration exceeds the maximum limit, please click the link above_`)
+                                    if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `❏ *𝙿𝙻𝙰𝚈𝙼𝙿3*\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴??𝚃* : MP3\n*Filesize* : ${filesizeF}\n*𝙻𝙸𝙽𝙺* : ${a.data}\n\n_Sorry the duration exceeds the maximum limit, please click the link above_`)
                                     const captions = `❏ *𝚈𝚃𝚖𝚙3*\n\n❏ *𝚃𝙸𝚃𝙻𝙴* : ${title}\n❏ *𝙴𝚇𝚃* : MP3\n❏ *𝚂𝙸𝚉𝙴* : ${filesizeF}\n❏ *𝚂𝙴𝚁𝚅𝙴𝚁* : 𝚈𝚃𝙼𝙿3, _𝚆𝙰𝙸𝚃 𝙰 𝙼𝙸𝙽𝚄𝚃𝙴_`
 								    sendMediaURL(from, thumb, captions)
                                     sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
@@ -4145,8 +3645,8 @@ break
 					return denz.sendMessage(from, JSON.stringify(eval(body.slice(8))), text, {quoted: mek})
 					if (err) return denz.sendMessage(from, `root @Anees-Anz:~ ${err}`, text, { quoted: mek })
                  break
-                 case 'photo':
-				case 'tophoto':
+                 case 'toimg':
+				case 'tomedia':
 					if (!isQuotedSticker) return reply('𝚁𝚎𝚙𝚕𝚢 𝚝𝚘 𝚂𝚝𝚒𝚌𝚔𝚎𝚛')
 					if (mek.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.isAnimated === true){
 						const encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -4177,15 +3677,15 @@ break
 				break
 				case 'addsticker':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-					if (!isQuotedSticker) return reply('𝚁𝚎𝚙𝚕𝚢 𝚝𝚘 𝚂𝚝𝚒𝚌𝚔𝚎𝚛')
+					if (!isQuotedSticker) return reply('ʀᴇᴘʟʏ ᴛᴏ sᴛɪᴄᴋᴇʀ')
 					nm = body.slice(12)
-					if (!nm) return reply('𝚆𝚑𝚊𝚝 𝚒𝚜 𝚜𝚝𝚒𝚌𝚔𝚎𝚛 𝚗𝚊𝚖𝚎?')
+					if (!nm) return reply('ᴡʜᴀᴛ ɪs ᴛʜᴇ ɴᴀᴍᴇ ?')
 					boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					delb = await denz.downloadMediaMessage(boij)
 					setik.push(`${nm}`)
 					fs.writeFileSync(`./media/sticker/${nm}.webp`, delb)
 					fs.writeFileSync('./database/setik.json', JSON.stringify(setik))
-					denz.sendMessage(from, `ᴀᴅᴅᴇᴅ ᴛᴏ ᴅᴀᴛᴀʙᴀsᴇ✔, *${prefix}liststicker*`, MessageType.text, { quoted: mek })
+					denz.sendMessage(from, `ᴀᴅᴅᴇᴅ ᴛᴏ sᴛɪᴄᴋᴇʀ ᴅᴀᴛᴀʙᴀsᴇ🥂`, MessageType.text, { quoted: mek })
 					break
 				case 'delsticker':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
@@ -4194,7 +3694,7 @@ break
 					 wanu = setik.indexOf(nmm)
 					 setik.splice(wanu, 1)
 					 fs.unlinkSync(`./media/sticker/${nmm}.webp`)
-					 reply(`𝙳𝙾𝙽𝙴✔ ${body.slice(12)}`)
+					 reply(`sᴛɪᴄᴋᴇʀ ᴅᴇʟᴇᴛᴇᴅ➬ ${body.slice(12)}`)
 					} catch (err){
 						console.log(err)
 						reply(mess.error.api)
@@ -4202,7 +3702,7 @@ break
 					break
 				case 'stickerlist':
 				case 'liststicker':
-					teks = '*Sticker List :*\n\n'
+					teks = '*sᴛɪᴄᴋᴇʀ ʟɪsᴛ :*\n\n'
 					for (let awokwkwk of setik) {
 						teks += `- ${awokwkwk}\n`
 					}
@@ -4211,15 +3711,15 @@ break
 					break
 					case 'addvn':
 					if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-					if (!isQuotedAudio) return reply('𝚁𝚎𝚙𝚕𝚢 𝚝𝚘 𝙰𝚞𝚍𝚒𝚘')
+					if (!isQuotedAudio) return reply('ʀᴇᴘʟʏ ᴛᴏ ᴀᴜᴅɪᴏ')
 					nm = body.slice(7)
-					if (!nm) return reply('𝚆𝚑𝚊𝚝 𝚒𝚜 𝚋𝚐𝚖 𝚗𝚊𝚖𝚎?')
+					if (!nm) return reply('ᴡʜᴀᴛ ɪs ᴛʜᴇ ɴᴀᴍᴇ ?')
 					boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					delb = await denz.downloadMediaMessage(boij)
 					vien.push(`${nm}`)
 					fs.writeFileSync(`./media/vn/${nm}.mp3`, delb)
 					fs.writeFileSync('./database/vien.json', JSON.stringify(vien))
-					denz.sendMessage(from, `ᴀᴅᴅᴇᴅ ᴛᴏ ᴅᴀᴛᴀʙᴀsᴇ✔, *${prefix}listvn*`, MessageType.text, { quoted: mek })
+					denz.sendMessage(from, `ᴀᴅᴅᴇᴅ ᴛᴏ ʙɢᴍ ᴅᴀᴛᴀʙᴀsᴇ🥂`, MessageType.text, { quoted: mek })
 					break
 					case 'delvn':
 					if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
@@ -4228,7 +3728,7 @@ break
 					 wanu = vien.indexOf(nmm)
 					 vien.splice(wanu, 1)
 					 fs.unlinkSync(`./media/vn/${nmm}.mp3`)
-					reply(`𝙳𝙾𝙽𝙴✔ ${body.slice(7)}`)
+					reply(`ʙɢᴍ ᴅᴇʟᴇᴛᴇᴅ➬ ${body.slice(7)}`)
 					} catch (err){
 						console.log(err)
 						reply(mess.error.api)
@@ -4236,7 +3736,7 @@ break
 					break
 				case 'vnlist':
 				case 'listvn':
-					teks = '*𝙱𝙶𝙼 List :*\n\n'
+					teks = '*ʙɢᴍ ʟɪsᴛ :*\n\n'
 					for (let awokwkwk of vien) {
 						teks += `- ${awokwkwk}\n`
 					}
@@ -4245,15 +3745,15 @@ break
 					break
 				case 'addimage':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-					if (!isQuotedImage) return reply('𝚁𝚎𝚙𝚕𝚢 𝚝𝚘 𝙸𝚖𝚊𝚐𝚎')
+					if (!isQuotedImage) return reply('ʀᴇᴘʟʏ ᴛᴏ ɪᴍᴀɢᴇ')
 					nm = body.slice(10)
-					if (!nm) return reply('𝚆𝚑𝚊𝚝 𝚒𝚜 𝚒𝚖𝚊𝚐𝚎 𝚗𝚊𝚖𝚎?')
+					if (!nm) return reply('ᴡʜᴀᴛ ɪs ᴛʜᴇ ɴᴀᴍᴇ ?')
 					boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					delb = await denz.downloadMediaMessage(boij)
 					imagi.push(`${nm}`)
 					fs.writeFileSync(`./media/image/${nm}.jpg`, delb)
 					fs.writeFileSync('./database/imagi.json', JSON.stringify(imagi))
-					denz.sendMessage(from, `ᴀᴅᴅᴇᴅ ᴛᴏ ᴅᴀᴛᴀʙᴀsᴇ✔, *${prefix}listimage*`, MessageType.text, { quoted: mek })
+					denz.sendMessage(from, `ᴀᴅᴅᴇᴅ ᴛᴏ ɪᴍᴀɢᴇ ᴅᴀᴛᴀʙᴀsᴇ🥂`, MessageType.text, { quoted: mek })
 					break
 				case 'delimage':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
@@ -4262,7 +3762,7 @@ break
 					 wanu = imagi.indexOf(nmm)
 					 imagi.splice(wanu, 1)
 					 fs.unlinkSync(`./media/image/${nmm}.jpg`)
-					 reply(`𝙳𝙾𝙽𝙴✔ ${body.slice(10)}`)
+					 reply(`ɪᴍᴀɢᴇ ᴅᴇʟᴇᴛᴇᴅ➬ ${body.slice(10)}`)
 					} catch (err){
 						console.log(err)
 						reply(mess.error.api)
@@ -4290,17 +3790,63 @@ break
 				result = fs.readFileSync(`./media/sticker/${wanu[1]}.webp`)
 				denz.sendMessage(`${wanu[0]}`, result, sticker, { contextInfo: { "mentionedJid": mem }})
 				break
-			case 'runtime':
-				runtime = process.uptime()
-				reply(`Runtime : ${waktu(runtime)}`)
-				break
+				case 'about':
+denz.sendMessage(from, `*ʜɪ ʙʀᴏ ${pushname}*
+
+┏━━𒆜 *ɪɴғᴏ*
+┃𒈒 *ɴᴀᴍᴇ ᴜsᴇʀ* : ${pushname}
+┃𒈒 *ɴᴀᴍᴇ ʙᴏᴛ* : ꪶ͢𝑺𝑷𝒀𝑹𝑶 𝑺𝑬𝑹 𝑩𝑶𝑻ꫂ⁩
+┃𒈒 *ɴᴀᴍᴇ ᴏᴡɴᴇʀ* : ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩
+┃𒈒 *ᴄʀᴇᴀᴛᴏʀ* : @917025868709
+┃𒈒 *sᴘᴇᴇᴅ* : 00065
+┗━━𒆜
+*ᴘʀɪᴠᴀᴛᴇ ʙᴏᴛ ᴀɴɴ ᴍᴡᴏɴᴇ*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "ꪶ͢𝑆𝐾𝑌𝐿𝐼𝑁𝐸ꫂ⁩",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg')}}})
+break
+case 'donate':
+	gambar = fs.readFileSync('./denz.jpg')
+	teksnya = `╭───────────────𒆜
+ | *ᴅᴏɴᴀᴛᴇ ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩ 🥂*
+╰───────────────𒈒
+╭───────────────𒆜
+ | ᴀɴᴛʜᴀᴅᴀ ᴅᴏɴᴀᴛᴇ ᴄʜᴇʏᴀɴɴᴏ ?
+ | 𒆜┤*ᴘᴀʏᴛᴍ*
+ | 𒆜┤*917025868709*
+ | 𒆜┤*ɢᴏᴏɢʟᴇ ᴘᴀʏ*
+ | 𒆜┤*917025868709^*
+╰───────────────𒈒`
+teks =
+`ᴀɴᴛʜᴀᴅᴀ ᴘᴇᴅɪᴄʜᴏ ɴᴇᴇ 🥂`
+but = [
+          { buttonId: `menu`, buttonText: { displayText: 'ᴍᴇɴᴜ' }, type: 1 },
+          { buttonId: `owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 }
+        ]
+        sendButLocation(from, teksnya, teks, gambar, but)
+break
 			case 'setbio':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-				if (args.length < 1) return reply('Teksnya?')
+				if (args.length < 1) return reply('ᴛᴇxᴛ?')
 					iyek = body.slice(8)
 					denz.setStatus(`${iyek}`)
 					reply(`Sukses mengganti bio ke ${body.slice(8)}`)
-					break			
+					break	
+case 'bs':
+if (!isOwner) return reply('ᴛᴇxᴛ?')
+if (args.length < 1) return reply('.......')
+anu = await denz.chats.all()
+if (isMedia && !mek.message.videoMessage || isQuotedImage) {
+const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
+bc = await denz.downloadMediaMessage(encmedia)
+for (let _ of anu) {
+denz.sendMessage(_.jid, bc, image, { caption: `[ All Broadcast ]\n\n${body.slice(4)}` })
+}
+reply('sᴜᴄᴄᴜss')
+} else {
+for (let _ of anu) {
+sendMess(_.jid, `[ *ᴀʟʟ ᴄʜᴀᴛ ʙʀᴏᴀᴅᴄᴀsᴛ* ]\n\n${body.slice(4)}`)
+}
+reply('sᴜᴄᴄᴜss ʙʀᴏᴀᴅᴄᴀsᴛ')
+}
+break		
 					case 'setname':
 					if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 				if (args.length < 1) return reply('Text?')
@@ -4308,20 +3854,15 @@ break
                 denz.updateProfileName(anu)
                 reply(`Succuss ${body.slice(9)}`)
                 break
-      case "add":
-			if (!isGroup) return reply('this feature is only for groups')
-			if (!isGroupAdmins) return sticAdmin(from)
-			if (!isBotGroupAdmins) return sticNotAdmin(from)
-			if (args.length < 1) return reply('do you want to add a genie?')
-					if (args[0].startsWith('+')) return reply('Enter the number with country code avoiding plus sign ; eg. 12132950219')
-					try {
-						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
-						denz.groupAdd(from, [num])
-					} catch (e) {
-						console.log('Error :', e)
-						reply('Failed to add target, maybe because its private🤔')
-					}
-					break;
+			case 'add':
+			if (!isGroup) return reply(mess.only.group)
+			if (!isGroupAdmins) return reply(mess.only.admin)
+			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply target!')
+			add = mek.message.extendedTextMessage.contextInfo.participant
+		    denz.groupAdd(from, [add])
+				reply('Succuss')
+				break
 				case 'kick':
 			if (!isGroup) return reply(mess.only.group)
 			if (!isGroupAdmins) return reply(mess.only.admin)
@@ -4329,7 +3870,7 @@ break
 			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply target!')
 			kick = mek.message.extendedTextMessage.contextInfo.participant
 		    denz.groupRemove(from, [kick])
-						reply('Success')
+						reply('Succuss')
                     break
                     case 'creategroup':
 			case 'creategrup':
@@ -4537,7 +4078,7 @@ Giliran = @${tty.player1.split('@')[0]}`
             if (!e.includes("Cannot set property 'mtype' of undefined")) {
             if (!e.includes("jid is not defined")) {
      console.log(color('|ERR|', 'red'), color(e, 'cyan'))
-     denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ALERT-ERROR* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer husni ser",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://chat.whatsapp.com/BzhyWkAEU0t8oVl3s8p94m"}}})
+     denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ᴇʀʀᴏʀ-ᴀʟᴇʀᴛ* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "ꪶ͢ʜᴜsɴɪ sᴇʀꫂ⁩",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/917356378949?text=Hi Bro"}}})
 	}
     }
     }
