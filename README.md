@@ -1,6 +1,6 @@
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=Welcome+to+AZNU+WA+Bot+repo;Created+by+NIJIN;This+is+my+repo;This+is+a+Featured+bot;With+Love+NIJIN)](https://git.io/typing-svg)
 <p align="center">
-<img src="https://i.ibb.co/XXJzY7C/munna.jpg" alt="𝑺𝑷𝒀𝑹𝑶 𝑺𝑬𝑹" width="170" />
+<img src="munna.jpg" alt="𝑺𝑷𝒀𝑹𝑶 𝑺𝑬𝑹" width="170" />
 <p align="center">
   ī.ᴀᴍ/ꪶ͢ɴɪᴊɪɴ sᴇʀꫂ⁩
 
